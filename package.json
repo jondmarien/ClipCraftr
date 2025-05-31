@@ -1,0 +1,48 @@
+{
+  "name": "clipcraftr",
+  "version": "0.1.0",
+  "description": "A Discord bot for creating automated video montages from user-submitted clips",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/esbuild",
+      "**/esbuild/**",
+      "**/ffmpeg-static",
+      "**/ffmpeg-static/**"
+    ]
+  },
+  "scripts": {
+    "bot:dev": "pnpm --filter @clipcraftr/bot dev",
+    "bot:build": "pnpm --filter @clipcraftr/bot build",
+    "bot:start": "pnpm --filter @clipcraftr/bot start",
+    "server:dev": "pnpm --filter @clipcraftr/server dev",
+    "server:build": "pnpm --filter @clipcraftr/server build",
+    "server:start": "pnpm --filter @clipcraftr/server start",
+    "dashboard:dev": "pnpm --filter @clipcraftr/dashboard dev",
+    "dashboard:build": "pnpm --filter @clipcraftr/dashboard build",
+    "dashboard:start": "pnpm --filter @clipcraftr/dashboard start",
+    "dev": "concurrently \"pnpm bot:dev\" \"pnpm server:dev\" \"pnpm dashboard:dev\"",
+    "build": "pnpm run -r build",
+    "start": "concurrently \"pnpm bot:start\" \"pnpm server:start\" \"pnpm dashboard:start\"",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "format": "prettier --write .",
+    "prepare": "husky install"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "video",
+    "montage",
+    "ffmpeg"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "packageManager": "pnpm@8.15.0"
+}

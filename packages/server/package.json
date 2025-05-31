@@ -1,0 +1,48 @@
+{
+  "name": "@clipcraftr/server",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Backend server for ClipCraftr",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "start": "node dist/index.js",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "@fastify/cors": "^8.4.0",
+    "@fastify/helmet": "^10.2.1",
+    "@fastify/sensible": "^5.2.1",
+    "@fastify/swagger": "^8.15.0",
+    "@fastify/swagger-ui": "^2.0.0",
+    "@fastify/websocket": "^8.3.0",
+    "dotenv": "^16.3.1",
+    "fastify": "^4.21.0",
+    "fastify-plugin": "^4.5.0",
+    "mongoose": "^8.0.3",
+    "pino-pretty": "^10.2.3",
+    "socket.io": "^4.7.2",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@fastify/type-provider-typebox": "^3.4.0",
+    "@sinclair/typebox": "^0.32.8",
+    "@types/node": "^20.5.7",
+    "@types/ws": "^8.5.10",
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "@typescript-eslint/parser": "^6.4.0",
+    "eslint": "^8.47.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "prettier": "^3.0.2",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
