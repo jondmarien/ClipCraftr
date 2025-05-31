@@ -1,9 +1,11 @@
 import 'dotenv/config';
 import { Client, Collection, GatewayIntentBits, Partials } from 'discord.js';
-import { logger } from './utils/logger';
 import { registerEvents } from './events';
 import { Command } from './types';
 import { loadCommands, registerSlashCommands } from './utils/commandHandler';
+import { connectDatabase } from './config/database';
+import { logger } from './utils/logger';
+import { validateEnvVars } from './utils/env';
 
 class ClipCraftrClient extends Client {
   public commands: Collection<string, Command> = new Collection();
@@ -29,6 +31,14 @@ class ClipCraftrClient extends Client {
 
   public async start() {
     try {
+      // Validate required environment variables
+      validateEnvVars(['DISCORD_TOKEN', 'MONGODB_URI']);
+
+      // Connect to MongoDB
+      this.logger.info('Connecting to database...');
+      await connectDatabase();
+      this.logger.info('Database connection established');
+
       // Load commands
       await this.loadAndRegisterCommands();
 
@@ -100,6 +110,18 @@ process.on('uncaughtException', (error: unknown) => {
   process.exit(1);
 });
 
-// Start the bot
+// Create and start the bot
 const client = new ClipCraftrClient();
-client.start();
+
+// Handle process termination
+process.on('SIGINT', async () => {
+  logger('Process').info('Shutting down...');
+  await client.destroy();
+  process.exit(0);
+});
+
+// Start the application
+client.start().catch((error) => {
+  logger('Process').error('Failed to start bot', { error });
+  process.exit(1);
+});
