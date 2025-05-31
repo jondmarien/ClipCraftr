@@ -19,21 +19,23 @@
     "discord-api-types": "^0.37.36",
     "discord.js": "^14.14.1",
     "dotenv": "^16.3.1",
-    "fluent-ffmpeg": "^2.1.2",
-    "winston": "^3.11.0"
+    "ffmpeg-static": "^5.2.0",
+    "ffmpeggy": "^1.0.0",
+    "uuid": "^9.0.1",
+    "winston": "^3.11.0",
+    "winston-daily-rotate-file": "^5.0.0"
   },
   "devDependencies": {
-    "@types/fluent-ffmpeg": "^2.1.22",
-    "@types/node": "^20.5.7",
+    "@types/node": "^18.16.0",
     "@typescript-eslint/eslint-plugin": "^6.4.0",
     "@typescript-eslint/parser": "^6.4.0",
-    "eslint": "^8.47.0",
+    "eslint": "^8.45.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.0",
     "prettier": "^3.0.2",
     "ts-node": "^10.9.1",
     "ts-node-dev": "^2.0.0",
-    "typescript": "^5.2.2"
+    "typescript": "^5.8.3"
   },
   "engines": {
     "node": ">=18.0.0"

@@ -29,7 +29,11 @@
     "start": "concurrently \"pnpm bot:start\" \"pnpm server:start\" \"pnpm dashboard:start\"",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "format": "prettier --write .",
-    "prepare": "husky install"
+    "prepare": "husky || echo \"Husky not found, skipping git hooks setup\""
+  },
+  "devDependencies": {
+    "husky": "^9.1.0",
+    "typescript": "^5.8.3"
   },
   "keywords": [
     "discord",
@@ -44,5 +48,10 @@
     "node": ">=18.0.0",
     "pnpm": ">=8.0.0"
   },
-  "packageManager": "pnpm@8.15.0"
+  "packageManager": "pnpm@8.15.0",
+  "pnpm": {
+    "overrides": {
+      "eslint": "^8.56.0"
+    }
+  }
 }
