@@ -72,6 +72,7 @@ ENV/
 
 # Logs
 *.log
+packages/bot/logs
 
 # Next.js
 .next/
