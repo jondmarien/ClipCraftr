@@ -7,11 +7,12 @@ from dotenv import load_dotenv
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 
-# Set up intents
-intents = discord.Intents.default()
-intents.message_content = True
+# Set up minimal intents to avoid requiring privileged ones
+intents = discord.Intents.none()  # Start with no intents
+intents.guilds = True  # Basic server info (non-privileged)
+intents.guild_messages = True  # For message events in guilds (non-privileged)
 
-# Initialize bot
+# Initialize bot with minimal intents
 bot = commands.Bot(command_prefix='!', intents=intents)
 
 @bot.event
