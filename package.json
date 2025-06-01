@@ -24,7 +24,7 @@
     "dashboard:dev": "pnpm --filter @clipcraftr/dashboard dev",
     "dashboard:build": "pnpm --filter @clipcraftr/dashboard build",
     "dashboard:start": "pnpm --filter @clipcraftr/dashboard start",
-    "dev": "concurrently \"pnpm bot:dev\" \"pnpm server:dev\" \"pnpm dashboard:dev\"",
+    "dev": "concurrently -k -n BOT,SERVER,DASH -c blue,green,magenta \"pnpm bot:dev\" \"pnpm server:dev\" \"wait-on tcp:4000 && pnpm dashboard:dev\"",
     "build": "pnpm run -r build",
     "start": "concurrently \"pnpm bot:start\" \"pnpm server:start\" \"pnpm dashboard:start\"",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
@@ -33,9 +33,12 @@
   },
   "devDependencies": {
     "@babel/preset-typescript": "^7.27.1",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.15.29",
     "concurrently": "^9.1.2",
     "husky": "^9.1.0",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "wait-on": "^8.0.3"
   },
   "keywords": [
     "discord",
