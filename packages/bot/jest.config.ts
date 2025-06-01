@@ -1,27 +1,17 @@
-import type { Config } from 'jest';
-
-const config: Config = {
-  preset: 'ts-jest/presets/default-esm',
+export default {
+  preset: 'ts-jest',
   testEnvironment: 'node',
   roots: ['<rootDir>/src'],
   testMatch: ['**/__tests__/**/*.test.ts'],
   moduleFileExtensions: ['ts', 'js', 'json', 'node'],
   transform: {
-    '^.+\\.tsx?$': [
-      'ts-jest',
-      {
-        useESM: true,
-      },
-    ],
+    '^.+\\.tsx?$': 'ts-jest',
   },
   moduleNameMapper: {
-    '^(\\.{1,2}/.*)\\.js$': '$1',
     '^@/(.*)$': '<rootDir>/src/$1',
   },
-  setupFiles: ['<rootDir>/src/setupTests.ts'],
-  extensionsToTreatAsEsm: ['.ts'],
   collectCoverageFrom: [
-    'src/**/*.{ts,tsx}',
+    'src/**/*.ts',
     '!src/**/*.d.ts',
     '!src/index.ts',
     '!src/config/**',
@@ -31,5 +21,3 @@ const config: Config = {
   coverageReporters: ['text', 'lcov'],
   testTimeout: 30000, // 30 seconds
 };
-
-export default config;
