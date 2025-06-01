@@ -6,11 +6,15 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc",
-    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "build": "swc src --out-dir dist --copy-files",
+    "dev": "swc src --out-dir .swc --copy-files --watch & node --watch .swc/index.js",
     "start": "node dist/index.js",
-    "test:db": "ts-node scripts/test-db.ts",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest --detectOpenHandles --forceExit --runInBand",
+    "test:watch": "NODE_OPTIONS=--experimental-vm-modules jest --watch",
+    "test:coverage": "NODE_OPTIONS=--experimental-vm-modules jest --coverage",
+    "test:db": "node -r @swc/register scripts/test-db.ts",
     "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
     "format": "prettier --write ."
   },
   "dependencies": {
@@ -30,17 +34,21 @@
     "winston-daily-rotate-file": "^5.0.0"
   },
   "devDependencies": {
-    "@types/node": "^18.16.0",
+    "@jest/globals": "30.0.0-beta.3",
+    "@swc/cli": "^0.7.7",
+    "@swc/core": "^1.11.29",
+    "@swc/helpers": "^0.5.17",  
+    "@swc/jest": "^0.2.37",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^18.19.110",
     "@typescript-eslint/eslint-plugin": "^6.4.0",
     "@typescript-eslint/parser": "^6.4.0",
     "dotenv-expand": "^12.0.2",
     "eslint": "^8.45.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.0",
-    "prettier": "^3.0.2",
-    "ts-node": "^10.9.1",
-    "ts-node-dev": "^2.0.0",
-    "typescript": "^5.8.3"
+    "jest": "^29.7.0",
+    "prettier": "^3.0.2"
   },
   "engines": {
     "node": ">=18.0.0"

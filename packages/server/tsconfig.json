@@ -5,13 +5,15 @@
     "rootDir": "./src",
     "baseUrl": ".",
     "paths": {
-      "@clipcraftr/shared": ["../../packages/shared/src"]
+      "@clipcraftr/shared": ["../../packages/shared/src"],
+      "@/*": ["./src/*"]
     },
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "strict": true
+    "strict": true,
+    "typeRoots": ["./node_modules/@types", "./src/types"]
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "src/types.d.ts"],
   "exclude": ["node_modules", "dist"]
 }

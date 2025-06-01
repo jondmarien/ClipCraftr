@@ -32,6 +32,8 @@
     "prepare": "husky || echo \"Husky not found, skipping git hooks setup\""
   },
   "devDependencies": {
+    "@babel/preset-typescript": "^7.27.1",
+    "concurrently": "^9.1.2",
     "husky": "^9.1.0",
     "typescript": "^5.8.3"
   },
