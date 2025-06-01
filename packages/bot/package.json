@@ -3,11 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "description": "Discord bot for ClipCraftr",
+  "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "swc src --out-dir dist --copy-files",
-    "dev": "swc src --out-dir .swc --copy-files --watch & node --watch .swc/index.js",
+    "dev": "tsx watch src/index.ts",
     "start": "node dist/index.js",
     "test": "jest --detectOpenHandles --forceExit --runInBand",
     "test:watch": "jest --watch",
@@ -29,6 +30,8 @@
     "ffmpeggy": "^1.0.0",
     "mongodb": "^6.16.0",
     "mongoose": "^8.0.3",
+    "tsx": "^4.7.0",
+    "typescript": "^5.0.0",
     "uuid": "^9.0.1",
     "winston": "^3.11.0",
     "winston-daily-rotate-file": "^5.0.0"

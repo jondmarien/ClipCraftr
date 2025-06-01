@@ -73,8 +73,7 @@ ENV/
 *.swo
 
 # Logs
-*.log
-packages/bot/logs
+
 
 # Next.js
 .next/
