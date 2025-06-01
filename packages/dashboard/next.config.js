@@ -6,15 +6,23 @@ const nextConfig = {
     // Enable SWC minification
     removeConsole: process.env.NODE_ENV === 'production',
   },
-  experimental: {
-    // Enable experimental features if needed
-    // serverComponentsExternalPackages: [],
-  },
   images: {
-    // Configure image optimization
-    domains: [],
+    domains: ['localhost'],
   },
-  // Enable TypeScript type checking during build
+  // appDir is now enabled by default in Next.js 13+
+  env: {
+    NEXTAUTH_URL: process.env.NEXTAUTH_URL || 'http://localhost:3000',
+    NEXTAUTH_SECRET: process.env.NEXTAUTH_SECRET,
+    API_BASE_URL: process.env.API_BASE_URL || 'http://localhost:4000',
+  },
+  async rewrites() {
+    return [
+      {
+        source: '/api/:path*',
+        destination: `${process.env.API_BASE_URL || 'http://localhost:4000'}/:path*`,
+      },
+    ];
+  },
   typescript: {
     ignoreBuildErrors: false,
   },
