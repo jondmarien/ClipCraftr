@@ -1,8 +1,9 @@
 import { REST, Routes, ApplicationCommandData, Collection, Client } from 'discord.js';
 import { readdirSync } from 'fs';
 import path from 'path';
-import { Command } from '../types';
-import { logger } from './logger';
+
+import { Command } from '../types/index.js';
+import { logger } from './logger.js';
 
 const commandLogger = logger('CommandHandler');
 
@@ -19,7 +20,7 @@ export async function loadCommands(client: ExtendedClient): Promise<void> {
     client.commands = new Collection();
   }
 
-  const commandsPath = path.join(__dirname, '..', 'commands');
+  const commandsPath = path.resolve(process.cwd(), 'src/commands');
   const commandCategories = readdirSync(commandsPath, { withFileTypes: true })
     .filter((dirent) => dirent.isDirectory())
     .map((dirent) => dirent.name);
@@ -34,8 +35,10 @@ export async function loadCommands(client: ExtendedClient): Promise<void> {
       const filePath = path.join(categoryPath, file);
 
       try {
+        // Convert Windows path to file URL for dynamic import
+        const fileUrl = new URL(`file://${filePath.replace(/\\/g, '/')}`).href;
         // Use dynamic import to load the command module
-        const commandModule = await import(filePath);
+        const commandModule = await import(fileUrl);
         const command: Command = commandModule.default || commandModule.command;
 
         if (!command || !command.name) {
@@ -92,16 +95,38 @@ export async function registerSlashCommands(client: ExtendedClient): Promise<voi
   try {
     commandLogger.info(`Started refreshing ${commands.length} application (/) commands.`);
 
-    // The put method is used to fully refresh all commands with the current set
-    const data = (await rest.put(
-      process.env.NODE_ENV === 'production'
-        ? Routes.applicationCommands(process.env.DISCORD_CLIENT_ID!)
-        : Routes.applicationGuildCommands(
-            process.env.DISCORD_CLIENT_ID!,
-            process.env.DEV_GUILD_ID! // Optional: Use a development guild for testing
-          ),
-      { body: commands }
-    )) as unknown as ApplicationCommandData[];
+    // Register commands based on environment
+    let data: ApplicationCommandData[] = [];
+
+    if (process.env.NODE_ENV === 'production') {
+      // In production, register global commands
+      commandLogger.info('Registering global commands...');
+      data = (await rest.put(Routes.applicationCommands(process.env.DISCORD_CLIENT_ID!), {
+        body: commands,
+      })) as ApplicationCommandData[];
+    } else {
+      // In development, try to register guild commands if DEV_GUILD_ID is set
+      if (process.env.DEV_GUILD_ID) {
+        commandLogger.info(
+          `Registering guild commands for development guild ${process.env.DEV_GUILD_ID}...`
+        );
+        data = (await rest.put(
+          Routes.applicationGuildCommands(process.env.DISCORD_CLIENT_ID!, process.env.DEV_GUILD_ID),
+          { body: commands }
+        )) as ApplicationCommandData[];
+      } else {
+        // Fall back to global commands if no DEV_GUILD_ID is set
+        commandLogger.warn(
+          'DEV_GUILD_ID not set. Registering global commands in development mode...'
+        );
+        commandLogger.warn(
+          'Note: Global commands can take up to an hour to update. Set DEV_GUILD_ID for instant updates.'
+        );
+        data = (await rest.put(Routes.applicationCommands(process.env.DISCORD_CLIENT_ID!), {
+          body: commands,
+        })) as ApplicationCommandData[];
+      }
+    }
 
     commandLogger.info(`Successfully reloaded ${data.length} application (/) commands.`);
   } catch (error) {

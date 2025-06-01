@@ -1,11 +1,20 @@
-import 'dotenv/config';
+import dotenv from 'dotenv';
+import path from 'path';
+import { fileURLToPath } from 'url';
 import { Client, Collection, GatewayIntentBits, Partials } from 'discord.js';
-import { registerEvents } from './events';
-import { Command } from './types';
-import { loadCommands, registerSlashCommands } from './utils/commandHandler';
-import { connectDatabase } from './config/database';
-import { logger } from './utils/logger';
-import { validateEnvVars } from './utils/env';
+
+// Load environment variables from root .env file
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const envPath = path.resolve(__dirname, '../../../../.env');
+dotenv.config({ path: envPath });
+
+import { registerEvents } from './events/index.js';
+import type { Command } from './types/index.js';
+import { loadCommands, registerSlashCommands } from './utils/commandHandler.js';
+import { connectDatabase } from './config/database.js';
+import { logger } from './utils/logger.js';
+import { validateEnvVars } from './utils/env.js';
 
 class ClipCraftrClient extends Client {
   public commands: Collection<string, Command> = new Collection();
@@ -32,7 +41,9 @@ class ClipCraftrClient extends Client {
   public async start() {
     try {
       // Validate required environment variables
+      this.logger.info('Validating environment variables...');
       validateEnvVars(['DISCORD_TOKEN', 'MONGODB_URI']);
+      this.logger.info('Environment variables validated');
 
       // Connect to MongoDB
       this.logger.info('Connecting to database...');
@@ -40,23 +51,41 @@ class ClipCraftrClient extends Client {
       this.logger.info('Database connection established');
 
       // Load commands
+      this.logger.info('Loading commands...');
       await this.loadAndRegisterCommands();
+      this.logger.info('Commands loaded successfully');
 
       // Register event handlers
+      this.logger.info('Registering event handlers...');
       registerEvents(this);
+      this.logger.info('Event handlers registered');
 
       // Login to Discord
-      await this.login(process.env.DISCORD_TOKEN);
-      this.logger.info('Bot is now running!');
+      this.logger.info('Logging in to Discord...');
+      try {
+        await this.login(process.env.DISCORD_TOKEN);
+        this.logger.info('Bot is now running!');
+      } catch (loginError) {
+        this.logger.error('Failed to login to Discord', {
+          error: loginError,
+          message: loginError instanceof Error ? loginError.message : 'Unknown error',
+          stack: loginError instanceof Error ? loginError.stack : undefined,
+        });
+        throw loginError;
+      }
     } catch (error) {
       const errorMessage = error instanceof Error ? error.message : 'An unknown error occurred';
       const errorStack = error instanceof Error ? error.stack : undefined;
+      const errorDetails = error instanceof Error ? error : undefined;
 
       this.logger.error('Failed to start bot', {
         message: errorMessage,
         stack: errorStack,
-        error: error,
+        error: errorDetails,
       });
+
+      // Add a small delay to ensure logs are written before exiting
+      await new Promise((resolve) => setTimeout(resolve, 1000));
       process.exit(1);
     }
   }

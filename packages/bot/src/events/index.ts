@@ -1,8 +1,9 @@
 import { Client, Collection } from 'discord.js';
 import { readdirSync } from 'fs';
 import path from 'path';
-import { Event } from '../types';
-import { logger } from '../utils/logger';
+
+import { Event } from '../types/index.js';
+import { logger } from '../utils/logger.js';
 
 const eventLogger = logger('Events');
 
@@ -11,7 +12,7 @@ const eventLogger = logger('Events');
  * @param client The Discord client
  */
 export async function registerEvents(client: Client): Promise<void> {
-  const eventsPath = path.join(__dirname);
+  const eventsPath = path.resolve(process.cwd(), 'src/events');
   const eventFiles = readdirSync(eventsPath)
     .filter((file) => file.endsWith('.js') || (file.endsWith('.ts') && !file.endsWith('.d.ts')))
     .filter((file) => file !== 'index.js' && file !== 'index.ts');
@@ -21,7 +22,9 @@ export async function registerEvents(client: Client): Promise<void> {
   // Load all event modules
   for (const file of eventFiles) {
     try {
-      const eventModule = await import(path.join(eventsPath, file));
+      const filePath = path.join(eventsPath, file);
+      const fileUrl = new URL(`file://${filePath.replace(/\\/g, '/')}`).href;
+      const eventModule = await import(fileUrl);
       const event: Event = eventModule.default || eventModule.event;
 
       if (!event || !event.name) {
@@ -73,7 +76,7 @@ export async function registerEvents(client: Client): Promise<void> {
 }
 
 // Export all event handlers for easy importing
-export * from './ready';
-export * from './interactionCreate';
-export * from './error';
+export * from './ready.js';
+export * from './interactionCreate.js';
+export * from './error.js';
 // Add more event exports as needed

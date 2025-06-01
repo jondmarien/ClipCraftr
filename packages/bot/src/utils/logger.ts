@@ -3,7 +3,9 @@ import { format } from 'winston';
 import DailyRotateFile from 'winston-daily-rotate-file';
 import path from 'path';
 import fs from 'fs';
-import type { Logger, Loggable } from './logger.types';
+
+// No need for __dirname in ES modules with process.cwd()
+import type { Logger, Loggable } from './logger.types.js';
 
 /**
  * Converts an unknown error to a loggable object
@@ -39,7 +41,7 @@ declare module 'winston' {
 // Format helpers are used directly from format object
 
 // Create logs directory if it doesn't exist
-const logDir = path.join(__dirname, '../../logs');
+const logDir = path.resolve(process.cwd(), 'logs');
 if (!fs.existsSync(logDir)) {
   fs.mkdirSync(logDir, { recursive: true });
 }
