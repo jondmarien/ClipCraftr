@@ -9,9 +9,9 @@
     "build": "swc src --out-dir dist --copy-files",
     "dev": "swc src --out-dir .swc --copy-files --watch & node --watch .swc/index.js",
     "start": "node .swc/index.js",
-    "test": "NODE_OPTIONS=--experimental-vm-modules jest",
-    "test:watch": "NODE_OPTIONS=--experimental-vm-modules jest --watch",
-    "test:coverage": "NODE_OPTIONS=--experimental-vm-modules jest --coverage",
+    "test": "jest --detectOpenHandles --forceExit --runInBand",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix",
     "format": "prettier --write ."
