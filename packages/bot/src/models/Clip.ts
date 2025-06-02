@@ -1,5 +1,5 @@
 import { Schema, model, Document, Types } from 'mongoose';
-import { IUser } from './User';
+import { IUser } from './User.js';
 
 export type ClipStatus = 'uploading' | 'processing' | 'ready' | 'error' | 'deleted';
 

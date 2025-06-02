@@ -1,17 +1,13 @@
 'use client';
 
-import { Inter } from 'next/font/google';
 import { Providers } from './providers';
-
-const inter = Inter({ subsets: ['latin'] });
+import { aeonik } from './fonts';
 
 export function ClientLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
-        <Providers>
-          <div className="min-h-screen bg-gray-100">{children}</div>
-        </Providers>
+    <html lang="en" suppressHydrationWarning className={`${aeonik.variable} font-sans`}>
+      <body className="min-h-screen bg-gray-100">
+        <Providers>{children}</Providers>
       </body>
     </html>
   );

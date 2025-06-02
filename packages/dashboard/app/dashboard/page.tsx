@@ -9,7 +9,7 @@ export default function Dashboard() {
 
   useEffect(() => {
     if (status === 'unauthenticated') {
-      redirect('/login');
+      redirect('/api/auth/signin');
     }
   }, [status]);
 
