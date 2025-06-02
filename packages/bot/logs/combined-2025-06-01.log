@@ -1,0 +1,968 @@
+2025-06-01 04:18:04 [undefined] INFO: Connecting to MongoDB at: mongodb+srv://jon:***@clipcraftr.aquvzqk.mongodb.net/clipcraftr?retryWrites=true&w=majority {"service":"clipcraftr-bot"}
+2025-06-01 04:18:04 [undefined] INFO: Connecting to database... {"service":"clipcraftr-bot"}
+2025-06-01 04:18:04 [undefined] INFO: Successfully connected to MongoDB {"service":"clipcraftr-bot"}
+2025-06-01 04:18:04 [undefined] INFO: Database connection established {"service":"clipcraftr-bot"}
+2025-06-01 04:18:32 [undefined] INFO: Connecting to database... {"service":"clipcraftr-bot"}
+2025-06-01 04:18:32 [undefined] INFO: Connecting to MongoDB at: mongodb+srv://jon:***@clipcraftr.aquvzqk.mongodb.net/clipcraftr?retryWrites=true&w=majority {"service":"clipcraftr-bot"}
+2025-06-01 04:18:32 [undefined] INFO: Successfully connected to MongoDB {"service":"clipcraftr-bot"}
+2025-06-01 04:18:32 [undefined] INFO: Database connection established {"service":"clipcraftr-bot"}
+2025-06-01 04:18:32 [undefined] INFO: Successfully loaded 0 commands from 1 categories {"service":"clipcraftr-bot"}
+2025-06-01 04:18:32 [undefined] INFO: Successfully loaded 0 commands {"service":"clipcraftr-bot"}
+2025-06-01 04:18:32 [undefined] WARN: No commands to register {"service":"clipcraftr-bot"}
+2025-06-01 04:18:32 [undefined] ERROR: Unhandled promise rejection {"service":"clipcraftr-bot","meta":{"message":"__dirname is not defined","stack":"ReferenceError: __dirname is not defined\n    at registerEvents (C:\\Users\\nucle\\Projects\\ClipCraftr\\packages\\bot\\src\\events\\index.ts:14:32)\n    at ClipCraftrClient.start (C:\\Users\\nucle\\Projects\\ClipCraftr\\packages\\bot\\src\\index.ts:55:7)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","error":{}}}
+2025-06-01 04:18:33 [undefined] ERROR: Failed to start bot {"service":"clipcraftr-bot","meta":{"message":"Used disallowed intents","stack":"Error: Used disallowed intents\n    at WebSocketShard.onClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\@discordjs+ws@1.2.2\\node_modules\\@discordjs\\ws\\src\\ws\\WebSocketShard.ts:815:13)\n    at WebSocket.connection.onclose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\@discordjs+ws@1.2.2\\node_modules\\@discordjs\\ws\\src\\ws\\WebSocketShard.ts:203:14)\n    at callListener (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\event-target.js:290:14)\n    at WebSocket.onClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\event-target.js:220:9)\n    at WebSocket.emit (node:events:518:28)\n    at WebSocket.emitClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\websocket.js:272:10)\n    at TLSSocket.socketOnClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\websocket.js:1341:15)\n    at TLSSocket.emit (node:events:530:35)\n    at node:net:351:12\n    at TCP.done (node:_tls_wrap:650:7)","error":{}}}
+2025-06-01 04:18:41 [undefined] INFO: Connecting to MongoDB at: mongodb+srv://jon:***@clipcraftr.aquvzqk.mongodb.net/clipcraftr?retryWrites=true&w=majority {"service":"clipcraftr-bot"}
+2025-06-01 04:18:41 [undefined] INFO: Connecting to database... {"service":"clipcraftr-bot"}
+2025-06-01 04:18:42 [undefined] INFO: Connecting to MongoDB at: mongodb+srv://jon:***@clipcraftr.aquvzqk.mongodb.net/clipcraftr?retryWrites=true&w=majority {"service":"clipcraftr-bot"}
+2025-06-01 04:18:42 [undefined] INFO: Connecting to database... {"service":"clipcraftr-bot"}
+2025-06-01 04:18:43 [undefined] INFO: Successfully connected to MongoDB {"service":"clipcraftr-bot"}
+2025-06-01 04:18:43 [undefined] INFO: Database connection established {"service":"clipcraftr-bot"}
+2025-06-01 04:18:43 [undefined] INFO: Successfully loaded 0 commands from 1 categories {"service":"clipcraftr-bot"}
+2025-06-01 04:18:43 [undefined] INFO: Successfully loaded 0 commands {"service":"clipcraftr-bot"}
+2025-06-01 04:18:43 [undefined] WARN: No commands to register {"service":"clipcraftr-bot"}
+2025-06-01 04:18:43 [undefined] ERROR: Unhandled promise rejection {"service":"clipcraftr-bot","meta":{"message":"__dirname is not defined","stack":"ReferenceError: __dirname is not defined\n    at registerEvents (C:\\Users\\nucle\\Projects\\ClipCraftr\\packages\\bot\\src\\events\\index.ts:14:32)\n    at ClipCraftrClient.start (C:\\Users\\nucle\\Projects\\ClipCraftr\\packages\\bot\\src\\index.ts:55:7)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","error":{}}}
+2025-06-01 04:18:43 [undefined] ERROR: Failed to start bot {"service":"clipcraftr-bot","meta":{"message":"Used disallowed intents","stack":"Error: Used disallowed intents\n    at WebSocketShard.onClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\@discordjs+ws@1.2.2\\node_modules\\@discordjs\\ws\\src\\ws\\WebSocketShard.ts:815:13)\n    at WebSocket.connection.onclose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\@discordjs+ws@1.2.2\\node_modules\\@discordjs\\ws\\src\\ws\\WebSocketShard.ts:203:14)\n    at callListener (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\event-target.js:290:14)\n    at WebSocket.onClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\event-target.js:220:9)\n    at WebSocket.emit (node:events:518:28)\n    at WebSocket.emitClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\websocket.js:272:10)\n    at TLSSocket.socketOnClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\websocket.js:1341:15)\n    at TLSSocket.emit (node:events:530:35)\n    at node:net:351:12\n    at TCP.done (node:_tls_wrap:650:7)","error":{}}}
+2025-06-01 04:18:48 [undefined] INFO: Connecting to MongoDB at: mongodb+srv://jon:***@clipcraftr.aquvzqk.mongodb.net/clipcraftr?retryWrites=true&w=majority {"service":"clipcraftr-bot"}
+2025-06-01 04:18:48 [undefined] INFO: Connecting to database... {"service":"clipcraftr-bot"}
+2025-06-01 04:18:48 [undefined] INFO: Successfully connected to MongoDB {"service":"clipcraftr-bot"}
+2025-06-01 04:18:48 [undefined] INFO: Database connection established {"service":"clipcraftr-bot"}
+2025-06-01 04:18:48 [undefined] INFO: Successfully loaded 0 commands from 1 categories {"service":"clipcraftr-bot"}
+2025-06-01 04:18:48 [undefined] INFO: Successfully loaded 0 commands {"service":"clipcraftr-bot"}
+2025-06-01 04:18:48 [undefined] WARN: No commands to register {"service":"clipcraftr-bot"}
+2025-06-01 04:18:48 [undefined] ERROR: Unhandled promise rejection {"service":"clipcraftr-bot","meta":{"message":"__dirname is not defined","stack":"ReferenceError: __dirname is not defined\n    at registerEvents (C:\\Users\\nucle\\Projects\\ClipCraftr\\packages\\bot\\src\\events\\index.ts:14:32)\n    at ClipCraftrClient.start (C:\\Users\\nucle\\Projects\\ClipCraftr\\packages\\bot\\src\\index.ts:55:7)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","error":{}}}
+2025-06-01 04:18:48 [undefined] ERROR: Failed to start bot {"service":"clipcraftr-bot","meta":{"message":"Used disallowed intents","stack":"Error: Used disallowed intents\n    at WebSocketShard.onClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\@discordjs+ws@1.2.2\\node_modules\\@discordjs\\ws\\src\\ws\\WebSocketShard.ts:815:13)\n    at WebSocket.connection.onclose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\@discordjs+ws@1.2.2\\node_modules\\@discordjs\\ws\\src\\ws\\WebSocketShard.ts:203:14)\n    at callListener (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\event-target.js:290:14)\n    at WebSocket.onClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\event-target.js:220:9)\n    at WebSocket.emit (node:events:518:28)\n    at WebSocket.emitClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\websocket.js:272:10)\n    at TLSSocket.socketOnClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\websocket.js:1341:15)\n    at TLSSocket.emit (node:events:530:35)\n    at node:net:351:12\n    at TCP.done (node:_tls_wrap:650:7)","error":{}}}
+2025-06-01 04:18:50 [undefined] INFO: Connecting to MongoDB at: mongodb+srv://jon:***@clipcraftr.aquvzqk.mongodb.net/clipcraftr?retryWrites=true&w=majority {"service":"clipcraftr-bot"}
+2025-06-01 04:18:50 [undefined] INFO: Connecting to database... {"service":"clipcraftr-bot"}
+2025-06-01 04:18:50 [undefined] INFO: Successfully connected to MongoDB {"service":"clipcraftr-bot"}
+2025-06-01 04:18:50 [undefined] INFO: Database connection established {"service":"clipcraftr-bot"}
+2025-06-01 04:18:50 [undefined] INFO: Successfully loaded 0 commands from 1 categories {"service":"clipcraftr-bot"}
+2025-06-01 04:18:50 [undefined] INFO: Successfully loaded 0 commands {"service":"clipcraftr-bot"}
+2025-06-01 04:18:50 [undefined] WARN: No commands to register {"service":"clipcraftr-bot"}
+2025-06-01 04:18:50 [undefined] ERROR: Unhandled promise rejection {"service":"clipcraftr-bot","meta":{"message":"__dirname is not defined","stack":"ReferenceError: __dirname is not defined\n    at registerEvents (C:\\Users\\nucle\\Projects\\ClipCraftr\\packages\\bot\\src\\events\\index.ts:14:32)\n    at ClipCraftrClient.start (C:\\Users\\nucle\\Projects\\ClipCraftr\\packages\\bot\\src\\index.ts:55:7)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","error":{}}}
+2025-06-01 04:18:51 [undefined] ERROR: Failed to start bot {"service":"clipcraftr-bot","meta":{"message":"Used disallowed intents","stack":"Error: Used disallowed intents\n    at WebSocketShard.onClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\@discordjs+ws@1.2.2\\node_modules\\@discordjs\\ws\\src\\ws\\WebSocketShard.ts:815:13)\n    at WebSocket.connection.onclose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\@discordjs+ws@1.2.2\\node_modules\\@discordjs\\ws\\src\\ws\\WebSocketShard.ts:203:14)\n    at callListener (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\event-target.js:290:14)\n    at WebSocket.onClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\event-target.js:220:9)\n    at WebSocket.emit (node:events:518:28)\n    at WebSocket.emitClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\websocket.js:272:10)\n    at TLSSocket.socketOnClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\websocket.js:1341:15)\n    at TLSSocket.emit (node:events:530:35)\n    at node:net:351:12\n    at TCP.done (node:_tls_wrap:650:7)","error":{}}}
+2025-06-01 04:20:10 [undefined] INFO: Connecting to MongoDB at: mongodb+srv://jon:***@clipcraftr.aquvzqk.mongodb.net/clipcraftr?retryWrites=true&w=majority {"service":"clipcraftr-bot"}
+2025-06-01 04:20:10 [undefined] INFO: Connecting to database... {"service":"clipcraftr-bot"}
+2025-06-01 04:20:11 [undefined] INFO: Successfully connected to MongoDB {"service":"clipcraftr-bot"}
+2025-06-01 04:20:11 [undefined] INFO: Database connection established {"service":"clipcraftr-bot"}
+2025-06-01 04:20:11 [undefined] ERROR: Error loading command from ping.ts: Only URLs with a scheme in: file, data, and node are supported by the default ESM loader. On Windows, absolute paths must be valid file:// URLs. Received protocol 'c:' {"service":"clipcraftr-bot"}
+2025-06-01 04:20:11 [undefined] INFO: Successfully loaded 0 commands {"service":"clipcraftr-bot"}
+2025-06-01 04:20:11 [undefined] INFO: Successfully loaded 0 commands from 1 categories {"service":"clipcraftr-bot"}
+2025-06-01 04:20:11 [undefined] WARN: No commands to register {"service":"clipcraftr-bot"}
+2025-06-01 04:20:11 [undefined] ERROR: Unhandled promise rejection {"service":"clipcraftr-bot","meta":{"message":"__dirname is not defined","stack":"ReferenceError: __dirname is not defined\n    at registerEvents (C:\\Users\\nucle\\Projects\\ClipCraftr\\packages\\bot\\src\\events\\index.ts:14:32)\n    at ClipCraftrClient.start (C:\\Users\\nucle\\Projects\\ClipCraftr\\packages\\bot\\src\\index.ts:55:7)","error":{}}}
+2025-06-01 04:20:11 [undefined] ERROR: Failed to start bot {"service":"clipcraftr-bot","meta":{"message":"Used disallowed intents","stack":"Error: Used disallowed intents\n    at WebSocketShard.onClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\@discordjs+ws@1.2.2\\node_modules\\@discordjs\\ws\\src\\ws\\WebSocketShard.ts:815:13)\n    at WebSocket.connection.onclose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\@discordjs+ws@1.2.2\\node_modules\\@discordjs\\ws\\src\\ws\\WebSocketShard.ts:203:14)\n    at callListener (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\event-target.js:290:14)\n    at WebSocket.onClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\event-target.js:220:9)\n    at WebSocket.emit (node:events:518:28)\n    at WebSocket.emitClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\websocket.js:272:10)\n    at TLSSocket.socketOnClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\websocket.js:1341:15)\n    at TLSSocket.emit (node:events:530:35)\n    at node:net:351:12\n    at TCP.done (node:_tls_wrap:650:7)","error":{}}}
+2025-06-01 04:23:06 [undefined] INFO: Connecting to MongoDB at: mongodb+srv://jon:***@clipcraftr.aquvzqk.mongodb.net/clipcraftr?retryWrites=true&w=majority {"service":"clipcraftr-bot"}
+2025-06-01 04:23:06 [undefined] INFO: Connecting to database... {"service":"clipcraftr-bot"}
+2025-06-01 04:23:06 [undefined] INFO: Successfully connected to MongoDB {"service":"clipcraftr-bot"}
+2025-06-01 04:23:06 [undefined] INFO: Database connection established {"service":"clipcraftr-bot"}
+2025-06-01 04:23:06 [undefined] INFO: Successfully loaded 1 commands from 1 categories {"service":"clipcraftr-bot"}
+2025-06-01 04:23:06 [undefined] INFO: Started refreshing 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 04:23:06 [undefined] ERROR: Error registering commands: Invalid Form Body
+guild_id[NUMBER_TYPE_COERCE]: Value "undefined" is not snowflake. {"service":"clipcraftr-bot"}
+2025-06-01 04:23:06 [undefined] INFO: Successfully loaded 1 commands {"service":"clipcraftr-bot"}
+2025-06-01 04:23:06 [undefined] INFO: Registered event: error {"service":"clipcraftr-bot"}
+2025-06-01 04:23:06 [undefined] INFO: Registered event: interactionCreate {"service":"clipcraftr-bot"}
+2025-06-01 04:23:06 [undefined] INFO: Registered one-time event: ready {"service":"clipcraftr-bot"}
+2025-06-01 04:23:06 [undefined] INFO: Successfully registered 3 events {"service":"clipcraftr-bot"}
+2025-06-01 04:23:07 [undefined] ERROR: Failed to start bot {"service":"clipcraftr-bot","meta":{"message":"Used disallowed intents","stack":"Error: Used disallowed intents\n    at WebSocketShard.onClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\@discordjs+ws@1.2.2\\node_modules\\@discordjs\\ws\\src\\ws\\WebSocketShard.ts:815:13)\n    at WebSocket.connection.onclose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\@discordjs+ws@1.2.2\\node_modules\\@discordjs\\ws\\src\\ws\\WebSocketShard.ts:203:14)\n    at callListener (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\event-target.js:290:14)\n    at WebSocket.onClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\event-target.js:220:9)\n    at WebSocket.emit (node:events:518:28)\n    at WebSocket.emitClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\websocket.js:272:10)\n    at TLSSocket.socketOnClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\websocket.js:1341:15)\n    at TLSSocket.emit (node:events:530:35)\n    at node:net:351:12\n    at TCP.done (node:_tls_wrap:650:7)","error":{}}}
+2025-06-01 04:24:16 [undefined] INFO: Connecting to MongoDB at: mongodb+srv://jon:***@clipcraftr.aquvzqk.mongodb.net/clipcraftr?retryWrites=true&w=majority {"service":"clipcraftr-bot"}
+2025-06-01 04:24:16 [undefined] INFO: Connecting to database... {"service":"clipcraftr-bot"}
+2025-06-01 04:24:16 [undefined] INFO: Successfully connected to MongoDB {"service":"clipcraftr-bot"}
+2025-06-01 04:24:16 [undefined] INFO: Database connection established {"service":"clipcraftr-bot"}
+2025-06-01 04:24:16 [undefined] INFO: Successfully loaded 1 commands from 1 categories {"service":"clipcraftr-bot"}
+2025-06-01 04:24:16 [undefined] INFO: Started refreshing 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 04:24:16 [undefined] WARN: DEV_GUILD_ID not set. Registering global commands in development mode... {"service":"clipcraftr-bot"}
+2025-06-01 04:24:16 [undefined] WARN: Note: Global commands can take up to an hour to update. Set DEV_GUILD_ID for instant updates. {"service":"clipcraftr-bot"}
+2025-06-01 04:24:17 [undefined] INFO: Successfully reloaded 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 04:24:17 [undefined] INFO: Successfully loaded 1 commands {"service":"clipcraftr-bot"}
+2025-06-01 04:24:17 [undefined] INFO: Registered event: error {"service":"clipcraftr-bot"}
+2025-06-01 04:24:17 [undefined] INFO: Registered event: interactionCreate {"service":"clipcraftr-bot"}
+2025-06-01 04:24:17 [undefined] INFO: Registered one-time event: ready {"service":"clipcraftr-bot"}
+2025-06-01 04:24:17 [undefined] INFO: Successfully registered 3 events {"service":"clipcraftr-bot"}
+2025-06-01 04:24:17 [undefined] ERROR: Failed to start bot {"service":"clipcraftr-bot","meta":{"message":"Used disallowed intents","stack":"Error: Used disallowed intents\n    at WebSocketShard.onClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\@discordjs+ws@1.2.2\\node_modules\\@discordjs\\ws\\src\\ws\\WebSocketShard.ts:815:13)\n    at WebSocket.connection.onclose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\@discordjs+ws@1.2.2\\node_modules\\@discordjs\\ws\\src\\ws\\WebSocketShard.ts:203:14)\n    at callListener (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\event-target.js:290:14)\n    at WebSocket.onClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\event-target.js:220:9)\n    at WebSocket.emit (node:events:518:28)\n    at WebSocket.emitClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\websocket.js:272:10)\n    at TLSSocket.socketOnClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\websocket.js:1341:15)\n    at TLSSocket.emit (node:events:530:35)\n    at node:net:351:12\n    at TCP.done (node:_tls_wrap:650:7)","error":{}}}
+2025-06-01 04:24:35 [undefined] INFO: Connecting to MongoDB at: mongodb+srv://jon:***@clipcraftr.aquvzqk.mongodb.net/clipcraftr?retryWrites=true&w=majority {"service":"clipcraftr-bot"}
+2025-06-01 04:24:35 [undefined] INFO: Connecting to database... {"service":"clipcraftr-bot"}
+2025-06-01 04:24:35 [undefined] INFO: Successfully connected to MongoDB {"service":"clipcraftr-bot"}
+2025-06-01 04:24:35 [undefined] INFO: Database connection established {"service":"clipcraftr-bot"}
+2025-06-01 04:24:35 [undefined] INFO: Successfully loaded 1 commands from 1 categories {"service":"clipcraftr-bot"}
+2025-06-01 04:24:35 [undefined] INFO: Started refreshing 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 04:24:35 [undefined] WARN: DEV_GUILD_ID not set. Registering global commands in development mode... {"service":"clipcraftr-bot"}
+2025-06-01 04:24:35 [undefined] WARN: Note: Global commands can take up to an hour to update. Set DEV_GUILD_ID for instant updates. {"service":"clipcraftr-bot"}
+2025-06-01 04:24:36 [undefined] INFO: Successfully reloaded 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 04:24:36 [undefined] INFO: Successfully loaded 1 commands {"service":"clipcraftr-bot"}
+2025-06-01 04:24:36 [undefined] INFO: Registered event: error {"service":"clipcraftr-bot"}
+2025-06-01 04:24:36 [undefined] INFO: Registered event: interactionCreate {"service":"clipcraftr-bot"}
+2025-06-01 04:24:36 [undefined] INFO: Registered one-time event: ready {"service":"clipcraftr-bot"}
+2025-06-01 04:24:36 [undefined] INFO: Successfully registered 3 events {"service":"clipcraftr-bot"}
+2025-06-01 04:24:36 [undefined] ERROR: Failed to start bot {"service":"clipcraftr-bot","meta":{"message":"Used disallowed intents","stack":"Error: Used disallowed intents\n    at WebSocketShard.onClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\@discordjs+ws@1.2.2\\node_modules\\@discordjs\\ws\\src\\ws\\WebSocketShard.ts:815:13)\n    at WebSocket.connection.onclose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\@discordjs+ws@1.2.2\\node_modules\\@discordjs\\ws\\src\\ws\\WebSocketShard.ts:203:14)\n    at callListener (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\event-target.js:290:14)\n    at WebSocket.onClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\event-target.js:220:9)\n    at WebSocket.emit (node:events:518:28)\n    at WebSocket.emitClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\websocket.js:272:10)\n    at TLSSocket.socketOnClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\websocket.js:1341:15)\n    at TLSSocket.emit (node:events:530:35)\n    at node:net:351:12\n    at TCP.done (node:_tls_wrap:650:7)","error":{}}}
+2025-06-01 04:24:45 [undefined] INFO: Connecting to MongoDB at: mongodb+srv://jon:***@clipcraftr.aquvzqk.mongodb.net/clipcraftr?retryWrites=true&w=majority {"service":"clipcraftr-bot"}
+2025-06-01 04:24:45 [undefined] INFO: Connecting to database... {"service":"clipcraftr-bot"}
+2025-06-01 04:24:45 [undefined] INFO: Successfully connected to MongoDB {"service":"clipcraftr-bot"}
+2025-06-01 04:24:45 [undefined] INFO: Database connection established {"service":"clipcraftr-bot"}
+2025-06-01 04:24:45 [undefined] INFO: Successfully loaded 1 commands from 1 categories {"service":"clipcraftr-bot"}
+2025-06-01 04:24:45 [undefined] INFO: Started refreshing 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 04:24:45 [undefined] WARN: DEV_GUILD_ID not set. Registering global commands in development mode... {"service":"clipcraftr-bot"}
+2025-06-01 04:24:45 [undefined] WARN: Note: Global commands can take up to an hour to update. Set DEV_GUILD_ID for instant updates. {"service":"clipcraftr-bot"}
+2025-06-01 04:25:18 [undefined] INFO: Successfully reloaded 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 04:25:18 [undefined] INFO: Successfully loaded 1 commands {"service":"clipcraftr-bot"}
+2025-06-01 04:25:18 [undefined] INFO: Registered event: error {"service":"clipcraftr-bot"}
+2025-06-01 04:25:18 [undefined] INFO: Registered event: interactionCreate {"service":"clipcraftr-bot"}
+2025-06-01 04:25:18 [undefined] INFO: Registered one-time event: ready {"service":"clipcraftr-bot"}
+2025-06-01 04:25:18 [undefined] INFO: Successfully registered 3 events {"service":"clipcraftr-bot"}
+2025-06-01 04:25:18 [undefined] ERROR: Failed to start bot {"service":"clipcraftr-bot","meta":{"message":"Used disallowed intents","stack":"Error: Used disallowed intents\n    at WebSocketShard.onClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\@discordjs+ws@1.2.2\\node_modules\\@discordjs\\ws\\src\\ws\\WebSocketShard.ts:815:13)\n    at WebSocket.connection.onclose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\@discordjs+ws@1.2.2\\node_modules\\@discordjs\\ws\\src\\ws\\WebSocketShard.ts:203:14)\n    at callListener (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\event-target.js:290:14)\n    at WebSocket.onClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\event-target.js:220:9)\n    at WebSocket.emit (node:events:518:28)\n    at WebSocket.emitClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\websocket.js:272:10)\n    at TLSSocket.socketOnClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\websocket.js:1341:15)\n    at TLSSocket.emit (node:events:530:35)\n    at node:net:351:12\n    at TCP.done (node:_tls_wrap:650:7)","error":{}}}
+2025-06-01 04:25:20 [undefined] INFO: Connecting to MongoDB at: mongodb+srv://jon:***@clipcraftr.aquvzqk.mongodb.net/clipcraftr?retryWrites=true&w=majority {"service":"clipcraftr-bot"}
+2025-06-01 04:25:20 [undefined] INFO: Connecting to database... {"service":"clipcraftr-bot"}
+2025-06-01 04:25:20 [undefined] INFO: Successfully connected to MongoDB {"service":"clipcraftr-bot"}
+2025-06-01 04:25:20 [undefined] INFO: Database connection established {"service":"clipcraftr-bot"}
+2025-06-01 04:25:20 [undefined] INFO: Successfully loaded 1 commands from 1 categories {"service":"clipcraftr-bot"}
+2025-06-01 04:25:20 [undefined] INFO: Started refreshing 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 04:25:20 [undefined] WARN: DEV_GUILD_ID not set. Registering global commands in development mode... {"service":"clipcraftr-bot"}
+2025-06-01 04:25:20 [undefined] WARN: Note: Global commands can take up to an hour to update. Set DEV_GUILD_ID for instant updates. {"service":"clipcraftr-bot"}
+2025-06-01 04:25:20 [undefined] INFO: Successfully reloaded 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 04:25:20 [undefined] INFO: Successfully loaded 1 commands {"service":"clipcraftr-bot"}
+2025-06-01 04:25:20 [undefined] INFO: Registered event: error {"service":"clipcraftr-bot"}
+2025-06-01 04:25:20 [undefined] INFO: Registered event: interactionCreate {"service":"clipcraftr-bot"}
+2025-06-01 04:25:20 [undefined] INFO: Registered one-time event: ready {"service":"clipcraftr-bot"}
+2025-06-01 04:25:20 [undefined] INFO: Successfully registered 3 events {"service":"clipcraftr-bot"}
+2025-06-01 04:25:20 [undefined] ERROR: Failed to start bot {"service":"clipcraftr-bot","meta":{"message":"Used disallowed intents","stack":"Error: Used disallowed intents\n    at WebSocketShard.onClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\@discordjs+ws@1.2.2\\node_modules\\@discordjs\\ws\\src\\ws\\WebSocketShard.ts:815:13)\n    at WebSocket.connection.onclose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\@discordjs+ws@1.2.2\\node_modules\\@discordjs\\ws\\src\\ws\\WebSocketShard.ts:203:14)\n    at callListener (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\event-target.js:290:14)\n    at WebSocket.onClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\event-target.js:220:9)\n    at WebSocket.emit (node:events:518:28)\n    at WebSocket.emitClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\websocket.js:272:10)\n    at TLSSocket.socketOnClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\websocket.js:1341:15)\n    at TLSSocket.emit (node:events:530:35)\n    at node:net:351:12\n    at TCP.done (node:_tls_wrap:650:7)","error":{}}}
+2025-06-01 04:26:12 [undefined] INFO: Connecting to MongoDB at: mongodb+srv://jon:***@clipcraftr.aquvzqk.mongodb.net/clipcraftr?retryWrites=true&w=majority {"service":"clipcraftr-bot"}
+2025-06-01 04:26:12 [undefined] INFO: Validating environment variables... {"service":"clipcraftr-bot"}
+2025-06-01 04:26:12 [undefined] INFO: Environment variables validated {"service":"clipcraftr-bot"}
+2025-06-01 04:26:12 [undefined] INFO: Connecting to database... {"service":"clipcraftr-bot"}
+2025-06-01 04:26:12 [undefined] INFO: Connecting to MongoDB at: mongodb+srv://jon:***@clipcraftr.aquvzqk.mongodb.net/clipcraftr?retryWrites=true&w=majority {"service":"clipcraftr-bot"}
+2025-06-01 04:26:12 [undefined] INFO: Validating environment variables... {"service":"clipcraftr-bot"}
+2025-06-01 04:26:12 [undefined] INFO: Environment variables validated {"service":"clipcraftr-bot"}
+2025-06-01 04:26:12 [undefined] INFO: Connecting to database... {"service":"clipcraftr-bot"}
+2025-06-01 04:26:12 [undefined] INFO: Successfully connected to MongoDB {"service":"clipcraftr-bot"}
+2025-06-01 04:26:12 [undefined] INFO: Database connection established {"service":"clipcraftr-bot"}
+2025-06-01 04:26:12 [undefined] INFO: Loading commands... {"service":"clipcraftr-bot"}
+2025-06-01 04:26:12 [undefined] INFO: Successfully loaded 1 commands from 1 categories {"service":"clipcraftr-bot"}
+2025-06-01 04:26:12 [undefined] INFO: Started refreshing 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 04:26:12 [undefined] WARN: DEV_GUILD_ID not set. Registering global commands in development mode... {"service":"clipcraftr-bot"}
+2025-06-01 04:26:12 [undefined] WARN: Note: Global commands can take up to an hour to update. Set DEV_GUILD_ID for instant updates. {"service":"clipcraftr-bot"}
+2025-06-01 04:26:12 [undefined] INFO: Successfully connected to MongoDB {"service":"clipcraftr-bot"}
+2025-06-01 04:26:12 [undefined] INFO: Database connection established {"service":"clipcraftr-bot"}
+2025-06-01 04:26:12 [undefined] INFO: Loading commands... {"service":"clipcraftr-bot"}
+2025-06-01 04:26:12 [undefined] INFO: Successfully loaded 1 commands from 1 categories {"service":"clipcraftr-bot"}
+2025-06-01 04:26:12 [undefined] INFO: Started refreshing 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 04:26:12 [undefined] WARN: DEV_GUILD_ID not set. Registering global commands in development mode... {"service":"clipcraftr-bot"}
+2025-06-01 04:26:12 [undefined] WARN: Note: Global commands can take up to an hour to update. Set DEV_GUILD_ID for instant updates. {"service":"clipcraftr-bot"}
+2025-06-01 04:26:12 [undefined] INFO: Successfully reloaded 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 04:26:12 [undefined] INFO: Successfully loaded 1 commands {"service":"clipcraftr-bot"}
+2025-06-01 04:26:12 [undefined] INFO: Commands loaded successfully {"service":"clipcraftr-bot"}
+2025-06-01 04:26:12 [undefined] INFO: Registering event handlers... {"service":"clipcraftr-bot"}
+2025-06-01 04:26:12 [undefined] INFO: Event handlers registered {"service":"clipcraftr-bot"}
+2025-06-01 04:26:12 [undefined] INFO: Logging in to Discord... {"service":"clipcraftr-bot"}
+2025-06-01 04:26:12 [undefined] INFO: Registered event: error {"service":"clipcraftr-bot"}
+2025-06-01 04:26:12 [undefined] INFO: Registered event: interactionCreate {"service":"clipcraftr-bot"}
+2025-06-01 04:26:12 [undefined] INFO: Registered one-time event: ready {"service":"clipcraftr-bot"}
+2025-06-01 04:26:12 [undefined] INFO: Successfully registered 3 events {"service":"clipcraftr-bot"}
+2025-06-01 04:26:12 [undefined] ERROR: Failed to login to Discord {"service":"clipcraftr-bot","meta":{"error":{},"message":"Used disallowed intents","stack":"Error: Used disallowed intents\n    at WebSocketShard.onClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\@discordjs+ws@1.2.2\\node_modules\\@discordjs\\ws\\src\\ws\\WebSocketShard.ts:815:13)\n    at WebSocket.connection.onclose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\@discordjs+ws@1.2.2\\node_modules\\@discordjs\\ws\\src\\ws\\WebSocketShard.ts:203:14)\n    at callListener (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\event-target.js:290:14)\n    at WebSocket.onClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\event-target.js:220:9)\n    at WebSocket.emit (node:events:518:28)\n    at WebSocket.emitClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\websocket.js:272:10)\n    at TLSSocket.socketOnClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\websocket.js:1341:15)\n    at TLSSocket.emit (node:events:530:35)\n    at node:net:351:12\n    at TCP.done (node:_tls_wrap:650:7)"}}
+2025-06-01 04:26:12 [undefined] ERROR: Failed to start bot {"service":"clipcraftr-bot","meta":{"message":"Used disallowed intents","stack":"Error: Used disallowed intents\n    at WebSocketShard.onClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\@discordjs+ws@1.2.2\\node_modules\\@discordjs\\ws\\src\\ws\\WebSocketShard.ts:815:13)\n    at WebSocket.connection.onclose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\@discordjs+ws@1.2.2\\node_modules\\@discordjs\\ws\\src\\ws\\WebSocketShard.ts:203:14)\n    at callListener (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\event-target.js:290:14)\n    at WebSocket.onClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\event-target.js:220:9)\n    at WebSocket.emit (node:events:518:28)\n    at WebSocket.emitClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\websocket.js:272:10)\n    at TLSSocket.socketOnClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\websocket.js:1341:15)\n    at TLSSocket.emit (node:events:530:35)\n    at node:net:351:12\n    at TCP.done (node:_tls_wrap:650:7)","error":{}}}
+2025-06-01 04:26:19 [undefined] INFO: Connecting to MongoDB at: mongodb+srv://jon:***@clipcraftr.aquvzqk.mongodb.net/clipcraftr?retryWrites=true&w=majority {"service":"clipcraftr-bot"}
+2025-06-01 04:26:19 [undefined] INFO: Validating environment variables... {"service":"clipcraftr-bot"}
+2025-06-01 04:26:19 [undefined] INFO: Environment variables validated {"service":"clipcraftr-bot"}
+2025-06-01 04:26:19 [undefined] INFO: Connecting to database... {"service":"clipcraftr-bot"}
+2025-06-01 04:26:19 [undefined] INFO: Connecting to MongoDB at: mongodb+srv://jon:***@clipcraftr.aquvzqk.mongodb.net/clipcraftr?retryWrites=true&w=majority {"service":"clipcraftr-bot"}
+2025-06-01 04:26:19 [undefined] INFO: Validating environment variables... {"service":"clipcraftr-bot"}
+2025-06-01 04:26:19 [undefined] INFO: Environment variables validated {"service":"clipcraftr-bot"}
+2025-06-01 04:26:19 [undefined] INFO: Connecting to database... {"service":"clipcraftr-bot"}
+2025-06-01 04:26:19 [undefined] INFO: Successfully connected to MongoDB {"service":"clipcraftr-bot"}
+2025-06-01 04:26:19 [undefined] INFO: Database connection established {"service":"clipcraftr-bot"}
+2025-06-01 04:26:19 [undefined] INFO: Loading commands... {"service":"clipcraftr-bot"}
+2025-06-01 04:26:19 [undefined] INFO: Successfully loaded 1 commands from 1 categories {"service":"clipcraftr-bot"}
+2025-06-01 04:26:19 [undefined] INFO: Started refreshing 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 04:26:19 [undefined] WARN: DEV_GUILD_ID not set. Registering global commands in development mode... {"service":"clipcraftr-bot"}
+2025-06-01 04:26:19 [undefined] WARN: Note: Global commands can take up to an hour to update. Set DEV_GUILD_ID for instant updates. {"service":"clipcraftr-bot"}
+2025-06-01 04:26:19 [undefined] INFO: Successfully connected to MongoDB {"service":"clipcraftr-bot"}
+2025-06-01 04:26:19 [undefined] INFO: Database connection established {"service":"clipcraftr-bot"}
+2025-06-01 04:26:19 [undefined] INFO: Loading commands... {"service":"clipcraftr-bot"}
+2025-06-01 04:26:19 [undefined] INFO: Successfully loaded 1 commands from 1 categories {"service":"clipcraftr-bot"}
+2025-06-01 04:26:19 [undefined] INFO: Started refreshing 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 04:26:19 [undefined] WARN: DEV_GUILD_ID not set. Registering global commands in development mode... {"service":"clipcraftr-bot"}
+2025-06-01 04:26:19 [undefined] WARN: Note: Global commands can take up to an hour to update. Set DEV_GUILD_ID for instant updates. {"service":"clipcraftr-bot"}
+2025-06-01 04:26:19 [undefined] INFO: Successfully reloaded 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 04:26:19 [undefined] INFO: Successfully loaded 1 commands {"service":"clipcraftr-bot"}
+2025-06-01 04:26:19 [undefined] INFO: Commands loaded successfully {"service":"clipcraftr-bot"}
+2025-06-01 04:26:19 [undefined] INFO: Registering event handlers... {"service":"clipcraftr-bot"}
+2025-06-01 04:26:19 [undefined] INFO: Event handlers registered {"service":"clipcraftr-bot"}
+2025-06-01 04:26:19 [undefined] INFO: Logging in to Discord... {"service":"clipcraftr-bot"}
+2025-06-01 04:26:19 [undefined] INFO: Registered event: error {"service":"clipcraftr-bot"}
+2025-06-01 04:26:19 [undefined] INFO: Registered event: interactionCreate {"service":"clipcraftr-bot"}
+2025-06-01 04:26:19 [undefined] INFO: Registered one-time event: ready {"service":"clipcraftr-bot"}
+2025-06-01 04:26:19 [undefined] INFO: Successfully registered 3 events {"service":"clipcraftr-bot"}
+2025-06-01 04:26:19 [undefined] ERROR: Failed to login to Discord {"service":"clipcraftr-bot","meta":{"error":{},"message":"Used disallowed intents","stack":"Error: Used disallowed intents\n    at WebSocketShard.onClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\@discordjs+ws@1.2.2\\node_modules\\@discordjs\\ws\\src\\ws\\WebSocketShard.ts:815:13)\n    at WebSocket.connection.onclose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\@discordjs+ws@1.2.2\\node_modules\\@discordjs\\ws\\src\\ws\\WebSocketShard.ts:203:14)\n    at callListener (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\event-target.js:290:14)\n    at WebSocket.onClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\event-target.js:220:9)\n    at WebSocket.emit (node:events:518:28)\n    at WebSocket.emitClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\websocket.js:272:10)\n    at TLSSocket.socketOnClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\websocket.js:1341:15)\n    at TLSSocket.emit (node:events:530:35)\n    at node:net:351:12\n    at TCP.done (node:_tls_wrap:650:7)"}}
+2025-06-01 04:26:19 [undefined] ERROR: Failed to start bot {"service":"clipcraftr-bot","meta":{"message":"Used disallowed intents","stack":"Error: Used disallowed intents\n    at WebSocketShard.onClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\@discordjs+ws@1.2.2\\node_modules\\@discordjs\\ws\\src\\ws\\WebSocketShard.ts:815:13)\n    at WebSocket.connection.onclose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\@discordjs+ws@1.2.2\\node_modules\\@discordjs\\ws\\src\\ws\\WebSocketShard.ts:203:14)\n    at callListener (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\event-target.js:290:14)\n    at WebSocket.onClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\event-target.js:220:9)\n    at WebSocket.emit (node:events:518:28)\n    at WebSocket.emitClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\websocket.js:272:10)\n    at TLSSocket.socketOnClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\websocket.js:1341:15)\n    at TLSSocket.emit (node:events:530:35)\n    at node:net:351:12\n    at TCP.done (node:_tls_wrap:650:7)","error":{}}}
+2025-06-01 04:27:03 [undefined] INFO: Connecting to MongoDB at: mongodb+srv://jon:***@clipcraftr.aquvzqk.mongodb.net/clipcraftr?retryWrites=true&w=majority {"service":"clipcraftr-bot"}
+2025-06-01 04:27:03 [undefined] INFO: Validating environment variables... {"service":"clipcraftr-bot"}
+2025-06-01 04:27:03 [undefined] INFO: Environment variables validated {"service":"clipcraftr-bot"}
+2025-06-01 04:27:03 [undefined] INFO: Connecting to database... {"service":"clipcraftr-bot"}
+2025-06-01 04:27:03 [undefined] INFO: Successfully connected to MongoDB {"service":"clipcraftr-bot"}
+2025-06-01 04:27:03 [undefined] INFO: Database connection established {"service":"clipcraftr-bot"}
+2025-06-01 04:27:03 [undefined] INFO: Loading commands... {"service":"clipcraftr-bot"}
+2025-06-01 04:27:03 [undefined] INFO: Successfully loaded 1 commands from 1 categories {"service":"clipcraftr-bot"}
+2025-06-01 04:27:03 [undefined] INFO: Started refreshing 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 04:27:03 [undefined] WARN: DEV_GUILD_ID not set. Registering global commands in development mode... {"service":"clipcraftr-bot"}
+2025-06-01 04:27:03 [undefined] WARN: Note: Global commands can take up to an hour to update. Set DEV_GUILD_ID for instant updates. {"service":"clipcraftr-bot"}
+2025-06-01 04:27:04 [undefined] INFO: Successfully reloaded 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 04:27:04 [undefined] INFO: Successfully loaded 1 commands {"service":"clipcraftr-bot"}
+2025-06-01 04:27:04 [undefined] INFO: Commands loaded successfully {"service":"clipcraftr-bot"}
+2025-06-01 04:27:04 [undefined] INFO: Registering event handlers... {"service":"clipcraftr-bot"}
+2025-06-01 04:27:04 [undefined] INFO: Event handlers registered {"service":"clipcraftr-bot"}
+2025-06-01 04:27:04 [undefined] INFO: Logging in to Discord... {"service":"clipcraftr-bot"}
+2025-06-01 04:27:04 [undefined] INFO: Registered event: error {"service":"clipcraftr-bot"}
+2025-06-01 04:27:04 [undefined] INFO: Registered event: interactionCreate {"service":"clipcraftr-bot"}
+2025-06-01 04:27:04 [undefined] INFO: Registered one-time event: ready {"service":"clipcraftr-bot"}
+2025-06-01 04:27:04 [undefined] INFO: Successfully registered 3 events {"service":"clipcraftr-bot"}
+2025-06-01 04:27:04 [undefined] ERROR: Failed to login to Discord {"service":"clipcraftr-bot","meta":{"error":{},"message":"Used disallowed intents","stack":"Error: Used disallowed intents\n    at WebSocketShard.onClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\@discordjs+ws@1.2.2\\node_modules\\@discordjs\\ws\\src\\ws\\WebSocketShard.ts:815:13)\n    at WebSocket.connection.onclose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\@discordjs+ws@1.2.2\\node_modules\\@discordjs\\ws\\src\\ws\\WebSocketShard.ts:203:14)\n    at callListener (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\event-target.js:290:14)\n    at WebSocket.onClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\event-target.js:220:9)\n    at WebSocket.emit (node:events:518:28)\n    at WebSocket.emitClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\websocket.js:272:10)\n    at TLSSocket.socketOnClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\websocket.js:1341:15)\n    at TLSSocket.emit (node:events:530:35)\n    at node:net:351:12\n    at TCP.done (node:_tls_wrap:650:7)"}}
+2025-06-01 04:27:04 [undefined] ERROR: Failed to start bot {"service":"clipcraftr-bot","meta":{"message":"Used disallowed intents","stack":"Error: Used disallowed intents\n    at WebSocketShard.onClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\@discordjs+ws@1.2.2\\node_modules\\@discordjs\\ws\\src\\ws\\WebSocketShard.ts:815:13)\n    at WebSocket.connection.onclose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\@discordjs+ws@1.2.2\\node_modules\\@discordjs\\ws\\src\\ws\\WebSocketShard.ts:203:14)\n    at callListener (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\event-target.js:290:14)\n    at WebSocket.onClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\event-target.js:220:9)\n    at WebSocket.emit (node:events:518:28)\n    at WebSocket.emitClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\websocket.js:272:10)\n    at TLSSocket.socketOnClose (C:\\Users\\nucle\\Projects\\ClipCraftr\\node_modules\\.pnpm\\ws@8.18.2\\node_modules\\ws\\lib\\websocket.js:1341:15)\n    at TLSSocket.emit (node:events:530:35)\n    at node:net:351:12\n    at TCP.done (node:_tls_wrap:650:7)","error":{}}}
+2025-06-01 04:32:52 [undefined] INFO: Connecting to MongoDB at: mongodb+srv://jon:***@clipcraftr.aquvzqk.mongodb.net/clipcraftr?retryWrites=true&w=majority {"service":"clipcraftr-bot"}
+2025-06-01 04:32:52 [undefined] INFO: Validating environment variables... {"service":"clipcraftr-bot"}
+2025-06-01 04:32:52 [undefined] INFO: Environment variables validated {"service":"clipcraftr-bot"}
+2025-06-01 04:32:52 [undefined] INFO: Connecting to database... {"service":"clipcraftr-bot"}
+2025-06-01 04:32:53 [undefined] INFO: Successfully connected to MongoDB {"service":"clipcraftr-bot"}
+2025-06-01 04:32:53 [undefined] INFO: Database connection established {"service":"clipcraftr-bot"}
+2025-06-01 04:32:53 [undefined] INFO: Loading commands... {"service":"clipcraftr-bot"}
+2025-06-01 04:32:53 [undefined] INFO: Successfully loaded 1 commands from 1 categories {"service":"clipcraftr-bot"}
+2025-06-01 04:32:53 [undefined] INFO: Started refreshing 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 04:32:53 [undefined] WARN: DEV_GUILD_ID not set. Registering global commands in development mode... {"service":"clipcraftr-bot"}
+2025-06-01 04:32:53 [undefined] WARN: Note: Global commands can take up to an hour to update. Set DEV_GUILD_ID for instant updates. {"service":"clipcraftr-bot"}
+2025-06-01 04:32:53 [undefined] INFO: Successfully reloaded 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 04:32:53 [undefined] INFO: Successfully loaded 1 commands {"service":"clipcraftr-bot"}
+2025-06-01 04:32:53 [undefined] INFO: Commands loaded successfully {"service":"clipcraftr-bot"}
+2025-06-01 04:32:53 [undefined] INFO: Registering event handlers... {"service":"clipcraftr-bot"}
+2025-06-01 04:32:53 [undefined] INFO: Event handlers registered {"service":"clipcraftr-bot"}
+2025-06-01 04:32:53 [undefined] INFO: Logging in to Discord... {"service":"clipcraftr-bot"}
+2025-06-01 04:32:53 [undefined] INFO: Registered event: error {"service":"clipcraftr-bot"}
+2025-06-01 04:32:53 [undefined] INFO: Registered event: interactionCreate {"service":"clipcraftr-bot"}
+2025-06-01 04:32:53 [undefined] INFO: Registered one-time event: ready {"service":"clipcraftr-bot"}
+2025-06-01 04:32:53 [undefined] INFO: Successfully registered 3 events {"service":"clipcraftr-bot"}
+2025-06-01 04:32:53 [undefined] INFO: Bot is now running! {"service":"clipcraftr-bot"}
+2025-06-01 04:32:53 [undefined] INFO: Logged in as ClipCraftr (1378466798701117572) {"service":"clipcraftr-bot"}
+2025-06-01 04:32:53 [undefined] INFO: Bot invite link: https://discord.com/oauth2/authorize?client_id=1378466798701117572&scope=bot%20applications.commands {"service":"clipcraftr-bot"}
+2025-06-01 04:32:53 [undefined] INFO: Bot is now online and ready! {"service":"clipcraftr-bot"}
+2025-06-01 04:33:01 [undefined] INFO: Command executed: ping by chronoblaze (96714019636785152) in Chrono's Hacker Den {"service":"clipcraftr-bot"}
+2025-06-01 17:12:43 [undefined] INFO: Connecting to MongoDB at: mongodb+srv://jon:***@clipcraftr.aquvzqk.mongodb.net/clipcraftr?retryWrites=true&w=majority {"service":"clipcraftr-bot"}
+2025-06-01 17:12:43 [undefined] INFO: Validating environment variables... {"service":"clipcraftr-bot"}
+2025-06-01 17:12:43 [undefined] INFO: Environment variables validated {"service":"clipcraftr-bot"}
+2025-06-01 17:12:43 [undefined] INFO: Connecting to database... {"service":"clipcraftr-bot"}
+2025-06-01 17:12:43 [undefined] INFO: Successfully connected to MongoDB {"service":"clipcraftr-bot"}
+2025-06-01 17:12:43 [undefined] INFO: Database connection established {"service":"clipcraftr-bot"}
+2025-06-01 17:12:43 [undefined] INFO: Loading commands... {"service":"clipcraftr-bot"}
+2025-06-01 17:12:43 [undefined] INFO: Successfully loaded 1 commands from 1 categories {"service":"clipcraftr-bot"}
+2025-06-01 17:12:43 [undefined] INFO: Started refreshing 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 17:12:43 [undefined] WARN: DEV_GUILD_ID not set. Registering global commands in development mode... {"service":"clipcraftr-bot"}
+2025-06-01 17:12:43 [undefined] WARN: Note: Global commands can take up to an hour to update. Set DEV_GUILD_ID for instant updates. {"service":"clipcraftr-bot"}
+2025-06-01 17:12:43 [undefined] INFO: Successfully reloaded 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 17:12:43 [undefined] INFO: Successfully loaded 1 commands {"service":"clipcraftr-bot"}
+2025-06-01 17:12:43 [undefined] INFO: Commands loaded successfully {"service":"clipcraftr-bot"}
+2025-06-01 17:12:43 [undefined] INFO: Registering event handlers... {"service":"clipcraftr-bot"}
+2025-06-01 17:12:43 [undefined] INFO: Event handlers registered {"service":"clipcraftr-bot"}
+2025-06-01 17:12:43 [undefined] INFO: Logging in to Discord... {"service":"clipcraftr-bot"}
+2025-06-01 17:12:43 [undefined] INFO: Registered event: error {"service":"clipcraftr-bot"}
+2025-06-01 17:12:43 [undefined] INFO: Registered event: interactionCreate {"service":"clipcraftr-bot"}
+2025-06-01 17:12:43 [undefined] INFO: Registered one-time event: ready {"service":"clipcraftr-bot"}
+2025-06-01 17:12:43 [undefined] INFO: Successfully registered 3 events {"service":"clipcraftr-bot"}
+2025-06-01 17:12:44 [undefined] INFO: Bot is now running! {"service":"clipcraftr-bot"}
+2025-06-01 17:12:44 [undefined] INFO: Logged in as ClipCraftr (1378466798701117572) {"service":"clipcraftr-bot"}
+2025-06-01 17:12:44 [undefined] INFO: Bot invite link: https://discord.com/oauth2/authorize?client_id=1378466798701117572&scope=bot%20applications.commands {"service":"clipcraftr-bot"}
+2025-06-01 17:12:44 [undefined] INFO: Bot is now online and ready! {"service":"clipcraftr-bot"}
+2025-06-01 18:02:05 [undefined] INFO: Connecting to MongoDB at: mongodb+srv://jon:***@clipcraftr.aquvzqk.mongodb.net/clipcraftr?retryWrites=true&w=majority {"service":"clipcraftr-bot"}
+2025-06-01 18:02:05 [undefined] INFO: Validating environment variables... {"service":"clipcraftr-bot"}
+2025-06-01 18:02:05 [undefined] INFO: Environment variables validated {"service":"clipcraftr-bot"}
+2025-06-01 18:02:05 [undefined] INFO: Connecting to database... {"service":"clipcraftr-bot"}
+2025-06-01 18:02:06 [undefined] INFO: Successfully connected to MongoDB {"service":"clipcraftr-bot"}
+2025-06-01 18:02:06 [undefined] INFO: Database connection established {"service":"clipcraftr-bot"}
+2025-06-01 18:02:06 [undefined] INFO: Loading commands... {"service":"clipcraftr-bot"}
+2025-06-01 18:02:06 [undefined] INFO: Successfully loaded 1 commands from 1 categories {"service":"clipcraftr-bot"}
+2025-06-01 18:02:06 [undefined] INFO: Started refreshing 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 18:02:06 [undefined] WARN: DEV_GUILD_ID not set. Registering global commands in development mode... {"service":"clipcraftr-bot"}
+2025-06-01 18:02:06 [undefined] WARN: Note: Global commands can take up to an hour to update. Set DEV_GUILD_ID for instant updates. {"service":"clipcraftr-bot"}
+2025-06-01 18:02:06 [undefined] INFO: Successfully reloaded 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 18:02:06 [undefined] INFO: Successfully loaded 1 commands {"service":"clipcraftr-bot"}
+2025-06-01 18:02:06 [undefined] INFO: Commands loaded successfully {"service":"clipcraftr-bot"}
+2025-06-01 18:02:06 [undefined] INFO: Registering event handlers... {"service":"clipcraftr-bot"}
+2025-06-01 18:02:06 [undefined] INFO: Event handlers registered {"service":"clipcraftr-bot"}
+2025-06-01 18:02:06 [undefined] INFO: Logging in to Discord... {"service":"clipcraftr-bot"}
+2025-06-01 18:02:06 [undefined] INFO: Registered event: error {"service":"clipcraftr-bot"}
+2025-06-01 18:02:06 [undefined] INFO: Registered event: interactionCreate {"service":"clipcraftr-bot"}
+2025-06-01 18:02:06 [undefined] INFO: Registered one-time event: ready {"service":"clipcraftr-bot"}
+2025-06-01 18:02:06 [undefined] INFO: Successfully registered 3 events {"service":"clipcraftr-bot"}
+2025-06-01 18:02:06 [undefined] INFO: Bot is now running! {"service":"clipcraftr-bot"}
+2025-06-01 18:02:06 [undefined] INFO: Logged in as ClipCraftr (1378466798701117572) {"service":"clipcraftr-bot"}
+2025-06-01 18:02:06 [undefined] INFO: Bot invite link: https://discord.com/oauth2/authorize?client_id=1378466798701117572&scope=bot%20applications.commands {"service":"clipcraftr-bot"}
+2025-06-01 18:02:06 [undefined] INFO: Bot is now online and ready! {"service":"clipcraftr-bot"}
+2025-06-01 18:17:24 [undefined] INFO: Connecting to MongoDB at: mongodb+srv://jon:***@clipcraftr.aquvzqk.mongodb.net/clipcraftr?retryWrites=true&w=majority {"service":"clipcraftr-bot"}
+2025-06-01 18:17:24 [undefined] INFO: Validating environment variables... {"service":"clipcraftr-bot"}
+2025-06-01 18:17:24 [undefined] INFO: Environment variables validated {"service":"clipcraftr-bot"}
+2025-06-01 18:17:24 [undefined] INFO: Connecting to database... {"service":"clipcraftr-bot"}
+2025-06-01 18:17:24 [undefined] INFO: Successfully connected to MongoDB {"service":"clipcraftr-bot"}
+2025-06-01 18:17:24 [undefined] INFO: Database connection established {"service":"clipcraftr-bot"}
+2025-06-01 18:17:24 [undefined] INFO: Loading commands... {"service":"clipcraftr-bot"}
+2025-06-01 18:17:24 [undefined] INFO: Successfully loaded 1 commands from 1 categories {"service":"clipcraftr-bot"}
+2025-06-01 18:17:24 [undefined] INFO: Started refreshing 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 18:17:24 [undefined] WARN: DEV_GUILD_ID not set. Registering global commands in development mode... {"service":"clipcraftr-bot"}
+2025-06-01 18:17:24 [undefined] WARN: Note: Global commands can take up to an hour to update. Set DEV_GUILD_ID for instant updates. {"service":"clipcraftr-bot"}
+2025-06-01 18:17:25 [undefined] INFO: Successfully reloaded 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 18:17:25 [undefined] INFO: Successfully loaded 1 commands {"service":"clipcraftr-bot"}
+2025-06-01 18:17:25 [undefined] INFO: Commands loaded successfully {"service":"clipcraftr-bot"}
+2025-06-01 18:17:25 [undefined] INFO: Registering event handlers... {"service":"clipcraftr-bot"}
+2025-06-01 18:17:25 [undefined] INFO: Event handlers registered {"service":"clipcraftr-bot"}
+2025-06-01 18:17:25 [undefined] INFO: Logging in to Discord... {"service":"clipcraftr-bot"}
+2025-06-01 18:17:25 [undefined] INFO: Registered event: error {"service":"clipcraftr-bot"}
+2025-06-01 18:17:25 [undefined] INFO: Registered event: interactionCreate {"service":"clipcraftr-bot"}
+2025-06-01 18:17:25 [undefined] INFO: Registered one-time event: ready {"service":"clipcraftr-bot"}
+2025-06-01 18:17:25 [undefined] INFO: Successfully registered 3 events {"service":"clipcraftr-bot"}
+2025-06-01 18:17:25 [undefined] INFO: Bot is now running! {"service":"clipcraftr-bot"}
+2025-06-01 18:17:25 [undefined] INFO: Logged in as ClipCraftr (1378466798701117572) {"service":"clipcraftr-bot"}
+2025-06-01 18:17:25 [undefined] INFO: Bot invite link: https://discord.com/oauth2/authorize?client_id=1378466798701117572&scope=bot%20applications.commands {"service":"clipcraftr-bot"}
+2025-06-01 18:17:25 [undefined] INFO: Bot is now online and ready! {"service":"clipcraftr-bot"}
+2025-06-01 18:21:57 [undefined] INFO: Connecting to MongoDB at: mongodb+srv://jon:***@clipcraftr.aquvzqk.mongodb.net/clipcraftr?retryWrites=true&w=majority {"service":"clipcraftr-bot"}
+2025-06-01 18:21:57 [undefined] INFO: Validating environment variables... {"service":"clipcraftr-bot"}
+2025-06-01 18:21:57 [undefined] INFO: Environment variables validated {"service":"clipcraftr-bot"}
+2025-06-01 18:21:57 [undefined] INFO: Connecting to database... {"service":"clipcraftr-bot"}
+2025-06-01 18:21:58 [undefined] INFO: Successfully connected to MongoDB {"service":"clipcraftr-bot"}
+2025-06-01 18:21:58 [undefined] INFO: Database connection established {"service":"clipcraftr-bot"}
+2025-06-01 18:21:58 [undefined] INFO: Loading commands... {"service":"clipcraftr-bot"}
+2025-06-01 18:21:58 [undefined] INFO: Successfully loaded 1 commands from 1 categories {"service":"clipcraftr-bot"}
+2025-06-01 18:21:58 [undefined] INFO: Started refreshing 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 18:21:58 [undefined] WARN: DEV_GUILD_ID not set. Registering global commands in development mode... {"service":"clipcraftr-bot"}
+2025-06-01 18:21:58 [undefined] WARN: Note: Global commands can take up to an hour to update. Set DEV_GUILD_ID for instant updates. {"service":"clipcraftr-bot"}
+2025-06-01 18:21:58 [undefined] INFO: Successfully reloaded 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 18:21:58 [undefined] INFO: Successfully loaded 1 commands {"service":"clipcraftr-bot"}
+2025-06-01 18:21:58 [undefined] INFO: Commands loaded successfully {"service":"clipcraftr-bot"}
+2025-06-01 18:21:58 [undefined] INFO: Registering event handlers... {"service":"clipcraftr-bot"}
+2025-06-01 18:21:58 [undefined] INFO: Event handlers registered {"service":"clipcraftr-bot"}
+2025-06-01 18:21:58 [undefined] INFO: Logging in to Discord... {"service":"clipcraftr-bot"}
+2025-06-01 18:21:58 [undefined] INFO: Registered event: error {"service":"clipcraftr-bot"}
+2025-06-01 18:21:58 [undefined] INFO: Registered event: interactionCreate {"service":"clipcraftr-bot"}
+2025-06-01 18:21:58 [undefined] INFO: Registered one-time event: ready {"service":"clipcraftr-bot"}
+2025-06-01 18:21:58 [undefined] INFO: Successfully registered 3 events {"service":"clipcraftr-bot"}
+2025-06-01 18:21:58 [undefined] INFO: Bot is now running! {"service":"clipcraftr-bot"}
+2025-06-01 18:21:58 [undefined] INFO: Logged in as ClipCraftr (1378466798701117572) {"service":"clipcraftr-bot"}
+2025-06-01 18:21:58 [undefined] INFO: Bot invite link: https://discord.com/oauth2/authorize?client_id=1378466798701117572&scope=bot%20applications.commands {"service":"clipcraftr-bot"}
+2025-06-01 18:21:58 [undefined] INFO: Bot is now online and ready! {"service":"clipcraftr-bot"}
+2025-06-01 18:26:42 [undefined] INFO: Connecting to MongoDB at: mongodb+srv://jon:***@clipcraftr.aquvzqk.mongodb.net/clipcraftr?retryWrites=true&w=majority {"service":"clipcraftr-bot"}
+2025-06-01 18:26:42 [undefined] INFO: Validating environment variables... {"service":"clipcraftr-bot"}
+2025-06-01 18:26:42 [undefined] INFO: Environment variables validated {"service":"clipcraftr-bot"}
+2025-06-01 18:26:42 [undefined] INFO: Connecting to database... {"service":"clipcraftr-bot"}
+2025-06-01 18:26:42 [undefined] INFO: Successfully connected to MongoDB {"service":"clipcraftr-bot"}
+2025-06-01 18:26:42 [undefined] INFO: Database connection established {"service":"clipcraftr-bot"}
+2025-06-01 18:26:42 [undefined] INFO: Loading commands... {"service":"clipcraftr-bot"}
+2025-06-01 18:26:42 [undefined] INFO: Successfully loaded 1 commands from 1 categories {"service":"clipcraftr-bot"}
+2025-06-01 18:26:42 [undefined] INFO: Started refreshing 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 18:26:42 [undefined] WARN: DEV_GUILD_ID not set. Registering global commands in development mode... {"service":"clipcraftr-bot"}
+2025-06-01 18:26:42 [undefined] WARN: Note: Global commands can take up to an hour to update. Set DEV_GUILD_ID for instant updates. {"service":"clipcraftr-bot"}
+2025-06-01 18:26:42 [undefined] INFO: Successfully reloaded 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 18:26:42 [undefined] INFO: Successfully loaded 1 commands {"service":"clipcraftr-bot"}
+2025-06-01 18:26:42 [undefined] INFO: Commands loaded successfully {"service":"clipcraftr-bot"}
+2025-06-01 18:26:42 [undefined] INFO: Registering event handlers... {"service":"clipcraftr-bot"}
+2025-06-01 18:26:42 [undefined] INFO: Event handlers registered {"service":"clipcraftr-bot"}
+2025-06-01 18:26:42 [undefined] INFO: Logging in to Discord... {"service":"clipcraftr-bot"}
+2025-06-01 18:26:42 [undefined] INFO: Registered event: error {"service":"clipcraftr-bot"}
+2025-06-01 18:26:42 [undefined] INFO: Registered event: interactionCreate {"service":"clipcraftr-bot"}
+2025-06-01 18:26:42 [undefined] INFO: Registered one-time event: ready {"service":"clipcraftr-bot"}
+2025-06-01 18:26:42 [undefined] INFO: Successfully registered 3 events {"service":"clipcraftr-bot"}
+2025-06-01 18:26:43 [undefined] INFO: Bot is now running! {"service":"clipcraftr-bot"}
+2025-06-01 18:26:43 [undefined] INFO: Logged in as ClipCraftr (1378466798701117572) {"service":"clipcraftr-bot"}
+2025-06-01 18:26:43 [undefined] INFO: Bot invite link: https://discord.com/oauth2/authorize?client_id=1378466798701117572&scope=bot%20applications.commands {"service":"clipcraftr-bot"}
+2025-06-01 18:26:43 [undefined] INFO: Bot is now online and ready! {"service":"clipcraftr-bot"}
+2025-06-01 18:40:16 [undefined] INFO: Connecting to MongoDB at: mongodb+srv://jon:***@clipcraftr.aquvzqk.mongodb.net/clipcraftr?retryWrites=true&w=majority {"service":"clipcraftr-bot"}
+2025-06-01 18:40:16 [undefined] INFO: Validating environment variables... {"service":"clipcraftr-bot"}
+2025-06-01 18:40:16 [undefined] INFO: Environment variables validated {"service":"clipcraftr-bot"}
+2025-06-01 18:40:16 [undefined] INFO: Connecting to database... {"service":"clipcraftr-bot"}
+2025-06-01 18:40:16 [undefined] INFO: Successfully connected to MongoDB {"service":"clipcraftr-bot"}
+2025-06-01 18:40:16 [undefined] INFO: Database connection established {"service":"clipcraftr-bot"}
+2025-06-01 18:40:16 [undefined] INFO: Loading commands... {"service":"clipcraftr-bot"}
+2025-06-01 18:40:16 [undefined] INFO: Successfully loaded 1 commands from 1 categories {"service":"clipcraftr-bot"}
+2025-06-01 18:40:16 [undefined] INFO: Started refreshing 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 18:40:16 [undefined] WARN: DEV_GUILD_ID not set. Registering global commands in development mode... {"service":"clipcraftr-bot"}
+2025-06-01 18:40:16 [undefined] WARN: Note: Global commands can take up to an hour to update. Set DEV_GUILD_ID for instant updates. {"service":"clipcraftr-bot"}
+2025-06-01 18:40:16 [undefined] INFO: Successfully reloaded 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 18:40:16 [undefined] INFO: Successfully loaded 1 commands {"service":"clipcraftr-bot"}
+2025-06-01 18:40:16 [undefined] INFO: Commands loaded successfully {"service":"clipcraftr-bot"}
+2025-06-01 18:40:16 [undefined] INFO: Registering event handlers... {"service":"clipcraftr-bot"}
+2025-06-01 18:40:16 [undefined] INFO: Event handlers registered {"service":"clipcraftr-bot"}
+2025-06-01 18:40:16 [undefined] INFO: Logging in to Discord... {"service":"clipcraftr-bot"}
+2025-06-01 18:40:16 [undefined] INFO: Registered event: error {"service":"clipcraftr-bot"}
+2025-06-01 18:40:16 [undefined] INFO: Registered event: interactionCreate {"service":"clipcraftr-bot"}
+2025-06-01 18:40:16 [undefined] INFO: Registered one-time event: ready {"service":"clipcraftr-bot"}
+2025-06-01 18:40:16 [undefined] INFO: Successfully registered 3 events {"service":"clipcraftr-bot"}
+2025-06-01 18:40:17 [undefined] INFO: Bot is now running! {"service":"clipcraftr-bot"}
+2025-06-01 18:40:17 [undefined] INFO: Logged in as ClipCraftr (1378466798701117572) {"service":"clipcraftr-bot"}
+2025-06-01 18:40:17 [undefined] INFO: Bot invite link: https://discord.com/oauth2/authorize?client_id=1378466798701117572&scope=bot%20applications.commands {"service":"clipcraftr-bot"}
+2025-06-01 18:40:17 [undefined] INFO: Bot is now online and ready! {"service":"clipcraftr-bot"}
+2025-06-01 18:44:54 [undefined] INFO: Connecting to MongoDB at: mongodb+srv://jon:***@clipcraftr.aquvzqk.mongodb.net/clipcraftr?retryWrites=true&w=majority {"service":"clipcraftr-bot"}
+2025-06-01 18:44:54 [undefined] INFO: Validating environment variables... {"service":"clipcraftr-bot"}
+2025-06-01 18:44:54 [undefined] INFO: Environment variables validated {"service":"clipcraftr-bot"}
+2025-06-01 18:44:54 [undefined] INFO: Connecting to database... {"service":"clipcraftr-bot"}
+2025-06-01 18:44:54 [undefined] INFO: Successfully connected to MongoDB {"service":"clipcraftr-bot"}
+2025-06-01 18:44:54 [undefined] INFO: Database connection established {"service":"clipcraftr-bot"}
+2025-06-01 18:44:54 [undefined] INFO: Loading commands... {"service":"clipcraftr-bot"}
+2025-06-01 18:44:54 [undefined] INFO: Successfully loaded 1 commands from 1 categories {"service":"clipcraftr-bot"}
+2025-06-01 18:44:54 [undefined] INFO: Started refreshing 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 18:44:54 [undefined] WARN: DEV_GUILD_ID not set. Registering global commands in development mode... {"service":"clipcraftr-bot"}
+2025-06-01 18:44:54 [undefined] WARN: Note: Global commands can take up to an hour to update. Set DEV_GUILD_ID for instant updates. {"service":"clipcraftr-bot"}
+2025-06-01 18:44:54 [undefined] INFO: Successfully reloaded 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 18:44:54 [undefined] INFO: Successfully loaded 1 commands {"service":"clipcraftr-bot"}
+2025-06-01 18:44:54 [undefined] INFO: Commands loaded successfully {"service":"clipcraftr-bot"}
+2025-06-01 18:44:54 [undefined] INFO: Registering event handlers... {"service":"clipcraftr-bot"}
+2025-06-01 18:44:54 [undefined] INFO: Event handlers registered {"service":"clipcraftr-bot"}
+2025-06-01 18:44:54 [undefined] INFO: Logging in to Discord... {"service":"clipcraftr-bot"}
+2025-06-01 18:44:54 [undefined] INFO: Registered event: error {"service":"clipcraftr-bot"}
+2025-06-01 18:44:54 [undefined] INFO: Registered event: interactionCreate {"service":"clipcraftr-bot"}
+2025-06-01 18:44:54 [undefined] INFO: Registered one-time event: ready {"service":"clipcraftr-bot"}
+2025-06-01 18:44:54 [undefined] INFO: Successfully registered 3 events {"service":"clipcraftr-bot"}
+2025-06-01 18:44:55 [undefined] INFO: Bot is now running! {"service":"clipcraftr-bot"}
+2025-06-01 18:44:55 [undefined] INFO: Logged in as ClipCraftr (1378466798701117572) {"service":"clipcraftr-bot"}
+2025-06-01 18:44:55 [undefined] INFO: Bot invite link: https://discord.com/oauth2/authorize?client_id=1378466798701117572&scope=bot%20applications.commands {"service":"clipcraftr-bot"}
+2025-06-01 18:44:55 [undefined] INFO: Bot is now online and ready! {"service":"clipcraftr-bot"}
+2025-06-01 18:47:49 [undefined] INFO: Connecting to MongoDB at: mongodb+srv://jon:***@clipcraftr.aquvzqk.mongodb.net/clipcraftr?retryWrites=true&w=majority {"service":"clipcraftr-bot"}
+2025-06-01 18:47:49 [undefined] INFO: Validating environment variables... {"service":"clipcraftr-bot"}
+2025-06-01 18:47:49 [undefined] INFO: Environment variables validated {"service":"clipcraftr-bot"}
+2025-06-01 18:47:49 [undefined] INFO: Connecting to database... {"service":"clipcraftr-bot"}
+2025-06-01 18:47:50 [undefined] INFO: Successfully connected to MongoDB {"service":"clipcraftr-bot"}
+2025-06-01 18:47:50 [undefined] INFO: Database connection established {"service":"clipcraftr-bot"}
+2025-06-01 18:47:50 [undefined] INFO: Loading commands... {"service":"clipcraftr-bot"}
+2025-06-01 18:47:50 [undefined] INFO: Successfully loaded 1 commands from 1 categories {"service":"clipcraftr-bot"}
+2025-06-01 18:47:50 [undefined] INFO: Started refreshing 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 18:47:50 [undefined] WARN: DEV_GUILD_ID not set. Registering global commands in development mode... {"service":"clipcraftr-bot"}
+2025-06-01 18:47:50 [undefined] WARN: Note: Global commands can take up to an hour to update. Set DEV_GUILD_ID for instant updates. {"service":"clipcraftr-bot"}
+2025-06-01 18:47:50 [undefined] INFO: Successfully reloaded 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 18:47:50 [undefined] INFO: Successfully loaded 1 commands {"service":"clipcraftr-bot"}
+2025-06-01 18:47:50 [undefined] INFO: Commands loaded successfully {"service":"clipcraftr-bot"}
+2025-06-01 18:47:50 [undefined] INFO: Registering event handlers... {"service":"clipcraftr-bot"}
+2025-06-01 18:47:50 [undefined] INFO: Event handlers registered {"service":"clipcraftr-bot"}
+2025-06-01 18:47:50 [undefined] INFO: Logging in to Discord... {"service":"clipcraftr-bot"}
+2025-06-01 18:47:50 [undefined] INFO: Registered event: error {"service":"clipcraftr-bot"}
+2025-06-01 18:47:50 [undefined] INFO: Registered event: interactionCreate {"service":"clipcraftr-bot"}
+2025-06-01 18:47:50 [undefined] INFO: Registered one-time event: ready {"service":"clipcraftr-bot"}
+2025-06-01 18:47:50 [undefined] INFO: Successfully registered 3 events {"service":"clipcraftr-bot"}
+2025-06-01 18:47:51 [undefined] INFO: Bot is now running! {"service":"clipcraftr-bot"}
+2025-06-01 18:47:51 [undefined] INFO: Logged in as ClipCraftr (1378466798701117572) {"service":"clipcraftr-bot"}
+2025-06-01 18:47:51 [undefined] INFO: Bot invite link: https://discord.com/oauth2/authorize?client_id=1378466798701117572&scope=bot%20applications.commands {"service":"clipcraftr-bot"}
+2025-06-01 18:47:51 [undefined] INFO: Bot is now online and ready! {"service":"clipcraftr-bot"}
+2025-06-01 19:16:57 [undefined] INFO: Connecting to MongoDB at: mongodb+srv://jon:***@clipcraftr.aquvzqk.mongodb.net/clipcraftr?retryWrites=true&w=majority {"service":"clipcraftr-bot"}
+2025-06-01 19:16:57 [undefined] INFO: Validating environment variables... {"service":"clipcraftr-bot"}
+2025-06-01 19:16:57 [undefined] INFO: Environment variables validated {"service":"clipcraftr-bot"}
+2025-06-01 19:16:57 [undefined] INFO: Connecting to database... {"service":"clipcraftr-bot"}
+2025-06-01 19:16:57 [undefined] INFO: Successfully connected to MongoDB {"service":"clipcraftr-bot"}
+2025-06-01 19:16:57 [undefined] INFO: Database connection established {"service":"clipcraftr-bot"}
+2025-06-01 19:16:57 [undefined] INFO: Loading commands... {"service":"clipcraftr-bot"}
+2025-06-01 19:16:57 [undefined] INFO: Successfully loaded 1 commands from 1 categories {"service":"clipcraftr-bot"}
+2025-06-01 19:16:57 [undefined] INFO: Started refreshing 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 19:16:57 [undefined] WARN: DEV_GUILD_ID not set. Registering global commands in development mode... {"service":"clipcraftr-bot"}
+2025-06-01 19:16:57 [undefined] WARN: Note: Global commands can take up to an hour to update. Set DEV_GUILD_ID for instant updates. {"service":"clipcraftr-bot"}
+2025-06-01 19:16:58 [undefined] INFO: Successfully reloaded 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 19:16:58 [undefined] INFO: Successfully loaded 1 commands {"service":"clipcraftr-bot"}
+2025-06-01 19:16:58 [undefined] INFO: Commands loaded successfully {"service":"clipcraftr-bot"}
+2025-06-01 19:16:58 [undefined] INFO: Registering event handlers... {"service":"clipcraftr-bot"}
+2025-06-01 19:16:58 [undefined] INFO: Event handlers registered {"service":"clipcraftr-bot"}
+2025-06-01 19:16:58 [undefined] INFO: Logging in to Discord... {"service":"clipcraftr-bot"}
+2025-06-01 19:16:58 [undefined] INFO: Registered event: error {"service":"clipcraftr-bot"}
+2025-06-01 19:16:58 [undefined] INFO: Registered event: interactionCreate {"service":"clipcraftr-bot"}
+2025-06-01 19:16:58 [undefined] INFO: Registered one-time event: ready {"service":"clipcraftr-bot"}
+2025-06-01 19:16:58 [undefined] INFO: Successfully registered 3 events {"service":"clipcraftr-bot"}
+2025-06-01 19:16:58 [undefined] INFO: Bot is now running! {"service":"clipcraftr-bot"}
+2025-06-01 19:16:58 [undefined] INFO: Logged in as ClipCraftr (1378466798701117572) {"service":"clipcraftr-bot"}
+2025-06-01 19:16:58 [undefined] INFO: Bot invite link: https://discord.com/oauth2/authorize?client_id=1378466798701117572&scope=bot%20applications.commands {"service":"clipcraftr-bot"}
+2025-06-01 19:16:58 [undefined] INFO: Bot is now online and ready! {"service":"clipcraftr-bot"}
+2025-06-01 19:42:42 [undefined] INFO: Connecting to MongoDB at: mongodb+srv://jon:***@clipcraftr.aquvzqk.mongodb.net/clipcraftr?retryWrites=true&w=majority {"service":"clipcraftr-bot"}
+2025-06-01 19:42:42 [undefined] INFO: Validating environment variables... {"service":"clipcraftr-bot"}
+2025-06-01 19:42:42 [undefined] INFO: Environment variables validated {"service":"clipcraftr-bot"}
+2025-06-01 19:42:42 [undefined] INFO: Connecting to database... {"service":"clipcraftr-bot"}
+2025-06-01 19:42:42 [undefined] INFO: Successfully connected to MongoDB {"service":"clipcraftr-bot"}
+2025-06-01 19:42:42 [undefined] INFO: Database connection established {"service":"clipcraftr-bot"}
+2025-06-01 19:42:42 [undefined] INFO: Loading commands... {"service":"clipcraftr-bot"}
+2025-06-01 19:42:42 [undefined] INFO: Successfully loaded 1 commands from 1 categories {"service":"clipcraftr-bot"}
+2025-06-01 19:42:42 [undefined] INFO: Started refreshing 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 19:42:42 [undefined] WARN: DEV_GUILD_ID not set. Registering global commands in development mode... {"service":"clipcraftr-bot"}
+2025-06-01 19:42:42 [undefined] WARN: Note: Global commands can take up to an hour to update. Set DEV_GUILD_ID for instant updates. {"service":"clipcraftr-bot"}
+2025-06-01 19:42:42 [undefined] INFO: Successfully reloaded 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 19:42:42 [undefined] INFO: Successfully loaded 1 commands {"service":"clipcraftr-bot"}
+2025-06-01 19:42:42 [undefined] INFO: Commands loaded successfully {"service":"clipcraftr-bot"}
+2025-06-01 19:42:42 [undefined] INFO: Registering event handlers... {"service":"clipcraftr-bot"}
+2025-06-01 19:42:42 [undefined] INFO: Event handlers registered {"service":"clipcraftr-bot"}
+2025-06-01 19:42:42 [undefined] INFO: Logging in to Discord... {"service":"clipcraftr-bot"}
+2025-06-01 19:42:42 [undefined] INFO: Registered event: error {"service":"clipcraftr-bot"}
+2025-06-01 19:42:42 [undefined] INFO: Registered event: interactionCreate {"service":"clipcraftr-bot"}
+2025-06-01 19:42:42 [undefined] INFO: Registered one-time event: ready {"service":"clipcraftr-bot"}
+2025-06-01 19:42:42 [undefined] INFO: Successfully registered 3 events {"service":"clipcraftr-bot"}
+2025-06-01 19:42:43 [undefined] INFO: Bot is now running! {"service":"clipcraftr-bot"}
+2025-06-01 19:42:43 [undefined] INFO: Logged in as ClipCraftr (1378466798701117572) {"service":"clipcraftr-bot"}
+2025-06-01 19:42:43 [undefined] INFO: Bot invite link: https://discord.com/oauth2/authorize?client_id=1378466798701117572&scope=bot%20applications.commands {"service":"clipcraftr-bot"}
+2025-06-01 19:42:43 [undefined] INFO: Bot is now online and ready! {"service":"clipcraftr-bot"}
+2025-06-01 19:45:04 [undefined] INFO: Connecting to MongoDB at: mongodb+srv://jon:***@clipcraftr.aquvzqk.mongodb.net/clipcraftr?retryWrites=true&w=majority {"service":"clipcraftr-bot"}
+2025-06-01 19:45:04 [undefined] INFO: Validating environment variables... {"service":"clipcraftr-bot"}
+2025-06-01 19:45:04 [undefined] INFO: Environment variables validated {"service":"clipcraftr-bot"}
+2025-06-01 19:45:04 [undefined] INFO: Connecting to database... {"service":"clipcraftr-bot"}
+2025-06-01 19:45:05 [undefined] INFO: Successfully connected to MongoDB {"service":"clipcraftr-bot"}
+2025-06-01 19:45:05 [undefined] INFO: Database connection established {"service":"clipcraftr-bot"}
+2025-06-01 19:45:05 [undefined] INFO: Loading commands... {"service":"clipcraftr-bot"}
+2025-06-01 19:45:05 [undefined] INFO: Successfully loaded 1 commands from 1 categories {"service":"clipcraftr-bot"}
+2025-06-01 19:45:05 [undefined] INFO: Started refreshing 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 19:45:05 [undefined] WARN: DEV_GUILD_ID not set. Registering global commands in development mode... {"service":"clipcraftr-bot"}
+2025-06-01 19:45:05 [undefined] WARN: Note: Global commands can take up to an hour to update. Set DEV_GUILD_ID for instant updates. {"service":"clipcraftr-bot"}
+2025-06-01 19:45:05 [undefined] INFO: Successfully reloaded 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 19:45:05 [undefined] INFO: Successfully loaded 1 commands {"service":"clipcraftr-bot"}
+2025-06-01 19:45:05 [undefined] INFO: Commands loaded successfully {"service":"clipcraftr-bot"}
+2025-06-01 19:45:05 [undefined] INFO: Registering event handlers... {"service":"clipcraftr-bot"}
+2025-06-01 19:45:05 [undefined] INFO: Event handlers registered {"service":"clipcraftr-bot"}
+2025-06-01 19:45:05 [undefined] INFO: Logging in to Discord... {"service":"clipcraftr-bot"}
+2025-06-01 19:45:05 [undefined] INFO: Registered event: error {"service":"clipcraftr-bot"}
+2025-06-01 19:45:05 [undefined] INFO: Registered event: interactionCreate {"service":"clipcraftr-bot"}
+2025-06-01 19:45:05 [undefined] INFO: Registered one-time event: ready {"service":"clipcraftr-bot"}
+2025-06-01 19:45:05 [undefined] INFO: Successfully registered 3 events {"service":"clipcraftr-bot"}
+2025-06-01 19:45:05 [undefined] INFO: Bot is now running! {"service":"clipcraftr-bot"}
+2025-06-01 19:45:05 [undefined] INFO: Logged in as ClipCraftr (1378466798701117572) {"service":"clipcraftr-bot"}
+2025-06-01 19:45:05 [undefined] INFO: Bot invite link: https://discord.com/oauth2/authorize?client_id=1378466798701117572&scope=bot%20applications.commands {"service":"clipcraftr-bot"}
+2025-06-01 19:45:05 [undefined] INFO: Bot is now online and ready! {"service":"clipcraftr-bot"}
+2025-06-01 20:25:14 [undefined] INFO: Connecting to MongoDB at: mongodb+srv://jon:***@clipcraftr.aquvzqk.mongodb.net/clipcraftr?retryWrites=true&w=majority {"service":"clipcraftr-bot"}
+2025-06-01 20:25:14 [undefined] INFO: Validating environment variables... {"service":"clipcraftr-bot"}
+2025-06-01 20:25:14 [undefined] INFO: Environment variables validated {"service":"clipcraftr-bot"}
+2025-06-01 20:25:14 [undefined] INFO: Connecting to database... {"service":"clipcraftr-bot"}
+2025-06-01 20:25:14 [undefined] INFO: Successfully connected to MongoDB {"service":"clipcraftr-bot"}
+2025-06-01 20:25:14 [undefined] INFO: Database connection established {"service":"clipcraftr-bot"}
+2025-06-01 20:25:14 [undefined] INFO: Loading commands... {"service":"clipcraftr-bot"}
+2025-06-01 20:25:14 [undefined] INFO: Successfully loaded 1 commands from 1 categories {"service":"clipcraftr-bot"}
+2025-06-01 20:25:14 [undefined] INFO: Started refreshing 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 20:25:14 [undefined] WARN: DEV_GUILD_ID not set. Registering global commands in development mode... {"service":"clipcraftr-bot"}
+2025-06-01 20:25:14 [undefined] WARN: Note: Global commands can take up to an hour to update. Set DEV_GUILD_ID for instant updates. {"service":"clipcraftr-bot"}
+2025-06-01 20:25:15 [undefined] INFO: Successfully reloaded 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 20:25:15 [undefined] INFO: Successfully loaded 1 commands {"service":"clipcraftr-bot"}
+2025-06-01 20:25:15 [undefined] INFO: Commands loaded successfully {"service":"clipcraftr-bot"}
+2025-06-01 20:25:15 [undefined] INFO: Registering event handlers... {"service":"clipcraftr-bot"}
+2025-06-01 20:25:15 [undefined] INFO: Event handlers registered {"service":"clipcraftr-bot"}
+2025-06-01 20:25:15 [undefined] INFO: Logging in to Discord... {"service":"clipcraftr-bot"}
+2025-06-01 20:25:15 [undefined] INFO: Registered event: error {"service":"clipcraftr-bot"}
+2025-06-01 20:25:15 [undefined] INFO: Registered event: interactionCreate {"service":"clipcraftr-bot"}
+2025-06-01 20:25:15 [undefined] INFO: Registered one-time event: ready {"service":"clipcraftr-bot"}
+2025-06-01 20:25:15 [undefined] INFO: Successfully registered 3 events {"service":"clipcraftr-bot"}
+2025-06-01 20:25:15 [undefined] INFO: Bot is now running! {"service":"clipcraftr-bot"}
+2025-06-01 20:25:15 [undefined] INFO: Logged in as ClipCraftr (1378466798701117572) {"service":"clipcraftr-bot"}
+2025-06-01 20:25:15 [undefined] INFO: Bot invite link: https://discord.com/oauth2/authorize?client_id=1378466798701117572&scope=bot%20applications.commands {"service":"clipcraftr-bot"}
+2025-06-01 20:25:15 [undefined] INFO: Bot is now online and ready! {"service":"clipcraftr-bot"}
+2025-06-01 20:27:26 [undefined] INFO: Connecting to MongoDB at: mongodb+srv://jon:***@clipcraftr.aquvzqk.mongodb.net/clipcraftr?retryWrites=true&w=majority {"service":"clipcraftr-bot"}
+2025-06-01 20:27:26 [undefined] INFO: Validating environment variables... {"service":"clipcraftr-bot"}
+2025-06-01 20:27:26 [undefined] INFO: Environment variables validated {"service":"clipcraftr-bot"}
+2025-06-01 20:27:26 [undefined] INFO: Connecting to database... {"service":"clipcraftr-bot"}
+2025-06-01 20:27:27 [undefined] INFO: Successfully connected to MongoDB {"service":"clipcraftr-bot"}
+2025-06-01 20:27:27 [undefined] INFO: Database connection established {"service":"clipcraftr-bot"}
+2025-06-01 20:27:27 [undefined] INFO: Loading commands... {"service":"clipcraftr-bot"}
+2025-06-01 20:27:27 [undefined] INFO: Successfully loaded 1 commands from 1 categories {"service":"clipcraftr-bot"}
+2025-06-01 20:27:27 [undefined] INFO: Started refreshing 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 20:27:27 [undefined] WARN: DEV_GUILD_ID not set. Registering global commands in development mode... {"service":"clipcraftr-bot"}
+2025-06-01 20:27:27 [undefined] WARN: Note: Global commands can take up to an hour to update. Set DEV_GUILD_ID for instant updates. {"service":"clipcraftr-bot"}
+2025-06-01 20:27:27 [undefined] INFO: Successfully reloaded 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 20:27:27 [undefined] INFO: Successfully loaded 1 commands {"service":"clipcraftr-bot"}
+2025-06-01 20:27:27 [undefined] INFO: Commands loaded successfully {"service":"clipcraftr-bot"}
+2025-06-01 20:27:27 [undefined] INFO: Registering event handlers... {"service":"clipcraftr-bot"}
+2025-06-01 20:27:27 [undefined] INFO: Event handlers registered {"service":"clipcraftr-bot"}
+2025-06-01 20:27:27 [undefined] INFO: Logging in to Discord... {"service":"clipcraftr-bot"}
+2025-06-01 20:27:27 [undefined] INFO: Registered event: error {"service":"clipcraftr-bot"}
+2025-06-01 20:27:27 [undefined] INFO: Registered event: interactionCreate {"service":"clipcraftr-bot"}
+2025-06-01 20:27:27 [undefined] INFO: Registered one-time event: ready {"service":"clipcraftr-bot"}
+2025-06-01 20:27:27 [undefined] INFO: Successfully registered 3 events {"service":"clipcraftr-bot"}
+2025-06-01 20:27:27 [undefined] INFO: Bot is now running! {"service":"clipcraftr-bot"}
+2025-06-01 20:27:27 [undefined] INFO: Logged in as ClipCraftr (1378466798701117572) {"service":"clipcraftr-bot"}
+2025-06-01 20:27:27 [undefined] INFO: Bot invite link: https://discord.com/oauth2/authorize?client_id=1378466798701117572&scope=bot%20applications.commands {"service":"clipcraftr-bot"}
+2025-06-01 20:27:27 [undefined] INFO: Bot is now online and ready! {"service":"clipcraftr-bot"}
+2025-06-01 20:39:47 [undefined] INFO: Connecting to MongoDB at: mongodb+srv://jon:***@clipcraftr.aquvzqk.mongodb.net/clipcraftr?retryWrites=true&w=majority {"service":"clipcraftr-bot"}
+2025-06-01 20:39:47 [undefined] INFO: Validating environment variables... {"service":"clipcraftr-bot"}
+2025-06-01 20:39:47 [undefined] INFO: Environment variables validated {"service":"clipcraftr-bot"}
+2025-06-01 20:39:47 [undefined] INFO: Connecting to database... {"service":"clipcraftr-bot"}
+2025-06-01 20:39:47 [undefined] INFO: Successfully connected to MongoDB {"service":"clipcraftr-bot"}
+2025-06-01 20:39:47 [undefined] INFO: Database connection established {"service":"clipcraftr-bot"}
+2025-06-01 20:39:47 [undefined] INFO: Loading commands... {"service":"clipcraftr-bot"}
+2025-06-01 20:39:47 [undefined] INFO: Successfully loaded 1 commands from 1 categories {"service":"clipcraftr-bot"}
+2025-06-01 20:39:47 [undefined] INFO: Started refreshing 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 20:39:47 [undefined] WARN: DEV_GUILD_ID not set. Registering global commands in development mode... {"service":"clipcraftr-bot"}
+2025-06-01 20:39:47 [undefined] WARN: Note: Global commands can take up to an hour to update. Set DEV_GUILD_ID for instant updates. {"service":"clipcraftr-bot"}
+2025-06-01 20:39:50 [undefined] INFO: Successfully reloaded 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 20:39:50 [undefined] INFO: Successfully loaded 1 commands {"service":"clipcraftr-bot"}
+2025-06-01 20:39:50 [undefined] INFO: Commands loaded successfully {"service":"clipcraftr-bot"}
+2025-06-01 20:39:50 [undefined] INFO: Registering event handlers... {"service":"clipcraftr-bot"}
+2025-06-01 20:39:50 [undefined] INFO: Event handlers registered {"service":"clipcraftr-bot"}
+2025-06-01 20:39:50 [undefined] INFO: Logging in to Discord... {"service":"clipcraftr-bot"}
+2025-06-01 20:39:50 [undefined] INFO: Registered event: error {"service":"clipcraftr-bot"}
+2025-06-01 20:39:50 [undefined] INFO: Registered event: interactionCreate {"service":"clipcraftr-bot"}
+2025-06-01 20:39:50 [undefined] INFO: Registered one-time event: ready {"service":"clipcraftr-bot"}
+2025-06-01 20:39:50 [undefined] INFO: Successfully registered 3 events {"service":"clipcraftr-bot"}
+2025-06-01 20:39:51 [undefined] INFO: Bot is now running! {"service":"clipcraftr-bot"}
+2025-06-01 20:39:51 [undefined] INFO: Logged in as ClipCraftr (1378466798701117572) {"service":"clipcraftr-bot"}
+2025-06-01 20:39:51 [undefined] INFO: Bot invite link: https://discord.com/oauth2/authorize?client_id=1378466798701117572&scope=bot%20applications.commands {"service":"clipcraftr-bot"}
+2025-06-01 20:39:51 [undefined] INFO: Bot is now online and ready! {"service":"clipcraftr-bot"}
+2025-06-01 20:42:07 [undefined] INFO: Connecting to MongoDB at: mongodb+srv://jon:***@clipcraftr.aquvzqk.mongodb.net/clipcraftr?retryWrites=true&w=majority {"service":"clipcraftr-bot"}
+2025-06-01 20:42:07 [undefined] INFO: Validating environment variables... {"service":"clipcraftr-bot"}
+2025-06-01 20:42:07 [undefined] INFO: Environment variables validated {"service":"clipcraftr-bot"}
+2025-06-01 20:42:07 [undefined] INFO: Connecting to database... {"service":"clipcraftr-bot"}
+2025-06-01 20:42:07 [undefined] INFO: Successfully connected to MongoDB {"service":"clipcraftr-bot"}
+2025-06-01 20:42:07 [undefined] INFO: Database connection established {"service":"clipcraftr-bot"}
+2025-06-01 20:42:07 [undefined] INFO: Loading commands... {"service":"clipcraftr-bot"}
+2025-06-01 20:42:07 [undefined] INFO: Successfully loaded 1 commands from 1 categories {"service":"clipcraftr-bot"}
+2025-06-01 20:42:07 [undefined] INFO: Started refreshing 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 20:42:07 [undefined] WARN: DEV_GUILD_ID not set. Registering global commands in development mode... {"service":"clipcraftr-bot"}
+2025-06-01 20:42:07 [undefined] WARN: Note: Global commands can take up to an hour to update. Set DEV_GUILD_ID for instant updates. {"service":"clipcraftr-bot"}
+2025-06-01 20:42:07 [undefined] INFO: Successfully reloaded 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 20:42:07 [undefined] INFO: Successfully loaded 1 commands {"service":"clipcraftr-bot"}
+2025-06-01 20:42:07 [undefined] INFO: Commands loaded successfully {"service":"clipcraftr-bot"}
+2025-06-01 20:42:07 [undefined] INFO: Registering event handlers... {"service":"clipcraftr-bot"}
+2025-06-01 20:42:07 [undefined] INFO: Event handlers registered {"service":"clipcraftr-bot"}
+2025-06-01 20:42:07 [undefined] INFO: Logging in to Discord... {"service":"clipcraftr-bot"}
+2025-06-01 20:42:07 [undefined] INFO: Registered event: error {"service":"clipcraftr-bot"}
+2025-06-01 20:42:07 [undefined] INFO: Registered event: interactionCreate {"service":"clipcraftr-bot"}
+2025-06-01 20:42:07 [undefined] INFO: Registered one-time event: ready {"service":"clipcraftr-bot"}
+2025-06-01 20:42:07 [undefined] INFO: Successfully registered 3 events {"service":"clipcraftr-bot"}
+2025-06-01 20:42:08 [undefined] INFO: Bot is now running! {"service":"clipcraftr-bot"}
+2025-06-01 20:42:08 [undefined] INFO: Logged in as ClipCraftr (1378466798701117572) {"service":"clipcraftr-bot"}
+2025-06-01 20:42:08 [undefined] INFO: Bot invite link: https://discord.com/oauth2/authorize?client_id=1378466798701117572&scope=bot%20applications.commands {"service":"clipcraftr-bot"}
+2025-06-01 20:42:08 [undefined] INFO: Bot is now online and ready! {"service":"clipcraftr-bot"}
+2025-06-01 20:42:39 [undefined] INFO: Connecting to MongoDB at: mongodb+srv://jon:***@clipcraftr.aquvzqk.mongodb.net/clipcraftr?retryWrites=true&w=majority {"service":"clipcraftr-bot"}
+2025-06-01 20:42:39 [undefined] INFO: Validating environment variables... {"service":"clipcraftr-bot"}
+2025-06-01 20:42:39 [undefined] INFO: Environment variables validated {"service":"clipcraftr-bot"}
+2025-06-01 20:42:39 [undefined] INFO: Connecting to database... {"service":"clipcraftr-bot"}
+2025-06-01 20:42:39 [undefined] INFO: Successfully connected to MongoDB {"service":"clipcraftr-bot"}
+2025-06-01 20:42:39 [undefined] INFO: Database connection established {"service":"clipcraftr-bot"}
+2025-06-01 20:42:39 [undefined] INFO: Loading commands... {"service":"clipcraftr-bot"}
+2025-06-01 20:42:39 [undefined] INFO: Successfully loaded 1 commands from 1 categories {"service":"clipcraftr-bot"}
+2025-06-01 20:42:39 [undefined] INFO: Started refreshing 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 20:42:39 [undefined] WARN: DEV_GUILD_ID not set. Registering global commands in development mode... {"service":"clipcraftr-bot"}
+2025-06-01 20:42:39 [undefined] WARN: Note: Global commands can take up to an hour to update. Set DEV_GUILD_ID for instant updates. {"service":"clipcraftr-bot"}
+2025-06-01 20:42:39 [undefined] INFO: Successfully reloaded 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 20:42:39 [undefined] INFO: Successfully loaded 1 commands {"service":"clipcraftr-bot"}
+2025-06-01 20:42:39 [undefined] INFO: Commands loaded successfully {"service":"clipcraftr-bot"}
+2025-06-01 20:42:39 [undefined] INFO: Registering event handlers... {"service":"clipcraftr-bot"}
+2025-06-01 20:42:39 [undefined] INFO: Event handlers registered {"service":"clipcraftr-bot"}
+2025-06-01 20:42:39 [undefined] INFO: Logging in to Discord... {"service":"clipcraftr-bot"}
+2025-06-01 20:42:39 [undefined] INFO: Registered event: error {"service":"clipcraftr-bot"}
+2025-06-01 20:42:39 [undefined] INFO: Registered event: interactionCreate {"service":"clipcraftr-bot"}
+2025-06-01 20:42:39 [undefined] INFO: Registered one-time event: ready {"service":"clipcraftr-bot"}
+2025-06-01 20:42:39 [undefined] INFO: Successfully registered 3 events {"service":"clipcraftr-bot"}
+2025-06-01 20:42:39 [undefined] INFO: Bot is now running! {"service":"clipcraftr-bot"}
+2025-06-01 20:42:39 [undefined] INFO: Logged in as ClipCraftr (1378466798701117572) {"service":"clipcraftr-bot"}
+2025-06-01 20:42:39 [undefined] INFO: Bot invite link: https://discord.com/oauth2/authorize?client_id=1378466798701117572&scope=bot%20applications.commands {"service":"clipcraftr-bot"}
+2025-06-01 20:42:39 [undefined] INFO: Bot is now online and ready! {"service":"clipcraftr-bot"}
+2025-06-01 20:44:45 [undefined] INFO: Connecting to MongoDB at: mongodb+srv://jon:***@clipcraftr.aquvzqk.mongodb.net/clipcraftr?retryWrites=true&w=majority {"service":"clipcraftr-bot"}
+2025-06-01 20:44:45 [undefined] INFO: Validating environment variables... {"service":"clipcraftr-bot"}
+2025-06-01 20:44:45 [undefined] INFO: Environment variables validated {"service":"clipcraftr-bot"}
+2025-06-01 20:44:45 [undefined] INFO: Connecting to database... {"service":"clipcraftr-bot"}
+2025-06-01 20:44:45 [undefined] INFO: Successfully connected to MongoDB {"service":"clipcraftr-bot"}
+2025-06-01 20:44:45 [undefined] INFO: Database connection established {"service":"clipcraftr-bot"}
+2025-06-01 20:44:45 [undefined] INFO: Loading commands... {"service":"clipcraftr-bot"}
+2025-06-01 20:44:45 [undefined] INFO: Successfully loaded 1 commands from 1 categories {"service":"clipcraftr-bot"}
+2025-06-01 20:44:45 [undefined] INFO: Started refreshing 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 20:44:45 [undefined] WARN: DEV_GUILD_ID not set. Registering global commands in development mode... {"service":"clipcraftr-bot"}
+2025-06-01 20:44:45 [undefined] WARN: Note: Global commands can take up to an hour to update. Set DEV_GUILD_ID for instant updates. {"service":"clipcraftr-bot"}
+2025-06-01 20:44:45 [undefined] INFO: Successfully reloaded 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 20:44:45 [undefined] INFO: Successfully loaded 1 commands {"service":"clipcraftr-bot"}
+2025-06-01 20:44:45 [undefined] INFO: Commands loaded successfully {"service":"clipcraftr-bot"}
+2025-06-01 20:44:45 [undefined] INFO: Registering event handlers... {"service":"clipcraftr-bot"}
+2025-06-01 20:44:45 [undefined] INFO: Event handlers registered {"service":"clipcraftr-bot"}
+2025-06-01 20:44:45 [undefined] INFO: Logging in to Discord... {"service":"clipcraftr-bot"}
+2025-06-01 20:44:45 [undefined] INFO: Registered event: error {"service":"clipcraftr-bot"}
+2025-06-01 20:44:45 [undefined] INFO: Registered event: interactionCreate {"service":"clipcraftr-bot"}
+2025-06-01 20:44:45 [undefined] INFO: Registered one-time event: ready {"service":"clipcraftr-bot"}
+2025-06-01 20:44:45 [undefined] INFO: Successfully registered 3 events {"service":"clipcraftr-bot"}
+2025-06-01 20:44:45 [undefined] INFO: Bot is now running! {"service":"clipcraftr-bot"}
+2025-06-01 20:44:45 [undefined] INFO: Logged in as ClipCraftr (1378466798701117572) {"service":"clipcraftr-bot"}
+2025-06-01 20:44:45 [undefined] INFO: Bot invite link: https://discord.com/oauth2/authorize?client_id=1378466798701117572&scope=bot%20applications.commands {"service":"clipcraftr-bot"}
+2025-06-01 20:44:45 [undefined] INFO: Bot is now online and ready! {"service":"clipcraftr-bot"}
+2025-06-01 20:49:49 [undefined] INFO: Connecting to MongoDB at: mongodb+srv://jon:***@clipcraftr.aquvzqk.mongodb.net/clipcraftr?retryWrites=true&w=majority {"service":"clipcraftr-bot"}
+2025-06-01 20:49:49 [undefined] INFO: Validating environment variables... {"service":"clipcraftr-bot"}
+2025-06-01 20:49:49 [undefined] INFO: Environment variables validated {"service":"clipcraftr-bot"}
+2025-06-01 20:49:49 [undefined] INFO: Connecting to database... {"service":"clipcraftr-bot"}
+2025-06-01 20:49:49 [undefined] INFO: Successfully connected to MongoDB {"service":"clipcraftr-bot"}
+2025-06-01 20:49:49 [undefined] INFO: Database connection established {"service":"clipcraftr-bot"}
+2025-06-01 20:49:49 [undefined] INFO: Loading commands... {"service":"clipcraftr-bot"}
+2025-06-01 20:49:49 [undefined] INFO: Successfully loaded 1 commands from 1 categories {"service":"clipcraftr-bot"}
+2025-06-01 20:49:49 [undefined] INFO: Started refreshing 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 20:49:49 [undefined] WARN: DEV_GUILD_ID not set. Registering global commands in development mode... {"service":"clipcraftr-bot"}
+2025-06-01 20:49:49 [undefined] WARN: Note: Global commands can take up to an hour to update. Set DEV_GUILD_ID for instant updates. {"service":"clipcraftr-bot"}
+2025-06-01 20:49:49 [undefined] INFO: Successfully reloaded 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 20:49:49 [undefined] INFO: Successfully loaded 1 commands {"service":"clipcraftr-bot"}
+2025-06-01 20:49:49 [undefined] INFO: Commands loaded successfully {"service":"clipcraftr-bot"}
+2025-06-01 20:49:49 [undefined] INFO: Registering event handlers... {"service":"clipcraftr-bot"}
+2025-06-01 20:49:49 [undefined] INFO: Event handlers registered {"service":"clipcraftr-bot"}
+2025-06-01 20:49:49 [undefined] INFO: Logging in to Discord... {"service":"clipcraftr-bot"}
+2025-06-01 20:49:49 [undefined] INFO: Registered event: error {"service":"clipcraftr-bot"}
+2025-06-01 20:49:49 [undefined] INFO: Registered event: interactionCreate {"service":"clipcraftr-bot"}
+2025-06-01 20:49:49 [undefined] INFO: Registered one-time event: ready {"service":"clipcraftr-bot"}
+2025-06-01 20:49:49 [undefined] INFO: Successfully registered 3 events {"service":"clipcraftr-bot"}
+2025-06-01 20:49:50 [undefined] INFO: Bot is now running! {"service":"clipcraftr-bot"}
+2025-06-01 20:49:50 [undefined] INFO: Logged in as ClipCraftr (1378466798701117572) {"service":"clipcraftr-bot"}
+2025-06-01 20:49:50 [undefined] INFO: Bot invite link: https://discord.com/oauth2/authorize?client_id=1378466798701117572&scope=bot%20applications.commands {"service":"clipcraftr-bot"}
+2025-06-01 20:49:50 [undefined] INFO: Bot is now online and ready! {"service":"clipcraftr-bot"}
+2025-06-01 20:53:25 [undefined] INFO: Connecting to MongoDB at: mongodb+srv://jon:***@clipcraftr.aquvzqk.mongodb.net/clipcraftr?retryWrites=true&w=majority {"service":"clipcraftr-bot"}
+2025-06-01 20:53:25 [undefined] INFO: Validating environment variables... {"service":"clipcraftr-bot"}
+2025-06-01 20:53:25 [undefined] INFO: Environment variables validated {"service":"clipcraftr-bot"}
+2025-06-01 20:53:25 [undefined] INFO: Connecting to database... {"service":"clipcraftr-bot"}
+2025-06-01 20:53:26 [undefined] INFO: Successfully connected to MongoDB {"service":"clipcraftr-bot"}
+2025-06-01 20:53:26 [undefined] INFO: Database connection established {"service":"clipcraftr-bot"}
+2025-06-01 20:53:26 [undefined] INFO: Loading commands... {"service":"clipcraftr-bot"}
+2025-06-01 20:53:26 [undefined] INFO: Successfully loaded 1 commands from 1 categories {"service":"clipcraftr-bot"}
+2025-06-01 20:53:26 [undefined] INFO: Started refreshing 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 20:53:26 [undefined] WARN: DEV_GUILD_ID not set. Registering global commands in development mode... {"service":"clipcraftr-bot"}
+2025-06-01 20:53:26 [undefined] WARN: Note: Global commands can take up to an hour to update. Set DEV_GUILD_ID for instant updates. {"service":"clipcraftr-bot"}
+2025-06-01 20:53:26 [undefined] INFO: Successfully reloaded 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 20:53:26 [undefined] INFO: Successfully loaded 1 commands {"service":"clipcraftr-bot"}
+2025-06-01 20:53:26 [undefined] INFO: Commands loaded successfully {"service":"clipcraftr-bot"}
+2025-06-01 20:53:26 [undefined] INFO: Registering event handlers... {"service":"clipcraftr-bot"}
+2025-06-01 20:53:26 [undefined] INFO: Event handlers registered {"service":"clipcraftr-bot"}
+2025-06-01 20:53:26 [undefined] INFO: Logging in to Discord... {"service":"clipcraftr-bot"}
+2025-06-01 20:53:26 [undefined] INFO: Registered event: error {"service":"clipcraftr-bot"}
+2025-06-01 20:53:26 [undefined] INFO: Registered event: interactionCreate {"service":"clipcraftr-bot"}
+2025-06-01 20:53:26 [undefined] INFO: Registered one-time event: ready {"service":"clipcraftr-bot"}
+2025-06-01 20:53:26 [undefined] INFO: Successfully registered 3 events {"service":"clipcraftr-bot"}
+2025-06-01 20:53:26 [undefined] INFO: Bot is now running! {"service":"clipcraftr-bot"}
+2025-06-01 20:53:27 [undefined] INFO: Logged in as ClipCraftr (1378466798701117572) {"service":"clipcraftr-bot"}
+2025-06-01 20:53:27 [undefined] INFO: Bot invite link: https://discord.com/oauth2/authorize?client_id=1378466798701117572&scope=bot%20applications.commands {"service":"clipcraftr-bot"}
+2025-06-01 20:53:27 [undefined] INFO: Bot is now online and ready! {"service":"clipcraftr-bot"}
+2025-06-01 20:57:28 [undefined] INFO: Connecting to MongoDB at: mongodb+srv://jon:***@clipcraftr.aquvzqk.mongodb.net/clipcraftr?retryWrites=true&w=majority {"service":"clipcraftr-bot"}
+2025-06-01 20:57:28 [undefined] INFO: Validating environment variables... {"service":"clipcraftr-bot"}
+2025-06-01 20:57:28 [undefined] INFO: Environment variables validated {"service":"clipcraftr-bot"}
+2025-06-01 20:57:28 [undefined] INFO: Connecting to database... {"service":"clipcraftr-bot"}
+2025-06-01 20:57:28 [undefined] INFO: Successfully connected to MongoDB {"service":"clipcraftr-bot"}
+2025-06-01 20:57:28 [undefined] INFO: Database connection established {"service":"clipcraftr-bot"}
+2025-06-01 20:57:28 [undefined] INFO: Loading commands... {"service":"clipcraftr-bot"}
+2025-06-01 20:57:28 [undefined] INFO: Successfully loaded 1 commands from 1 categories {"service":"clipcraftr-bot"}
+2025-06-01 20:57:28 [undefined] INFO: Started refreshing 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 20:57:28 [undefined] WARN: DEV_GUILD_ID not set. Registering global commands in development mode... {"service":"clipcraftr-bot"}
+2025-06-01 20:57:28 [undefined] WARN: Note: Global commands can take up to an hour to update. Set DEV_GUILD_ID for instant updates. {"service":"clipcraftr-bot"}
+2025-06-01 20:57:28 [undefined] INFO: Successfully reloaded 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 20:57:28 [undefined] INFO: Successfully loaded 1 commands {"service":"clipcraftr-bot"}
+2025-06-01 20:57:28 [undefined] INFO: Commands loaded successfully {"service":"clipcraftr-bot"}
+2025-06-01 20:57:28 [undefined] INFO: Registering event handlers... {"service":"clipcraftr-bot"}
+2025-06-01 20:57:28 [undefined] INFO: Event handlers registered {"service":"clipcraftr-bot"}
+2025-06-01 20:57:28 [undefined] INFO: Logging in to Discord... {"service":"clipcraftr-bot"}
+2025-06-01 20:57:28 [undefined] INFO: Registered event: error {"service":"clipcraftr-bot"}
+2025-06-01 20:57:28 [undefined] INFO: Registered event: interactionCreate {"service":"clipcraftr-bot"}
+2025-06-01 20:57:28 [undefined] INFO: Registered one-time event: ready {"service":"clipcraftr-bot"}
+2025-06-01 20:57:28 [undefined] INFO: Successfully registered 3 events {"service":"clipcraftr-bot"}
+2025-06-01 20:57:28 [undefined] INFO: Bot is now running! {"service":"clipcraftr-bot"}
+2025-06-01 20:57:28 [undefined] INFO: Logged in as ClipCraftr (1378466798701117572) {"service":"clipcraftr-bot"}
+2025-06-01 20:57:28 [undefined] INFO: Bot invite link: https://discord.com/oauth2/authorize?client_id=1378466798701117572&scope=bot%20applications.commands {"service":"clipcraftr-bot"}
+2025-06-01 20:57:28 [undefined] INFO: Bot is now online and ready! {"service":"clipcraftr-bot"}
+2025-06-01 20:59:37 [undefined] INFO: Connecting to MongoDB at: mongodb+srv://jon:***@clipcraftr.aquvzqk.mongodb.net/clipcraftr?retryWrites=true&w=majority {"service":"clipcraftr-bot"}
+2025-06-01 20:59:37 [undefined] INFO: Validating environment variables... {"service":"clipcraftr-bot"}
+2025-06-01 20:59:37 [undefined] INFO: Environment variables validated {"service":"clipcraftr-bot"}
+2025-06-01 20:59:37 [undefined] INFO: Connecting to database... {"service":"clipcraftr-bot"}
+2025-06-01 20:59:37 [undefined] INFO: Successfully connected to MongoDB {"service":"clipcraftr-bot"}
+2025-06-01 20:59:37 [undefined] INFO: Database connection established {"service":"clipcraftr-bot"}
+2025-06-01 20:59:37 [undefined] INFO: Loading commands... {"service":"clipcraftr-bot"}
+2025-06-01 20:59:37 [undefined] INFO: Successfully loaded 1 commands from 1 categories {"service":"clipcraftr-bot"}
+2025-06-01 20:59:37 [undefined] INFO: Started refreshing 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 20:59:37 [undefined] WARN: DEV_GUILD_ID not set. Registering global commands in development mode... {"service":"clipcraftr-bot"}
+2025-06-01 20:59:37 [undefined] WARN: Note: Global commands can take up to an hour to update. Set DEV_GUILD_ID for instant updates. {"service":"clipcraftr-bot"}
+2025-06-01 20:59:37 [undefined] INFO: Successfully reloaded 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 20:59:37 [undefined] INFO: Successfully loaded 1 commands {"service":"clipcraftr-bot"}
+2025-06-01 20:59:37 [undefined] INFO: Commands loaded successfully {"service":"clipcraftr-bot"}
+2025-06-01 20:59:37 [undefined] INFO: Registering event handlers... {"service":"clipcraftr-bot"}
+2025-06-01 20:59:37 [undefined] INFO: Event handlers registered {"service":"clipcraftr-bot"}
+2025-06-01 20:59:37 [undefined] INFO: Logging in to Discord... {"service":"clipcraftr-bot"}
+2025-06-01 20:59:37 [undefined] INFO: Registered event: error {"service":"clipcraftr-bot"}
+2025-06-01 20:59:37 [undefined] INFO: Registered event: interactionCreate {"service":"clipcraftr-bot"}
+2025-06-01 20:59:37 [undefined] INFO: Registered one-time event: ready {"service":"clipcraftr-bot"}
+2025-06-01 20:59:37 [undefined] INFO: Successfully registered 3 events {"service":"clipcraftr-bot"}
+2025-06-01 20:59:38 [undefined] INFO: Bot is now running! {"service":"clipcraftr-bot"}
+2025-06-01 20:59:38 [undefined] INFO: Logged in as ClipCraftr (1378466798701117572) {"service":"clipcraftr-bot"}
+2025-06-01 20:59:38 [undefined] INFO: Bot invite link: https://discord.com/oauth2/authorize?client_id=1378466798701117572&scope=bot%20applications.commands {"service":"clipcraftr-bot"}
+2025-06-01 20:59:38 [undefined] INFO: Bot is now online and ready! {"service":"clipcraftr-bot"}
+2025-06-01 21:03:25 [undefined] INFO: Connecting to MongoDB at: mongodb+srv://jon:***@clipcraftr.aquvzqk.mongodb.net/clipcraftr?retryWrites=true&w=majority {"service":"clipcraftr-bot"}
+2025-06-01 21:03:25 [undefined] INFO: Validating environment variables... {"service":"clipcraftr-bot"}
+2025-06-01 21:03:25 [undefined] INFO: Environment variables validated {"service":"clipcraftr-bot"}
+2025-06-01 21:03:25 [undefined] INFO: Connecting to database... {"service":"clipcraftr-bot"}
+2025-06-01 21:03:25 [undefined] INFO: Successfully connected to MongoDB {"service":"clipcraftr-bot"}
+2025-06-01 21:03:25 [undefined] INFO: Database connection established {"service":"clipcraftr-bot"}
+2025-06-01 21:03:25 [undefined] INFO: Loading commands... {"service":"clipcraftr-bot"}
+2025-06-01 21:03:25 [undefined] INFO: Successfully loaded 1 commands from 1 categories {"service":"clipcraftr-bot"}
+2025-06-01 21:03:25 [undefined] INFO: Started refreshing 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 21:03:25 [undefined] WARN: DEV_GUILD_ID not set. Registering global commands in development mode... {"service":"clipcraftr-bot"}
+2025-06-01 21:03:25 [undefined] WARN: Note: Global commands can take up to an hour to update. Set DEV_GUILD_ID for instant updates. {"service":"clipcraftr-bot"}
+2025-06-01 21:03:25 [undefined] INFO: Successfully reloaded 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 21:03:25 [undefined] INFO: Successfully loaded 1 commands {"service":"clipcraftr-bot"}
+2025-06-01 21:03:25 [undefined] INFO: Commands loaded successfully {"service":"clipcraftr-bot"}
+2025-06-01 21:03:25 [undefined] INFO: Registering event handlers... {"service":"clipcraftr-bot"}
+2025-06-01 21:03:25 [undefined] INFO: Event handlers registered {"service":"clipcraftr-bot"}
+2025-06-01 21:03:25 [undefined] INFO: Logging in to Discord... {"service":"clipcraftr-bot"}
+2025-06-01 21:03:25 [undefined] INFO: Registered event: error {"service":"clipcraftr-bot"}
+2025-06-01 21:03:25 [undefined] INFO: Registered event: interactionCreate {"service":"clipcraftr-bot"}
+2025-06-01 21:03:25 [undefined] INFO: Registered one-time event: ready {"service":"clipcraftr-bot"}
+2025-06-01 21:03:25 [undefined] INFO: Successfully registered 3 events {"service":"clipcraftr-bot"}
+2025-06-01 21:03:26 [undefined] INFO: Bot is now running! {"service":"clipcraftr-bot"}
+2025-06-01 21:03:26 [undefined] INFO: Logged in as ClipCraftr (1378466798701117572) {"service":"clipcraftr-bot"}
+2025-06-01 21:03:26 [undefined] INFO: Bot invite link: https://discord.com/oauth2/authorize?client_id=1378466798701117572&scope=bot%20applications.commands {"service":"clipcraftr-bot"}
+2025-06-01 21:03:26 [undefined] INFO: Bot is now online and ready! {"service":"clipcraftr-bot"}
+2025-06-01 21:08:48 [undefined] INFO: Connecting to MongoDB at: mongodb+srv://jon:***@clipcraftr.aquvzqk.mongodb.net/clipcraftr?retryWrites=true&w=majority {"service":"clipcraftr-bot"}
+2025-06-01 21:08:48 [undefined] INFO: Validating environment variables... {"service":"clipcraftr-bot"}
+2025-06-01 21:08:48 [undefined] INFO: Environment variables validated {"service":"clipcraftr-bot"}
+2025-06-01 21:08:48 [undefined] INFO: Connecting to database... {"service":"clipcraftr-bot"}
+2025-06-01 21:08:48 [undefined] INFO: Successfully connected to MongoDB {"service":"clipcraftr-bot"}
+2025-06-01 21:08:48 [undefined] INFO: Database connection established {"service":"clipcraftr-bot"}
+2025-06-01 21:08:48 [undefined] INFO: Loading commands... {"service":"clipcraftr-bot"}
+2025-06-01 21:08:48 [undefined] INFO: Successfully loaded 1 commands from 1 categories {"service":"clipcraftr-bot"}
+2025-06-01 21:08:48 [undefined] INFO: Started refreshing 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 21:08:48 [undefined] WARN: DEV_GUILD_ID not set. Registering global commands in development mode... {"service":"clipcraftr-bot"}
+2025-06-01 21:08:48 [undefined] WARN: Note: Global commands can take up to an hour to update. Set DEV_GUILD_ID for instant updates. {"service":"clipcraftr-bot"}
+2025-06-01 21:08:48 [undefined] INFO: Successfully reloaded 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 21:08:48 [undefined] INFO: Successfully loaded 1 commands {"service":"clipcraftr-bot"}
+2025-06-01 21:08:48 [undefined] INFO: Commands loaded successfully {"service":"clipcraftr-bot"}
+2025-06-01 21:08:48 [undefined] INFO: Registering event handlers... {"service":"clipcraftr-bot"}
+2025-06-01 21:08:48 [undefined] INFO: Event handlers registered {"service":"clipcraftr-bot"}
+2025-06-01 21:08:48 [undefined] INFO: Logging in to Discord... {"service":"clipcraftr-bot"}
+2025-06-01 21:08:48 [undefined] INFO: Registered event: error {"service":"clipcraftr-bot"}
+2025-06-01 21:08:48 [undefined] INFO: Registered event: interactionCreate {"service":"clipcraftr-bot"}
+2025-06-01 21:08:48 [undefined] INFO: Registered one-time event: ready {"service":"clipcraftr-bot"}
+2025-06-01 21:08:48 [undefined] INFO: Successfully registered 3 events {"service":"clipcraftr-bot"}
+2025-06-01 21:08:48 [undefined] INFO: Bot is now running! {"service":"clipcraftr-bot"}
+2025-06-01 21:08:48 [undefined] INFO: Logged in as ClipCraftr (1378466798701117572) {"service":"clipcraftr-bot"}
+2025-06-01 21:08:48 [undefined] INFO: Bot invite link: https://discord.com/oauth2/authorize?client_id=1378466798701117572&scope=bot%20applications.commands {"service":"clipcraftr-bot"}
+2025-06-01 21:08:48 [undefined] INFO: Bot is now online and ready! {"service":"clipcraftr-bot"}
+2025-06-01 21:14:19 [undefined] INFO: Connecting to MongoDB at: mongodb+srv://jon:***@clipcraftr.aquvzqk.mongodb.net/clipcraftr?retryWrites=true&w=majority {"service":"clipcraftr-bot"}
+2025-06-01 21:14:19 [undefined] INFO: Validating environment variables... {"service":"clipcraftr-bot"}
+2025-06-01 21:14:19 [undefined] INFO: Environment variables validated {"service":"clipcraftr-bot"}
+2025-06-01 21:14:19 [undefined] INFO: Connecting to database... {"service":"clipcraftr-bot"}
+2025-06-01 21:14:20 [undefined] INFO: Successfully connected to MongoDB {"service":"clipcraftr-bot"}
+2025-06-01 21:14:20 [undefined] INFO: Database connection established {"service":"clipcraftr-bot"}
+2025-06-01 21:14:20 [undefined] INFO: Loading commands... {"service":"clipcraftr-bot"}
+2025-06-01 21:14:20 [undefined] INFO: Successfully loaded 1 commands from 1 categories {"service":"clipcraftr-bot"}
+2025-06-01 21:14:20 [undefined] INFO: Started refreshing 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 21:14:20 [undefined] WARN: DEV_GUILD_ID not set. Registering global commands in development mode... {"service":"clipcraftr-bot"}
+2025-06-01 21:14:20 [undefined] WARN: Note: Global commands can take up to an hour to update. Set DEV_GUILD_ID for instant updates. {"service":"clipcraftr-bot"}
+2025-06-01 21:14:20 [undefined] INFO: Successfully reloaded 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 21:14:20 [undefined] INFO: Successfully loaded 1 commands {"service":"clipcraftr-bot"}
+2025-06-01 21:14:20 [undefined] INFO: Commands loaded successfully {"service":"clipcraftr-bot"}
+2025-06-01 21:14:20 [undefined] INFO: Registering event handlers... {"service":"clipcraftr-bot"}
+2025-06-01 21:14:20 [undefined] INFO: Event handlers registered {"service":"clipcraftr-bot"}
+2025-06-01 21:14:20 [undefined] INFO: Logging in to Discord... {"service":"clipcraftr-bot"}
+2025-06-01 21:14:20 [undefined] INFO: Registered event: error {"service":"clipcraftr-bot"}
+2025-06-01 21:14:20 [undefined] INFO: Registered event: interactionCreate {"service":"clipcraftr-bot"}
+2025-06-01 21:14:20 [undefined] INFO: Registered one-time event: ready {"service":"clipcraftr-bot"}
+2025-06-01 21:14:20 [undefined] INFO: Successfully registered 3 events {"service":"clipcraftr-bot"}
+2025-06-01 21:14:20 [undefined] INFO: Bot is now running! {"service":"clipcraftr-bot"}
+2025-06-01 21:14:20 [undefined] INFO: Logged in as ClipCraftr (1378466798701117572) {"service":"clipcraftr-bot"}
+2025-06-01 21:14:20 [undefined] INFO: Bot invite link: https://discord.com/oauth2/authorize?client_id=1378466798701117572&scope=bot%20applications.commands {"service":"clipcraftr-bot"}
+2025-06-01 21:14:20 [undefined] INFO: Bot is now online and ready! {"service":"clipcraftr-bot"}
+2025-06-01 21:32:04 [undefined] INFO: Connecting to MongoDB at: mongodb+srv://jon:***@clipcraftr.aquvzqk.mongodb.net/clipcraftr?retryWrites=true&w=majority {"service":"clipcraftr-bot"}
+2025-06-01 21:32:04 [undefined] INFO: Validating environment variables... {"service":"clipcraftr-bot"}
+2025-06-01 21:32:04 [undefined] INFO: Environment variables validated {"service":"clipcraftr-bot"}
+2025-06-01 21:32:04 [undefined] INFO: Connecting to database... {"service":"clipcraftr-bot"}
+2025-06-01 21:32:05 [undefined] INFO: Successfully connected to MongoDB {"service":"clipcraftr-bot"}
+2025-06-01 21:32:05 [undefined] INFO: Database connection established {"service":"clipcraftr-bot"}
+2025-06-01 21:32:05 [undefined] INFO: Loading commands... {"service":"clipcraftr-bot"}
+2025-06-01 21:32:05 [undefined] INFO: Successfully loaded 1 commands from 1 categories {"service":"clipcraftr-bot"}
+2025-06-01 21:32:05 [undefined] INFO: Started refreshing 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 21:32:05 [undefined] WARN: DEV_GUILD_ID not set. Registering global commands in development mode... {"service":"clipcraftr-bot"}
+2025-06-01 21:32:05 [undefined] WARN: Note: Global commands can take up to an hour to update. Set DEV_GUILD_ID for instant updates. {"service":"clipcraftr-bot"}
+2025-06-01 21:32:05 [undefined] INFO: Successfully reloaded 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 21:32:05 [undefined] INFO: Successfully loaded 1 commands {"service":"clipcraftr-bot"}
+2025-06-01 21:32:05 [undefined] INFO: Commands loaded successfully {"service":"clipcraftr-bot"}
+2025-06-01 21:32:05 [undefined] INFO: Registering event handlers... {"service":"clipcraftr-bot"}
+2025-06-01 21:32:05 [undefined] INFO: Event handlers registered {"service":"clipcraftr-bot"}
+2025-06-01 21:32:05 [undefined] INFO: Logging in to Discord... {"service":"clipcraftr-bot"}
+2025-06-01 21:32:05 [undefined] INFO: Registered event: error {"service":"clipcraftr-bot"}
+2025-06-01 21:32:05 [undefined] INFO: Registered event: interactionCreate {"service":"clipcraftr-bot"}
+2025-06-01 21:32:05 [undefined] INFO: Registered one-time event: ready {"service":"clipcraftr-bot"}
+2025-06-01 21:32:05 [undefined] INFO: Successfully registered 3 events {"service":"clipcraftr-bot"}
+2025-06-01 21:32:05 [undefined] INFO: Bot is now running! {"service":"clipcraftr-bot"}
+2025-06-01 21:32:05 [undefined] INFO: Logged in as ClipCraftr (1378466798701117572) {"service":"clipcraftr-bot"}
+2025-06-01 21:32:05 [undefined] INFO: Bot invite link: https://discord.com/oauth2/authorize?client_id=1378466798701117572&scope=bot%20applications.commands {"service":"clipcraftr-bot"}
+2025-06-01 21:32:05 [undefined] INFO: Bot is now online and ready! {"service":"clipcraftr-bot"}
+2025-06-01 21:37:33 [undefined] INFO: Connecting to MongoDB at: mongodb+srv://jon:***@clipcraftr.aquvzqk.mongodb.net/clipcraftr?retryWrites=true&w=majority {"service":"clipcraftr-bot"}
+2025-06-01 21:37:33 [undefined] INFO: Validating environment variables... {"service":"clipcraftr-bot"}
+2025-06-01 21:37:33 [undefined] INFO: Environment variables validated {"service":"clipcraftr-bot"}
+2025-06-01 21:37:33 [undefined] INFO: Connecting to database... {"service":"clipcraftr-bot"}
+2025-06-01 21:37:33 [undefined] INFO: Successfully connected to MongoDB {"service":"clipcraftr-bot"}
+2025-06-01 21:37:33 [undefined] INFO: Database connection established {"service":"clipcraftr-bot"}
+2025-06-01 21:37:33 [undefined] INFO: Loading commands... {"service":"clipcraftr-bot"}
+2025-06-01 21:37:33 [undefined] INFO: Successfully loaded 1 commands from 1 categories {"service":"clipcraftr-bot"}
+2025-06-01 21:37:33 [undefined] INFO: Started refreshing 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 21:37:33 [undefined] WARN: DEV_GUILD_ID not set. Registering global commands in development mode... {"service":"clipcraftr-bot"}
+2025-06-01 21:37:33 [undefined] WARN: Note: Global commands can take up to an hour to update. Set DEV_GUILD_ID for instant updates. {"service":"clipcraftr-bot"}
+2025-06-01 21:37:33 [undefined] INFO: Successfully reloaded 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 21:37:33 [undefined] INFO: Successfully loaded 1 commands {"service":"clipcraftr-bot"}
+2025-06-01 21:37:33 [undefined] INFO: Commands loaded successfully {"service":"clipcraftr-bot"}
+2025-06-01 21:37:33 [undefined] INFO: Registering event handlers... {"service":"clipcraftr-bot"}
+2025-06-01 21:37:33 [undefined] INFO: Event handlers registered {"service":"clipcraftr-bot"}
+2025-06-01 21:37:33 [undefined] INFO: Logging in to Discord... {"service":"clipcraftr-bot"}
+2025-06-01 21:37:33 [undefined] INFO: Registered event: error {"service":"clipcraftr-bot"}
+2025-06-01 21:37:33 [undefined] INFO: Registered event: interactionCreate {"service":"clipcraftr-bot"}
+2025-06-01 21:37:33 [undefined] INFO: Registered one-time event: ready {"service":"clipcraftr-bot"}
+2025-06-01 21:37:33 [undefined] INFO: Successfully registered 3 events {"service":"clipcraftr-bot"}
+2025-06-01 21:37:34 [undefined] INFO: Bot is now running! {"service":"clipcraftr-bot"}
+2025-06-01 21:37:34 [undefined] INFO: Logged in as ClipCraftr (1378466798701117572) {"service":"clipcraftr-bot"}
+2025-06-01 21:37:34 [undefined] INFO: Bot invite link: https://discord.com/oauth2/authorize?client_id=1378466798701117572&scope=bot%20applications.commands {"service":"clipcraftr-bot"}
+2025-06-01 21:37:34 [undefined] INFO: Bot is now online and ready! {"service":"clipcraftr-bot"}
+2025-06-01 21:39:22 [undefined] INFO: Validating environment variables... {"service":"clipcraftr-bot"}
+2025-06-01 21:39:22 [undefined] INFO: Environment variables validated {"service":"clipcraftr-bot"}
+2025-06-01 21:39:22 [undefined] INFO: Connecting to database... {"service":"clipcraftr-bot"}
+2025-06-01 21:39:22 [undefined] INFO: Connecting to MongoDB at: mongodb+srv://jon:***@clipcraftr.aquvzqk.mongodb.net/clipcraftr?retryWrites=true&w=majority {"service":"clipcraftr-bot"}
+2025-06-01 21:39:22 [undefined] INFO: Successfully connected to MongoDB {"service":"clipcraftr-bot"}
+2025-06-01 21:39:22 [undefined] INFO: Database connection established {"service":"clipcraftr-bot"}
+2025-06-01 21:39:22 [undefined] INFO: Loading commands... {"service":"clipcraftr-bot"}
+2025-06-01 21:39:22 [undefined] INFO: Successfully loaded 1 commands from 1 categories {"service":"clipcraftr-bot"}
+2025-06-01 21:39:22 [undefined] INFO: Started refreshing 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 21:39:22 [undefined] WARN: DEV_GUILD_ID not set. Registering global commands in development mode... {"service":"clipcraftr-bot"}
+2025-06-01 21:39:22 [undefined] WARN: Note: Global commands can take up to an hour to update. Set DEV_GUILD_ID for instant updates. {"service":"clipcraftr-bot"}
+2025-06-01 21:39:23 [undefined] INFO: Successfully reloaded 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 21:39:23 [undefined] INFO: Successfully loaded 1 commands {"service":"clipcraftr-bot"}
+2025-06-01 21:39:23 [undefined] INFO: Commands loaded successfully {"service":"clipcraftr-bot"}
+2025-06-01 21:39:23 [undefined] INFO: Registering event handlers... {"service":"clipcraftr-bot"}
+2025-06-01 21:39:23 [undefined] INFO: Event handlers registered {"service":"clipcraftr-bot"}
+2025-06-01 21:39:23 [undefined] INFO: Logging in to Discord... {"service":"clipcraftr-bot"}
+2025-06-01 21:39:23 [undefined] INFO: Registered event: error {"service":"clipcraftr-bot"}
+2025-06-01 21:39:23 [undefined] INFO: Registered event: interactionCreate {"service":"clipcraftr-bot"}
+2025-06-01 21:39:23 [undefined] INFO: Registered one-time event: ready {"service":"clipcraftr-bot"}
+2025-06-01 21:39:23 [undefined] INFO: Successfully registered 3 events {"service":"clipcraftr-bot"}
+2025-06-01 21:39:23 [undefined] INFO: Bot is now running! {"service":"clipcraftr-bot"}
+2025-06-01 21:39:23 [undefined] INFO: Logged in as ClipCraftr (1378466798701117572) {"service":"clipcraftr-bot"}
+2025-06-01 21:39:23 [undefined] INFO: Bot invite link: https://discord.com/oauth2/authorize?client_id=1378466798701117572&scope=bot%20applications.commands {"service":"clipcraftr-bot"}
+2025-06-01 21:39:23 [undefined] INFO: Bot is now online and ready! {"service":"clipcraftr-bot"}
+2025-06-01 21:42:52 [undefined] INFO: Connecting to MongoDB at: mongodb+srv://jon:***@clipcraftr.aquvzqk.mongodb.net/clipcraftr?retryWrites=true&w=majority {"service":"clipcraftr-bot"}
+2025-06-01 21:42:52 [undefined] INFO: Validating environment variables... {"service":"clipcraftr-bot"}
+2025-06-01 21:42:52 [undefined] INFO: Environment variables validated {"service":"clipcraftr-bot"}
+2025-06-01 21:42:52 [undefined] INFO: Connecting to database... {"service":"clipcraftr-bot"}
+2025-06-01 21:42:52 [undefined] INFO: Successfully connected to MongoDB {"service":"clipcraftr-bot"}
+2025-06-01 21:42:52 [undefined] INFO: Database connection established {"service":"clipcraftr-bot"}
+2025-06-01 21:42:52 [undefined] INFO: Loading commands... {"service":"clipcraftr-bot"}
+2025-06-01 21:42:52 [undefined] INFO: Successfully loaded 1 commands from 1 categories {"service":"clipcraftr-bot"}
+2025-06-01 21:42:52 [undefined] INFO: Started refreshing 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 21:42:52 [undefined] WARN: DEV_GUILD_ID not set. Registering global commands in development mode... {"service":"clipcraftr-bot"}
+2025-06-01 21:42:52 [undefined] WARN: Note: Global commands can take up to an hour to update. Set DEV_GUILD_ID for instant updates. {"service":"clipcraftr-bot"}
+2025-06-01 21:42:52 [undefined] INFO: Successfully reloaded 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 21:42:52 [undefined] INFO: Successfully loaded 1 commands {"service":"clipcraftr-bot"}
+2025-06-01 21:42:52 [undefined] INFO: Commands loaded successfully {"service":"clipcraftr-bot"}
+2025-06-01 21:42:52 [undefined] INFO: Registering event handlers... {"service":"clipcraftr-bot"}
+2025-06-01 21:42:52 [undefined] INFO: Event handlers registered {"service":"clipcraftr-bot"}
+2025-06-01 21:42:52 [undefined] INFO: Logging in to Discord... {"service":"clipcraftr-bot"}
+2025-06-01 21:42:52 [undefined] INFO: Registered event: error {"service":"clipcraftr-bot"}
+2025-06-01 21:42:52 [undefined] INFO: Registered event: interactionCreate {"service":"clipcraftr-bot"}
+2025-06-01 21:42:52 [undefined] INFO: Registered one-time event: ready {"service":"clipcraftr-bot"}
+2025-06-01 21:42:52 [undefined] INFO: Successfully registered 3 events {"service":"clipcraftr-bot"}
+2025-06-01 21:42:53 [undefined] INFO: Bot is now running! {"service":"clipcraftr-bot"}
+2025-06-01 21:42:53 [undefined] INFO: Logged in as ClipCraftr (1378466798701117572) {"service":"clipcraftr-bot"}
+2025-06-01 21:42:53 [undefined] INFO: Bot invite link: https://discord.com/oauth2/authorize?client_id=1378466798701117572&scope=bot%20applications.commands {"service":"clipcraftr-bot"}
+2025-06-01 21:42:53 [undefined] INFO: Bot is now online and ready! {"service":"clipcraftr-bot"}
+2025-06-01 22:46:53 [undefined] INFO: Connecting to MongoDB at: mongodb+srv://jon:***@clipcraftr.aquvzqk.mongodb.net/clipcraftr?retryWrites=true&w=majority {"service":"clipcraftr-bot"}
+2025-06-01 22:46:53 [undefined] INFO: Validating environment variables... {"service":"clipcraftr-bot"}
+2025-06-01 22:46:53 [undefined] INFO: Environment variables validated {"service":"clipcraftr-bot"}
+2025-06-01 22:46:53 [undefined] INFO: Connecting to database... {"service":"clipcraftr-bot"}
+2025-06-01 22:46:53 [undefined] INFO: Successfully connected to MongoDB {"service":"clipcraftr-bot"}
+2025-06-01 22:46:53 [undefined] INFO: Database connection established {"service":"clipcraftr-bot"}
+2025-06-01 22:46:53 [undefined] INFO: Loading commands... {"service":"clipcraftr-bot"}
+2025-06-01 22:46:53 [undefined] INFO: Successfully loaded 1 commands from 1 categories {"service":"clipcraftr-bot"}
+2025-06-01 22:46:53 [undefined] INFO: Started refreshing 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 22:46:53 [undefined] WARN: DEV_GUILD_ID not set. Registering global commands in development mode... {"service":"clipcraftr-bot"}
+2025-06-01 22:46:53 [undefined] WARN: Note: Global commands can take up to an hour to update. Set DEV_GUILD_ID for instant updates. {"service":"clipcraftr-bot"}
+2025-06-01 22:46:53 [undefined] INFO: Successfully reloaded 1 application (/) commands. {"service":"clipcraftr-bot"}
+2025-06-01 22:46:53 [undefined] INFO: Successfully loaded 1 commands {"service":"clipcraftr-bot"}
+2025-06-01 22:46:53 [undefined] INFO: Commands loaded successfully {"service":"clipcraftr-bot"}
+2025-06-01 22:46:53 [undefined] INFO: Registering event handlers... {"service":"clipcraftr-bot"}
+2025-06-01 22:46:53 [undefined] INFO: Event handlers registered {"service":"clipcraftr-bot"}
+2025-06-01 22:46:53 [undefined] INFO: Logging in to Discord... {"service":"clipcraftr-bot"}
+2025-06-01 22:46:53 [undefined] INFO: Registered event: error {"service":"clipcraftr-bot"}
+2025-06-01 22:46:53 [undefined] INFO: Registered event: interactionCreate {"service":"clipcraftr-bot"}
+2025-06-01 22:46:53 [undefined] INFO: Registered one-time event: ready {"service":"clipcraftr-bot"}
+2025-06-01 22:46:53 [undefined] INFO: Successfully registered 3 events {"service":"clipcraftr-bot"}
+2025-06-01 22:46:53 [undefined] INFO: Bot is now running! {"service":"clipcraftr-bot"}
+2025-06-01 22:46:54 [undefined] INFO: Logged in as ClipCraftr (1378466798701117572) {"service":"clipcraftr-bot"}
+2025-06-01 22:46:54 [undefined] INFO: Bot invite link: https://discord.com/oauth2/authorize?client_id=1378466798701117572&scope=bot%20applications.commands {"service":"clipcraftr-bot"}
+2025-06-01 22:46:54 [undefined] INFO: Bot is now online and ready! {"service":"clipcraftr-bot"}

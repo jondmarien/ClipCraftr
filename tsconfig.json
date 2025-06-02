@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "target": "ES2022",
+    "module": "commonjs",
+    "lib": ["ES2022"],
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "incremental": true,
+    "composite": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "@clipcraftr/shared/*": ["packages/shared/src/*"]
+    }
+  },
+  "exclude": ["node_modules", "**/dist", "**/node_modules"],
+  "include": ["**/*.ts", "**/*.tsx", "packages/dashboard/app/api/auth/session/session.ts.bak"]
+}
