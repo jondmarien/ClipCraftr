@@ -5,7 +5,7 @@ export default {
   testMatch: ['**/__tests__/**/*.test.ts'],
   moduleFileExtensions: ['ts', 'js', 'json', 'node'],
   transform: {
-    '^.+\\.tsx?$': 'ts-jest',
+    '^.+\\.(js|jsx|ts|tsx)$': ['@swc/jest'],
   },
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/src/$1',
