@@ -27,7 +27,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "app/api/auth/session/session.ts.bak"  ],
   "exclude": [
     "node_modules"
   ]

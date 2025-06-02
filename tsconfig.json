@@ -22,5 +22,5 @@
     }
   },
   "exclude": ["node_modules", "**/dist", "**/node_modules"],
-  "include": ["**/*.ts", "**/*.tsx"]
+  "include": ["**/*.ts", "**/*.tsx", "packages/dashboard/app/api/auth/session/session.ts.bak"]
 }

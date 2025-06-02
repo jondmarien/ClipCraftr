@@ -17,9 +17,15 @@ const nextConfig = {
   },
   async rewrites() {
     return [
+      // Let Next.js handle NextAuth routes directly
+      {
+        source: '/api/auth/:path*',
+        destination: '/api/auth/:path*',
+      },
+      // Proxy all other /api routes to Fastify
       {
         source: '/api/:path*',
-        destination: `${process.env.API_BASE_URL || 'http://localhost:4000'}/:path*`,
+        destination: `${process.env.API_BASE_URL || 'http://localhost:4000'}/api/:path*`,
       },
     ];
   },
