@@ -65,10 +65,6 @@ export async function middleware(req: NextRequest) {
   // Check for session token for protected routes
   if (!sessionToken) {
     let intendedPath = pathname !== '/' ? pathname + search : '';
-    // Prevent /login as callbackUrl
-    if (intendedPath === '/login' || intendedPath.startsWith('/login?')) {
-      intendedPath = '/dashboard';
-    }
     const url = new URL('/api/auth/signin', req.url);
     if (intendedPath) {
       url.searchParams.set('callbackUrl', intendedPath);

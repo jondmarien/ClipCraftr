@@ -1,4 +1,4 @@
-import type { DefaultSession, NextAuthConfig } from 'next-auth';
+import type { DefaultSession, NextAuthOptions } from 'next-auth';
 import Discord from 'next-auth/providers/discord';
 import { MongoDBAdapter } from '@auth/mongodb-adapter';
 import { MongoClient } from 'mongodb';
@@ -40,13 +40,11 @@ if (!process.env.NEXTAUTH_SECRET) {
 const client = new MongoClient(process.env.MONGODB_URI);
 const clientPromise = client.connect();
 
-export const authOptions: NextAuthConfig = {
-  // Ensure we're using the correct base URL
-  basePath: '/api/auth',
+export const authOptions: NextAuthOptions = {
+
   // Use the secure cookie flag in production
   useSecureCookies: process.env.NODE_ENV === 'production',
-  // Trust the host header (needed for Vercel and other platforms)
-  trustHost: true,
+  // TODO: To customize the NextAuth endpoint path for production, move this handler to the desired location in the app directory (e.g., app/api/custom-auth/[...nextauth]/route.ts).
   // Session configuration
   session: {
     strategy: 'jwt',
@@ -73,7 +71,7 @@ export const authOptions: NextAuthConfig = {
     databaseName: process.env.MONGODB_DB || 'clipcraftr',
   }),
   callbacks: {
-    async jwt({ token, user, account }) {
+    async jwt({ token, user, account }: any) {
       // Initial sign in
       if (account && user) {
         // Return access_token and refresh_token in the JWT
@@ -99,22 +97,22 @@ export const authOptions: NextAuthConfig = {
       // For now, just return the current token
       return token;
     },
-    async session({ session, token }) {
+    async session({ session, token }: any) {
       // Ensure the session has a user object
       if (session.user) {
         // Add the user ID to the session
         if (token.sub) {
-          session.user.id = token.sub;
+          session.user.id = token.sub || session.user?.sub;
         } else if (token.id) {
-          session.user.id = token.id as string;
+          session.user.id = token.id || session.user?.id;
         }
 
         // Add the access token and other token data to the session
         if (token.accessToken) {
-          session.accessToken = token.accessToken as string;
+          session.accessToken = token.accessToken || session.accessToken;
         }
         if (token.refreshToken) {
-          session.refreshToken = token.refreshToken as string;
+          session.refreshToken = token.refreshToken || session.refreshToken;
         }
 
         // Set the session expiry from the token if it exists
@@ -126,7 +124,7 @@ export const authOptions: NextAuthConfig = {
 
       return session;
     },
-    redirect: async ({ url, baseUrl }) => {
+    redirect: async ({ url, baseUrl }: any) => {
       // DEBUG: Log all incoming redirect callback URLs
       if (process.env.NODE_ENV === 'development') {
         // eslint-disable-next-line no-console
@@ -140,10 +138,8 @@ export const authOptions: NextAuthConfig = {
         path = url;
       }
       if (
-        path === '/login' ||
         path === '/' ||
-        path === '/api/auth/signin' ||
-        path === '/api/auth/login'
+        path === '/api/auth/signin'
       ) {
         if (process.env.NODE_ENV === 'development') {
           // eslint-disable-next-line no-console
@@ -165,10 +161,10 @@ export const authOptions: NextAuthConfig = {
   },
 
   logger: {
-    error: (error: Error) => {
+    error: (code: string, metadata: Error | { [key: string]: unknown; error: Error; }) => {
       if (process.env.NODE_ENV === 'development') {
         // eslint-disable-next-line no-console
-        console.error('Auth error:', error);
+        console.error('Auth error:', code, metadata);
       }
     },
     warn: (code: string) => {

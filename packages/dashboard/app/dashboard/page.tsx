@@ -1,24 +1,15 @@
-'use client';
+import { getServerSession } from "next-auth";
+import { authOptions } from "../api/auth/auth-options";
+import { redirect } from "next/navigation";
+import { Session } from "next-auth";
+import SignOutButton from "../components/SignOutButton";
 
-import { signOut, useSession } from 'next-auth/react';
-import { redirect } from 'next/navigation';
-import { useEffect } from 'react';
+export default async function Dashboard() {
+  const session = await getServerSession(authOptions);
+  const typedSession = session as Session | null;
 
-export default function Dashboard() {
-  const { data: session, status } = useSession();
-
-  useEffect(() => {
-    if (status === 'unauthenticated') {
-      redirect('/api/auth/signin');
-    }
-  }, [status]);
-
-  if (status === 'loading' || !session?.user) {
-    return (
-      <div className="flex items-center justify-center min-h-screen">
-        <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-500"></div>
-      </div>
-    );
+  if (!session) {
+    redirect("/api/auth/signin");
   }
 
   return (
@@ -26,12 +17,7 @@ export default function Dashboard() {
       <header className="bg-white dark:bg-gray-800 shadow">
         <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 flex justify-between items-center">
           <h1 className="text-2xl font-bold text-gray-900 dark:text-white">Dashboard</h1>
-          <button
-            onClick={() => signOut({ callbackUrl: '/' })}
-            className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
-          >
-            Sign out
-          </button>
+          <SignOutButton />
         </div>
       </header>
       <main className="min-h-[calc(100vh-4rem)]">
@@ -39,7 +25,9 @@ export default function Dashboard() {
           <div className="px-4 py-6 sm:px-0">
             <div className="border-4 border-dashed border-gray-200 dark:border-gray-700 rounded-lg p-6 bg-white dark:bg-gray-800">
               <h2 className="text-lg font-medium text-gray-900 dark:text-white mb-4">
-                Welcome, {session.user.name || 'User'}!
+                <span className="text-green-600 font-bold">Welcome, </span>
+                <span className="text-orange-500 italic">{typedSession?.user?.name || 'User'}</span>
+                <span className="text-orange-500">!</span>
               </h2>
               <p className="text-gray-600 dark:text-gray-300">
                 You are now logged in with Discord.
