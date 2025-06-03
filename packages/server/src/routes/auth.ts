@@ -1,5 +1,6 @@
 import { FastifyInstance } from 'fastify';
 import { request } from 'undici';
+import auditLogger from '../utils/auditLogger';
 
 export const registerAuthRoutes = async (app: FastifyInstance): Promise<void> => {
   // Only proxy /auth/* in production to avoid dev proxy loops and 404s
@@ -35,12 +36,26 @@ export const registerAuthRoutes = async (app: FastifyInstance): Promise<void> =>
   }
 
   // Login
-  app.post('/api/auth/login', async (_request, _reply) => {
+  app.post('/api/auth/login', async (request, _reply) => {
+    const user = request.user?.id || 'anonymous';
+    auditLogger.info('User login', {
+      user,
+      action: 'login',
+      collection: 'users',
+      timestamp: new Date(),
+    });
     return { message: 'Login successful' };
   });
 
   // Logout
-  app.post('/api/auth/logout', async (_request, _reply) => {
+  app.post('/api/auth/logout', async (request, _reply) => {
+    const user = request.user?.id || 'anonymous';
+    auditLogger.info('User logout', {
+      user,
+      action: 'logout',
+      collection: 'users',
+      timestamp: new Date(),
+    });
     return { message: 'Logout successful' };
   });
 

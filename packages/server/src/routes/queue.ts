@@ -1,5 +1,6 @@
 import { FastifyInstance } from 'fastify';
 import { emitQueueUpdate } from '../websocket';
+import auditLogger from '../utils/auditLogger';
 
 // Simple in-memory queue and mission status (replace with DB in production)
 let queue: { id: string; payload: any }[] = [];
@@ -17,6 +18,14 @@ export const registerQueueRoutes = async (app: FastifyInstance): Promise<void> =
     const id = Math.random().toString(36).slice(2, 10);
     const item = { id, payload };
     queue.push(item);
+    const user = req.user?.id || 'anonymous';
+    auditLogger.info('Queue item added', {
+      user,
+      action: 'add',
+      collection: 'queue',
+      details: item,
+      timestamp: new Date(),
+    });
     emitQueueUpdate({ type: 'added', item, queue });
     return { message: 'Added to queue', item };
   });
@@ -25,6 +34,14 @@ export const registerQueueRoutes = async (app: FastifyInstance): Promise<void> =
   app.delete('/api/queue/:id', async (req, _reply) => {
     const { id } = req.params as { id: string };
     queue = queue.filter((item) => item.id !== id);
+    const user = req.user?.id || 'anonymous';
+    auditLogger.info('Queue item removed', {
+      user,
+      action: 'remove',
+      collection: 'queue',
+      documentId: id,
+      timestamp: new Date(),
+    });
     emitQueueUpdate({ type: 'removed', id, queue });
     return { message: 'Removed from queue', id };
   });

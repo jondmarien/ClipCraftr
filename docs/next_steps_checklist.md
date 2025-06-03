@@ -90,7 +90,7 @@ This document provides a comprehensive, actionable checklist for completing the 
 
 ### Persistence & Recovery
 
-- [ ] Ensure all persistent data (queue, clips, montages, configs) is stored in MongoDB (not just memory).
+- [x] Ensure all persistent data (queue, clips, montages, configs) is stored in MongoDB (not just memory).
 - [ ] Add job recovery on bot/server restart.
 
 ### Testing & QA
@@ -111,7 +111,7 @@ This document provides a comprehensive, actionable checklist for completing the 
 
 - [ ] Prepare production environment (VPS, Vercel, Railway, etc.).
 - [ ] Deploy bot, server, and dashboard.
-- [ ] Set up logging/monitoring (optional but recommended).
+- [x] Set up logging/monitoring (optional but recommended).
 - [ ] Create support/test Discord server (optional).
 
 ---

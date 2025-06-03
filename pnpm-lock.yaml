@@ -361,6 +361,12 @@ importers:
       supertest:
         specifier: ^7.1.1
         version: 7.1.1
+      winston:
+        specifier: ^3.17.0
+        version: 3.17.0
+      winston-mongodb:
+        specifier: ^6.0.0
+        version: 6.0.0(winston@3.17.0)
       zod:
         specifier: ^3.22.4
         version: 3.25.46
@@ -5665,6 +5671,12 @@ packages:
     engines: {node: '>=8'}
     peerDependencies:
       winston: ^3
+
+  winston-mongodb@6.0.0:
+    resolution: {integrity: sha512-/H7hrGjOVv6rlxJX/BzIrh7LscS9TetAidqx6A9JWJIDSafhSXfuJGkgUJftWVOX0h5hnUoOTqps2XffMhWFcw==}
+    engines: {node: '>=14.20.1'}
+    peerDependencies:
+      winston: ^3.0.0
 
   winston-transport@4.9.0:
     resolution: {integrity: sha512-8drMJ4rkgaPo1Me4zD/3WLfI/zPdA9o2IipKODunnGDcuqbHwjsbB79ylv04LCGGzU0xQ6vTznOMpQGaLhhm6A==}
@@ -12248,6 +12260,20 @@ snapshots:
       triple-beam: 1.4.1
       winston: 3.17.0
       winston-transport: 4.9.0
+
+  winston-mongodb@6.0.0(winston@3.17.0):
+    dependencies:
+      mongodb: 6.16.0
+      winston: 3.17.0
+      winston-transport: 4.9.0
+    transitivePeerDependencies:
+      - '@aws-sdk/credential-providers'
+      - '@mongodb-js/zstd'
+      - gcp-metadata
+      - kerberos
+      - mongodb-client-encryption
+      - snappy
+      - socks
 
   winston-transport@4.9.0:
     dependencies:

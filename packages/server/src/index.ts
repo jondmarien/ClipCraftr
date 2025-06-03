@@ -76,7 +76,7 @@ const registerPlugins = async () => {
           version: '1.0.0',
         },
         externalDocs: {
-          url: 'https://github.com/yourusername/clipcraftr',
+          url: 'https://github.com/jondmarien/clipcraftr',
           description: 'GitHub repository',
         },
         servers: [
