@@ -48,17 +48,17 @@ This document provides a comprehensive, actionable checklist for completing the 
 
 ### WebSocket Integration
 
-- [ ] Ensure WebSocket events are emitted for queue/status/montage updates.
-- [ ] Confirm dashboard can subscribe to real-time events from server.
+- [x] Ensure WebSocket events are emitted for queue/status/montage updates.
+- [x] Confirm dashboard can subscribe to real-time events from server.
 
 ### Bot Integration
 
-- [ ] Confirm bot communicates with server for queue, clip, and montage management (via REST or WebSocket as planned).
-- [ ] Add/finalize any missing endpoints needed by dashboard or bot.
+- [x] Confirm bot communicates with server for queue, clip, and montage management (via REST or WebSocket as planned).
+- [x] Add/finalize any missing endpoints needed by dashboard or bot.
 
 ### Testing & Robustness
 
-- [ ] Add/finalize tests for API endpoints and WebSocket events.
+- [x] Add/finalize tests for API endpoints and WebSocket events.
 
 **Note:** The server package is mostly complete for MVP, but ensure integration with the bot and dashboard is robust and all real-time flows are working.
 

@@ -28,6 +28,14 @@ const app = fastify({
   },
 });
 
+const setupApp = async () => {
+  await registerPlugins();
+  await registerRoutes(app);
+  await setupWebSocket(app);
+  await connectDB();
+  return app;
+};
+
 // Register plugins
 const registerPlugins = async () => {
   // Security
@@ -141,4 +149,8 @@ process.on('SIGINT', async () => {
 });
 
 // Start the application
-start();
+if (require.main === module) {
+  start();
+}
+
+export default setupApp;

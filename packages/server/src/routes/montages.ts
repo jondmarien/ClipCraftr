@@ -1,4 +1,5 @@
 import { FastifyInstance } from 'fastify';
+import { emitMontageUpdate } from '../websocket';
 
 export const registerMontageRoutes = async (app: FastifyInstance): Promise<void> => {
   // Get all montages
@@ -14,12 +15,16 @@ export const registerMontageRoutes = async (app: FastifyInstance): Promise<void>
 
   // Create a new montage
   app.post('/api/montages', async (_request, _reply) => {
+    // TODO: Emit with real montage data
+    emitMontageUpdate({ type: 'created', montage: {/* ...montage data... */} });
     return { message: 'Montage created' };
   });
 
   // Delete a montage
   app.delete('/api/montages/:id', async (request, _reply) => {
     const { id } = request.params as { id: string };
+    // TODO: Emit with real montage data
+    emitMontageUpdate({ type: 'deleted', montageId: id });
     return { id, message: 'Montage deleted' };
   });
 };
