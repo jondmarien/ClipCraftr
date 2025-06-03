@@ -20,7 +20,7 @@ This document provides a comprehensive, actionable checklist for completing the 
 ### Queue & Video Handling
 
 - [ ] Accept video uploads via Discord, validate and queue them.
-- [ ] Implement in-memory queue (if not done), then swap for MongoDB-backed queue/history.
+- [x] Implement in-memory queue (if not done), then swap for MongoDB-backed queue/history.
 - [ ] Robust error handling and user feedback for invalid files, full queue, etc.
 
 ### FFmpeg Montage Pipeline
@@ -91,7 +91,7 @@ This document provides a comprehensive, actionable checklist for completing the 
 ### Persistence & Recovery
 
 - [x] Ensure all persistent data (queue, clips, montages, configs) is stored in MongoDB (not just memory).
-- [ ] Add job recovery on bot/server restart.
+- [x] Add job recovery on bot/server restart.
 
 ### Testing & QA
 
