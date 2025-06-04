@@ -161,7 +161,7 @@ export default new Command({
           duration,
           mimeType: attachment.contentType || '',
           userId, // always correct type
-          status: 'uploading' as ClipStatus,
+          status: 'ready' as ClipStatus, // Set to 'ready' as soon as added
           priority: priorityNum, // store numeric priority
           metadata: {
             width: width || 0,
@@ -172,12 +172,11 @@ export default new Command({
             aspectRatio: videoStream?.display_aspect_ratio || '',
           },
           isPublic: false,
-          tags: [],
+          tags: ['ready_for_montage'], // Tag for future extensibility
           usedInMontages: [],
           uploadedAt: new Date(),
           createdAt: new Date(),
           updatedAt: new Date(),
-          // Do NOT set id here; let Mongoose generate _id
         };
 
         console.log('clipData to insert:', clipData);
