@@ -4,6 +4,7 @@ import { CommandInteraction, CacheType } from 'discord.js';
 import { v4 as uuidv4 } from 'uuid';
 import { ClipStatus } from '../../models/Clip.js';
 
+const { Clip } = await import('../../models/Clip.js');
 
 export default new Command({
   name: 'queue',
@@ -103,6 +104,15 @@ export default new Command({
       const codec = videoStream?.codec_name;
       const format = probeData.format?.format_name;
 
+      // Explicit duration validation (e.g. 1s - 300s)
+      const MIN_DURATION = 1; // 1s
+      const MAX_DURATION = 300; // 5min
+      if (duration < MIN_DURATION || duration > MAX_DURATION) {
+        try { await fs.unlink(tempFilePath); } catch {}
+        await interaction.reply({ content: `Video duration must be between ${MIN_DURATION}s and ${MAX_DURATION}s. Your file is ${duration.toFixed(2)}s.`, ephemeral: true });
+        return;
+      }
+
       // Step 3: Clean up temp file
       await fs.unlink(tempFilePath);
 
@@ -121,6 +131,26 @@ export default new Command({
         const { Types } = await import('mongoose');
         const userId = dbUser._id instanceof Types.ObjectId ? dbUser._id : new Types.ObjectId(String(dbUser._id));
 
+        // Robust error handling: Check for duplicate upload (same fileName and userId with status uploading/processing)
+        const duplicate = await Clip.findOne({ fileName: tempFileName, userId, status: { $in: ['uploading', 'processing'] } });
+        if (duplicate) {
+          try { await fs.unlink(tempFilePath); } catch {}
+          await interaction.reply({ content: 'You have already uploaded this file and it is still being processed.', ephemeral: true });
+          return;
+        }
+
+        // Enforce per-user queue limit
+        const userQueueCount = await Clip.countDocuments({ userId, status: { $in: ['uploading', 'processing'] } });
+        if (userQueueCount >= (dbUser.queueLimit ?? 10)) {
+          try { await fs.unlink(tempFilePath); } catch {}
+          await interaction.reply({ content: `You have reached your queue limit (${dbUser.queueLimit ?? 10} clips). Please wait for your current clips to finish processing.`, ephemeral: true });
+          return;
+        }
+
+        // Priority option: map 'high' to 1, 'normal' to 0 (default)
+        let priorityNum = 0;
+        if (priority === 'high') priorityNum = 1;
+
         const clipData = {
           id: uuidv4(),
           originalName: attachment.name,
@@ -132,6 +162,7 @@ export default new Command({
           mimeType: attachment.contentType || '',
           userId, // always correct type
           status: 'uploading' as ClipStatus,
+          priority: priorityNum, // store numeric priority
           metadata: {
             width: width || 0,
             height: height || 0,
@@ -149,13 +180,28 @@ export default new Command({
           // Do NOT set id here; let Mongoose generate _id
         };
 
-
         console.log('clipData to insert:', clipData);
-        await DatabaseService.addClip(clipData);
+        const insertedClip = await DatabaseService.addClip(clipData);
+
+        // Calculate global queue position (clips with status 'uploading' or 'processing', sorted by priority DESC, then createdAt ASC)
+        const queueClips = await Clip.find({ status: { $in: ['uploading', 'processing'] } })
+          .sort({ priority: -1, createdAt: 1 })
+          .exec();
+        const globalPosition = queueClips.findIndex((c: any) => c.id === insertedClip.id) + 1;
+
+        // Calculate number of clips ahead of this user's clips
+        const clipsAhead = queueClips.filter((c: any) => String(c.userId) !== String(insertedClip.userId)).length;
 
         await interaction.reply({
-          content: `Video metadata extracted and stored!\nDuration: ${duration}s\nResolution: ${width}x${height}\nCodec: ${codec}\nFormat: ${format}`,
-          ephemeral: true,
+          content:
+            `Video metadata extracted and stored!` +
+            `\nDuration: ${duration}s` +
+            `\nResolution: ${width}x${height}` +
+            `\nCodec: ${codec}` +
+            `\nFormat: ${format}` +
+            `\n\nQueue position: #${globalPosition} out of ${queueClips.length}` +
+            `\nClips ahead of yours: ${globalPosition - 1 - clipsAhead}`,
+          ephemeral: true
         });
       } catch (dbError: any) {
         try { await fs.unlink(tempFilePath); } catch {}

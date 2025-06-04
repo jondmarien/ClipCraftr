@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "C:\\Users\\nucle\\Projects\\ClipCraftr\\logs\\.22e94bc452992bd363ee0f78a7bd2fe4b8a86657-audit.json",
+    "files": [
+        {
+            "date": 1749012642801,
+            "name": "C:\\Users\\nucle\\Projects\\ClipCraftr\\logs\\combined-2025-06-04.log",
+            "hash": "a36603322b3b5d1f1d9393ea9f74bce84cf0a02081b912dd6201e8944fc21749"
+        }
+    ],
+    "hashType": "sha256"
+}
