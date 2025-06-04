@@ -14,6 +14,7 @@ export async function extractVideoMetadata(url: string, filename: string): Promi
   const tempDir = os.tmpdir();
   const tempFilePath = path.join(tempDir, filename);
   try {
+    // Import ffmpeg-static for ffmpeg binary
     const ffmpegPath: string = (await import('ffmpeg-static')).default as unknown as string;
     // Download
     const response = await fetch(url);
@@ -21,24 +22,23 @@ export async function extractVideoMetadata(url: string, filename: string): Promi
     const arrayBuffer = await response.arrayBuffer();
     await fs.writeFile(tempFilePath, Buffer.from(arrayBuffer));
 
-    // Use FFmpeg from ffmpeggy to run ffprobe
-    const { ffprobe } = await import('ffmpeggy');
-    const result = await ffprobe(tempFilePath, {
-      ffprobePath: ffmpegPath.replace(/ffmpeg(?:\.exe)?$/, 'ffprobe$1')
+    // Use fluent-ffmpeg with ffmpeg-static (let ffprobe be auto-detected)
+    const ffmpeg = (await import('fluent-ffmpeg')).default;
+    ffmpeg.setFfmpegPath(ffmpegPath);
+
+    return new Promise<VideoMetadata>((resolve, reject) => {
+      ffmpeg.ffprobe(tempFilePath, async (err: any, metadata: any) => {
+        await fs.unlink(tempFilePath);
+        if (err) return reject(err);
+        const videoStream = metadata.streams?.find((s: any) => s.codec_type === 'video');
+        const duration = Number(metadata.format?.duration) || 0;
+        const width = videoStream?.width;
+        const height = videoStream?.height;
+        const codec = videoStream?.codec_name;
+        const format = metadata.format?.format_name;
+        resolve({ duration, width, height, codec, format });
+      });
     });
-    console.log(result);
-    
-    const probeData = JSON.parse(result.stdout);
-    const videoStream = probeData.streams?.find((s: any) => s.codec_type === 'video');
-    const duration = Number(probeData.format?.duration) || 0;
-    const width = videoStream?.width;
-    const height = videoStream?.height;
-    const codec = videoStream?.codec_name;
-    const format = probeData.format?.format_name;
-
-    await fs.unlink(tempFilePath);
-
-    return { duration, width, height, codec, format };
 
   } catch (err: any) {
     // Logging error to logs/errors

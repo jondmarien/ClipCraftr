@@ -1,5 +1,7 @@
 import setupApp from '../index';
 
+import { describe, expect, it, beforeAll, afterAll } from 'vitest';
+
 describe('Montages API', () => {
   let app: any;
   beforeAll(async () => {

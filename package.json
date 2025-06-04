@@ -69,7 +69,9 @@
     ]
   },
   "dependencies": {
+    "mongoose": "^8.15.1",
     "save-dev": "0.0.1-security",
+    "vite": "^6.3.5",
     "vitest": "^3.2.1"
   }
 }

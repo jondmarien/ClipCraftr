@@ -8,6 +8,7 @@
     "moduleResolution": "NodeNext",
     "target": "ES2022",
     "esModuleInterop": true,
+    "typeRoots": ["./node_modules/@types", "./src/types"],
     "strict": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,

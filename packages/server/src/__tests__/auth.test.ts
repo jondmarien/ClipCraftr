@@ -1,3 +1,4 @@
+import { beforeAll, describe, afterAll, it, expect } from 'vitest';
 import setupApp from '../index';
 
 describe('Auth API', () => {

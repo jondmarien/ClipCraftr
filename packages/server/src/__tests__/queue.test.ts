@@ -1,5 +1,7 @@
 import setupApp from '../index';
 
+import { describe, expect, it, beforeAll, afterAll } from 'vitest';
+
 describe('Queue API', () => {
 
   let app: any;

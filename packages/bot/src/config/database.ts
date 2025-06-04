@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-import { logger } from '../utils/logger';
+import { logger } from '../utils/logger.js';
 
 const dbLogger = logger('Database');
 
@@ -22,7 +22,7 @@ export async function connectDatabase(mongoUri?: string) {
 
   try {
     // Set debug mode
-    mongoose.set('debug', (collectionName, method, query, doc) => {
+    mongoose.set('debug', (collectionName: string, method: string, query: any, doc: any) => {
       dbLogger.debug(`Mongoose: ${collectionName}.${method}`, { query, doc });
     });
 
@@ -45,14 +45,14 @@ export async function connectDatabase(mongoUri?: string) {
       db: connection.connection.db?.namespace,
     });
   } catch (error) {
-    const errorMessage = error instanceof Error ? error.message : 'An unknown error occurred';
+    const errorMessage = error instanceof Error ? error.message : 'An unknown error occurred' as string;
     dbLogger.error('MongoDB connection error:', { message: errorMessage, error });
     process.exit(1);
   }
 }
 
 // Handle connection events
-mongoose.connection.on('error', (error) => {
+mongoose.connection.on('error', (error: Error) => {
   dbLogger.error('MongoDB connection error:', error);
 });
 

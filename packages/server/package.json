@@ -9,7 +9,7 @@
     "build": "swc src --out-dir dist --copy-files",
     "dev": "ts-node -r tsconfig-paths/register --transpile-only src/index.ts",
     "start": "node dist/index.js",
-    "test": "vitest run --detectOpenHandles --forceExit --runInBand",
+    "test": "vitest run",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
     "lint": "eslint . --ext .ts",
@@ -32,6 +32,7 @@
     "socket.io": "^4.7.2",
     "socket.io-client": "^4.8.1",
     "supertest": "^7.1.1",
+    "vite": "^6.3.5",
     "winston": "^3.17.0",
     "winston-mongodb": "^6.0.0",
     "zod": "^3.22.4"

@@ -12,7 +12,7 @@ const auditLogger = createLogger({
     // Uncomment below after installing winston-mongodb:
     new transports.MongoDB({
       db: process.env.MONGODB_URI || '',
-      options: { useUnifiedTopology: true },
+      options: {},
       collection: 'logs',
       tryReconnect: true,
       metaKey: 'details',
