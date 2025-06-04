@@ -9,7 +9,7 @@ This document provides a comprehensive, actionable checklist for completing the 
 ### Slash Commands
 
 - [ ] Ensure all core slash commands are implemented:
-  - [ ] `/queue add [attachment] [priority]`
+  - [x] `/queue add [attachment] [priority]`
   - [ ] `/queue status`
   - [ ] `/queue remove [clip_id]`
   - [ ] `/queue clear`
@@ -18,7 +18,7 @@ This document provides a comprehensive, actionable checklist for completing the 
   - [ ] Support batch upload of clips for montage creation
   - [ ] Ensure queue position logic updates so processed clips show no clips ahead
   - [ ] `/config set [option] [value]`
-- [ ] Register commands with Discord API and test in server.
+- [x] Register commands with Discord API and test in server.
 
 I'd like to be able to either:
 
@@ -29,9 +29,9 @@ OR
 
 ### Queue & Video Handling
 
-- [ ] Accept video uploads via Discord, validate and queue them.
+- [x] Accept video uploads via Discord, validate and queue them.
 - [x] Implement in-memory queue (if not done), then swap for MongoDB-backed queue/history.
-- [ ] Robust error handling and user feedback for invalid files, full queue, etc.
+- [x] Robust error handling and user feedback for invalid files, full queue, etc.
 
 ### FFmpeg Montage Pipeline
 
@@ -42,7 +42,7 @@ OR
 
 ### Admin & Permissions
 
-- [ ] Implement admin-only config commands (channels, limits, etc.).
+- [ ] Implement admin-only config commands (channels, limits, purge (done, but need to lock behind admin) etc.).
 - [ ] Restrict sensitive commands to admins only.
 
 ---
