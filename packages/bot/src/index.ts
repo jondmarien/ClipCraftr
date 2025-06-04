@@ -2,16 +2,18 @@ import dotenv from 'dotenv';
 import path from 'path';
 import { Client, Collection, GatewayIntentBits, Partials } from 'discord.js';
 
-// Always resolve from the process root, not relative to __dirname
-const envPath = path.resolve(process.cwd(), '.env');
-dotenv.config({ path: envPath });
-
 import { registerEvents } from './events/index.js';
 import type { Command } from './types/index.js';
 import { loadCommands, registerSlashCommands } from './utils/commandHandler.js';
 import { connectDatabase } from './config/database.js';
 import { logger } from './utils/logger.js';
 import { validateEnvVars } from './utils/env.js';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const envPath = path.resolve(__dirname, '../../../.env');
+dotenv.config({ path: envPath });
 
 class ClipCraftrClient extends Client {
   public commands: Collection<string, Command> = new Collection();
