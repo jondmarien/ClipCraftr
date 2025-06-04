@@ -38,9 +38,9 @@
     "@types/node": "^22.15.29",
     "concurrently": "^9.1.2",
     "husky": "^9.1.0",
-    "jest": "^29.7.0",
     "typescript": "^5.8.3",
     "undici": "^7.10.0",
+    "vitest": "^3.2.1",
     "wait-on": "^8.0.3"
   },
   "keywords": [
@@ -69,6 +69,7 @@
     ]
   },
   "dependencies": {
-    "vitest": "^1.6.1"
+    "save-dev": "0.0.1-security",
+    "vitest": "^3.2.1"
   }
 }

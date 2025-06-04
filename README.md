@@ -38,7 +38,7 @@ A powerful Discord bot that creates automated video montages from user-submitted
 - **Authentication**: NextAuth.js with Discord OAuth2
 - **Video Processing**: FFmpeg
 - **Linting/Formatting**: ESLint, Prettier
-- **Testing**: Jest, Supertest
+- **Testing**: Vitest, Supertest
 
 ## 🛠️ Development Setup
 

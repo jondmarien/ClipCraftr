@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { extractVideoMetadata } from '../video';
+import { extractVideoMetadata } from '../video.js';
 
 describe('extractVideoMetadata', () => {
   it('extracts metadata from a sample Discord CDN video', async () => {

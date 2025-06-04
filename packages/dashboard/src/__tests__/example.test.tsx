@@ -1,5 +1,4 @@
-import '@testing-library/jest-dom';
-import { expect, describe, it } from '@jest/globals';
+import { expect, describe, it } from 'vitest';
 
 describe('Example Test', () => {
   it('should support basic assertions', () => {

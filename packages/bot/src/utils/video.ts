@@ -22,15 +22,12 @@ export async function extractVideoMetadata(url: string, filename: string): Promi
     await fs.writeFile(tempFilePath, Buffer.from(arrayBuffer));
 
     // Use FFmpeg from ffmpeggy to run ffprobe
-    const ffmpeggy = await import('ffmpeggy');
-    const ffmpeg = new ffmpeggy.({ ffprobePath: ffmpegPath.replace(/ffmpeg(?:\.exe)?$/, 'ffprobe$1') });
-    const result = await ffmpeg.ffprobe([
-      '-v', 'quiet',
-      '-print_format', 'json',
-      '-show_format',
-      '-show_streams',
-      tempFilePath
-    ]);
+    const { ffprobe } = await import('ffmpeggy');
+    const result = await ffprobe(tempFilePath, {
+      ffprobePath: ffmpegPath.replace(/ffmpeg(?:\.exe)?$/, 'ffprobe$1')
+    });
+    console.log(result);
+    
     const probeData = JSON.parse(result.stdout);
     const videoStream = probeData.streams?.find((s: any) => s.codec_type === 'video');
     const duration = Number(probeData.format?.duration) || 0;

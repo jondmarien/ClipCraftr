@@ -128,7 +128,7 @@ pnpm start
    - Verify Node.js version (requires Node.js 18+)
 
 2. **Test Failures**
-   - Clear Jest cache: `pnpm test --clearCache`
+   - Clear Vitest cache: `pnpm test --clearCache`
    - Ensure test environment variables are set
 
 3. **Performance Issues**
@@ -144,4 +144,4 @@ pnpm start
 
 - [SWC Documentation](https://swc.rs/)
 - [Next.js SWC Documentation](https://nextjs.org/docs/advanced-features/compiler)
-- [Jest with SWC](https://swc.rs/docs/usage/jest)
+- [Vitest](https://vitest.dev/)
