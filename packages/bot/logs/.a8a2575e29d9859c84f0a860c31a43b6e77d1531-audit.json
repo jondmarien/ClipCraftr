@@ -1,0 +1,20 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "C:\\Users\\nucle\\Projects\\ClipCraftr\\packages\\bot\\logs\\.a8a2575e29d9859c84f0a860c31a43b6e77d1531-audit.json",
+    "files": [
+        {
+            "date": 1749009176463,
+            "name": "C:\\Users\\nucle\\Projects\\ClipCraftr\\packages\\bot\\logs\\error-2025-06-03.log",
+            "hash": "42b4cd1afdc931d65d4f99deffe966399c4556ad03736cf7dc0eae492185909a"
+        },
+        {
+            "date": 1749009675653,
+            "name": "C:\\Users\\nucle\\Projects\\ClipCraftr\\packages\\bot\\logs\\error-2025-06-04.log",
+            "hash": "3ef81460fe3895a7f5588795948f697b2005734bc17ea853f17e4f90f06f35c7"
+        }
+    ],
+    "hashType": "sha256"
+}

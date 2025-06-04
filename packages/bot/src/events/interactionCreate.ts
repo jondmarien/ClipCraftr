@@ -5,10 +5,12 @@ import {
   AutocompleteInteraction,
   Client,
   Collection,
+  MessageFlags,
+  BitFieldResolvable,
 } from 'discord.js';
-import type { Command } from '../types';
-import { Event } from '../types';
-import { logger } from '../utils/logger';
+import type { Command } from '../types/index.js';
+import { Event } from '../types/index.js';
+import { logger } from '../utils/logger.js';
 
 interface ExtendedClient extends Client {
   commands: Collection<string, Command>;

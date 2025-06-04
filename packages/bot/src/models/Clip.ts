@@ -34,6 +34,7 @@ export interface IClip extends Document {
 
 const clipSchema = new Schema<IClip>(
   {
+    id: { type: String, required: true, unique: true },
     originalName: { type: String, required: true, trim: true },
     fileName: { type: String, required: true, unique: true },
     filePath: { type: String, required: true },
@@ -94,6 +95,5 @@ clipSchema.pre<IClip>('save', function (next) {
   this.updatedAt = new Date();
   next();
 });
-clipSchema.index({ tags: 1 });
 
 export const Clip = model<IClip>('Clip', clipSchema);

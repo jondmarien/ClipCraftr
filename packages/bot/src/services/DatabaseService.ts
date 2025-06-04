@@ -1,16 +1,8 @@
 import { Document, FilterQuery, UpdateQuery, Types, ClientSession, startSession } from 'mongoose';
-import {
-  IUser,
-  User,
-  IClip,
-  Clip,
-  ClipStatus,
-  IMontage,
-  Montage,
-  MontageStatus,
-  IProcessingStep,
-} from '../models';
-import { logger } from '../utils/logger';
+import { IUser, User } from '../models/User.js';
+import { IClip, Clip, ClipStatus } from '../models/Clip.js';
+import { IMontage, IProcessingStep, Montage, MontageStatus } from '../models/Montage.js';
+import { logger } from '../utils/logger.js';
 
 const serviceLogger = logger('DatabaseService');
 
@@ -95,7 +87,10 @@ export class DatabaseService {
   /**
    * Create a new clip
    */
-  static async createClip(
+  /**
+   * Add a new clip (formerly createClip)
+   */
+  static async addClip(
     clipData: Omit<IClip, keyof Document>,
     session?: ClientSession
   ): Promise<IClip> {
@@ -109,6 +104,7 @@ export class DatabaseService {
     serviceLogger.info(`Clip ${clip._id} created for user ${clip.userId}`);
     return clip;
   }
+
 
   /**
    * Get a clip by ID

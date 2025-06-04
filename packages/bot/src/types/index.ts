@@ -93,7 +93,7 @@ export class CommandError extends Error {
 
 // Context types
 // Import Logger type from logger module
-import type { Logger } from '../utils/logger.types';
+import type { Logger } from '../utils/logger.types.js';
 
 export interface CommandContext {
   interaction: CommandInteraction;

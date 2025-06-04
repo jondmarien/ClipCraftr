@@ -1,6 +1,6 @@
 import { Schema, model, Document, Types } from 'mongoose';
-import { IUser } from './User';
-import { IClip } from './Clip';
+import { IUser } from './User.js';
+import { IClip } from './Clip.js';
 
 export type MontageStatus = 'queued' | 'processing' | 'completed' | 'failed' | 'cancelled';
 

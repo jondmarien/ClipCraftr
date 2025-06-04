@@ -98,6 +98,8 @@ export async function registerSlashCommands(client: ExtendedClient): Promise<voi
     // Register commands based on environment
     let data: ApplicationCommandData[] = [];
 
+    console.log('DEV_GUILD_ID:', process.env.DEV_GUILD_ID);
+
     if (process.env.NODE_ENV === 'production') {
       // In production, register global commands
       commandLogger.info('Registering global commands...');
