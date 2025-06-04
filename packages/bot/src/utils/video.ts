@@ -15,25 +15,23 @@ export async function extractVideoMetadata(url: string, filename: string): Promi
   const tempFilePath = path.join(tempDir, filename);
   try {
     const ffmpegPath: string = (await import('ffmpeg-static')).default as unknown as string;
-    const ffmpeggyImport = await import('ffmpeggy');
-    console.log('DEBUG: ffmpeggyImport shape:', ffmpeggyImport);
-    const ffprobe =
-      ffmpeggyImport.ffprobe ||
-      ffmpeggyImport.default?.ffprobe ||
-      ffmpeggyImport.default ||
-      ffmpeggyImport;
-    if (typeof ffprobe !== 'function') throw new Error('ffprobe not found in ffmpeggy import');
-
     // Download
     const response = await fetch(url);
     if (!response.ok) throw new Error('Failed to download');
     const arrayBuffer = await response.arrayBuffer();
     await fs.writeFile(tempFilePath, Buffer.from(arrayBuffer));
 
-    // ffprobe
-    const probeData = await ffprobe(tempFilePath, {
-      ffprobePath: ffmpegPath.replace(/ffmpeg(?:\.exe)?$/, 'ffprobe$1'),
-    });
+    // Use FFmpeg from ffmpeggy to run ffprobe
+    const ffmpeggy = await import('ffmpeggy');
+    const ffmpeg = new ffmpeggy.({ ffprobePath: ffmpegPath.replace(/ffmpeg(?:\.exe)?$/, 'ffprobe$1') });
+    const result = await ffmpeg.ffprobe([
+      '-v', 'quiet',
+      '-print_format', 'json',
+      '-show_format',
+      '-show_streams',
+      tempFilePath
+    ]);
+    const probeData = JSON.parse(result.stdout);
     const videoStream = probeData.streams?.find((s: any) => s.codec_type === 'video');
     const duration = Number(probeData.format?.duration) || 0;
     const width = videoStream?.width;
@@ -44,6 +42,7 @@ export async function extractVideoMetadata(url: string, filename: string): Promi
     await fs.unlink(tempFilePath);
 
     return { duration, width, height, codec, format };
+
   } catch (err: any) {
     // Logging error to logs/errors
     try {

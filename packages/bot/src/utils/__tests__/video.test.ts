@@ -1,4 +1,4 @@
-// @ts-expect-error TS(3a4d33fe-2600-49dd-92cb-45ad54519ace): Babel-Jest requires extensionless imports for TS files
+import { describe, expect, it } from 'vitest';
 import { extractVideoMetadata } from '../video';
 
 describe('extractVideoMetadata', () => {

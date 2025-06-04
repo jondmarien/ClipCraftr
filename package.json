@@ -27,14 +27,14 @@
     "dev": "concurrently -k -n BOT,SERVER,DASH -c blue,green,magenta \"pnpm bot:dev\" \"pnpm server:dev\" \"wait-on tcp:4000 && pnpm dashboard:dev\"",
     "build": "pnpm run -r build",
     "start": "concurrently \"pnpm bot:start\" \"pnpm server:start\" \"pnpm dashboard:start\"",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "test": "vitest run",
     "format": "prettier --write .",
     "prepare": "husky || echo \"Husky not found, skipping git hooks setup\""
   },
   "devDependencies": {
     "@babel/preset-typescript": "^7.27.1",
-    "@jest/globals": "^29.7.0",
-    "@types/jest": "^29.5.14",
     "@types/node": "^22.15.29",
     "concurrently": "^9.1.2",
     "husky": "^9.1.0",
@@ -67,5 +67,8 @@
       "ffmpeg-static",
       "unrs-resolver"
     ]
+  },
+  "dependencies": {
+    "vitest": "^1.6.1"
   }
 }
