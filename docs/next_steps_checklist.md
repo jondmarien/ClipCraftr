@@ -14,8 +14,18 @@ This document provides a comprehensive, actionable checklist for completing the 
   - [ ] `/queue remove [clip_id]`
   - [ ] `/queue clear`
   - [ ] `/montage create [options]`
+  - [ ] Support montage creation from all clips in queue (optionally: named queues)
+  - [ ] Support batch upload of clips for montage creation
+  - [ ] Ensure queue position logic updates so processed clips show no clips ahead
   - [ ] `/config set [option] [value]`
 - [ ] Register commands with Discord API and test in server.
+
+I'd like to be able to either:
+
+- upload many singular clips, then use a command like `/montage create` where it takes all the clips in a given queue (maybe add named queues), and creates a montage.
+OR
+
+- upload many clips with one command that accepts multiple inputs, and then the user can use `/montage create` to create a montage from said batch of clips.
 
 ### Queue & Video Handling
 

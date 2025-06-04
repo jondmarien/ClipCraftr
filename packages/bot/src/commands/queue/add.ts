@@ -210,7 +210,6 @@ export default new Command({
         return;
       }
 
-      // TODO: Next steps - add to queue, return queue position
     } catch (error: any) {
       // Clean up temp file if it exists
       try { await fs.unlink(tempFilePath); } catch {}

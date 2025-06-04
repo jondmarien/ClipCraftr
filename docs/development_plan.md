@@ -17,6 +17,10 @@ This plan is structured for a solo, experienced developer moving quickly. It emp
 
 - Slash commands for all bot functions (queue, status, montage creation, config, etc.)
 - Accept video uploads via Discord, validate and queue them
+- **Montage Creation User Flows:**
+  - Users can upload multiple clips individually (single uploads), then use `/montage create` to combine all clips in the queue into a montage. Optionally, support named queues for organizational flexibility.
+  - Users can upload multiple clips in a single command (batch upload), then use `/montage create` to create a montage from that batch of clips.
+  - Supporting both flows is a project goal.
 - FFmpeg-powered montage creation (concat, transitions, output settings)
 - Progress/status updates in Discord
 - Admin-only config commands (channels, limits, etc.)
