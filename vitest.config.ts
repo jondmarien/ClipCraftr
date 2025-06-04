@@ -12,6 +12,10 @@ export default defineConfig({
         find: /^@bot\/(.*)$/,
         replacement: path.resolve(__dirname, 'packages/bot/src/$1'),
       },
+      {
+        find: /^@dashboard\/(.*)$/,
+        replacement: path.resolve(__dirname, 'packages/dashboard/src/$1'),
+      }
     ],
   },
   test: {
