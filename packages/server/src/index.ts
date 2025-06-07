@@ -120,6 +120,15 @@ const start = async () => {
     // Register routes
     await registerRoutes(app);
 
+    app.get('/', async (request, reply) => {
+      return { status: 'ok', message: 'Welcome to the ClipCraftr API!' };
+    });
+  
+    app.get('/favicon.ico', async (request, reply) => {
+      // Optionally serve a favicon, or just return 204 No Content
+      reply.code(204).send();
+    });
+
     // Setup WebSocket
     await setupWebSocket(app);
 

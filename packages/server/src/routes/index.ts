@@ -3,6 +3,7 @@ import { registerClipRoutes } from '@/routes/clips';
 import { registerMontageRoutes } from '@/routes/montages';
 import { registerAuthRoutes } from '@/routes/auth';
 import { registerQueueRoutes } from '@/routes/queue';
+import { registerUserRoutes } from '@/routes/user';
 
 export const registerRoutes = async (app: FastifyInstance): Promise<void> => {
   // Health check endpoint
@@ -15,4 +16,5 @@ export const registerRoutes = async (app: FastifyInstance): Promise<void> => {
   await registerMontageRoutes(app);
   await registerAuthRoutes(app);
   await registerQueueRoutes(app);
+  await registerUserRoutes(app);
 };

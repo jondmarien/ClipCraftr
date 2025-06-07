@@ -76,6 +76,7 @@
     "mongoose": "^8.15.1",
     "save-dev": "0.0.1-security",
     "uuid": "^9.0.1",
-    "vite": "^6.3.5"
+    "vite": "^6.3.5",
+    "zod-to-json-schema": "^3.24.5"
   }
 }

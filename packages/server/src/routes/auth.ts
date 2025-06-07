@@ -36,7 +36,38 @@ export const registerAuthRoutes = async (app: FastifyInstance): Promise<void> =>
   }
 
   // Login
-  app.post('/api/auth/login', async (request, _reply) => {
+  app.post('/api/auth/login', {
+    schema: {
+      description: 'User login',
+      tags: ['auth'],
+      body: {
+        type: 'object',
+        properties: {
+          username: { type: 'string', description: 'Username' },
+          password: { type: 'string', description: 'Password' }
+        },
+        required: ['username', 'password']
+      },
+      response: {
+        200: {
+          description: 'Login successful',
+          type: 'object',
+          properties: {
+            message: { type: 'string' }
+          },
+          example: { message: 'Login successful' }
+        },
+        401: {
+          description: 'Invalid credentials',
+          type: 'object',
+          properties: {
+            message: { type: 'string' }
+          },
+          example: { message: 'Invalid credentials' }
+        }
+      }
+    }
+  }, async (request, _reply) => {
     const user = request.user?.id || 'anonymous';
     auditLogger.info('User login', {
       user,
@@ -48,7 +79,22 @@ export const registerAuthRoutes = async (app: FastifyInstance): Promise<void> =>
   });
 
   // Logout
-  app.post('/api/auth/logout', async (request, _reply) => {
+  app.post('/api/auth/logout', {
+    schema: {
+      description: 'User logout',
+      tags: ['auth'],
+      response: {
+        200: {
+          description: 'Logout successful',
+          type: 'object',
+          properties: {
+            message: { type: 'string' }
+          },
+          example: { message: 'Logout successful' }
+        }
+      }
+    }
+  }, async (request, _reply) => {
     const user = request.user?.id || 'anonymous';
     auditLogger.info('User logout', {
       user,
@@ -60,7 +106,36 @@ export const registerAuthRoutes = async (app: FastifyInstance): Promise<void> =>
   });
 
   // Get current user
-  app.get('/api/auth/me', async (_request, _reply) => {
+  app.get('/api/auth/me', {
+    schema: {
+      description: 'Get current authenticated user',
+      tags: ['auth'],
+      response: {
+        200: {
+          description: 'Current user info',
+          type: 'object',
+          properties: {
+            user: {
+              type: 'object',
+              properties: {
+                id: { type: 'string' },
+                username: { type: 'string' }
+              }
+            }
+          },
+          example: { user: { id: '1', username: 'admin' } }
+        },
+        401: {
+          description: 'Not authenticated',
+          type: 'object',
+          properties: {
+            message: { type: 'string' }
+          },
+          example: { message: 'Not authenticated' }
+        }
+      }
+    }
+  }, async (_request, _reply) => {
     return { user: { id: '1', username: 'admin' } };
   });
 };
