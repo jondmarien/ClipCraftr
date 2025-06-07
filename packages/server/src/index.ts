@@ -1,3 +1,7 @@
+/// <reference path="../types/fastify.d.ts" />
+
+import { loadEnv } from '../../shared/src/utils/loadEnv'
+loadEnv();
 import fastify from 'fastify';
 import cors from '@fastify/cors';
 import helmet from '@fastify/helmet';
@@ -5,14 +9,9 @@ import sensible from '@fastify/sensible';
 import { fastifySwagger } from '@fastify/swagger';
 import { fastifySwaggerUi } from '@fastify/swagger-ui';
 import { fastifyWebsocket } from '@fastify/websocket';
-import dotenv from 'dotenv';
 import { connectDB } from '@/config/database';
 import { registerRoutes } from '@/routes';
 import { setupWebSocket } from '@/websocket';
-
-// Load environment variables from root .env file
-import path from 'path';
-dotenv.config({ path: path.resolve(process.cwd(), '../../.env') });
 
 // Create Fastify instance
 const app = fastify({

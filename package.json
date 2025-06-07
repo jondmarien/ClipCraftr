@@ -25,6 +25,7 @@
     "dashboard:build": "pnpm --filter @clipcraftr/dashboard build",
     "dashboard:start": "pnpm --filter @clipcraftr/dashboard start",
     "dev": "concurrently -k -n BOT,SERVER,DASH -c blue,green,magenta \"pnpm bot:dev\" \"pnpm server:dev\" \"wait-on tcp:4000 && pnpm dashboard:dev\"",
+    "dev:hcp": "hcp vault-secrets run --app clipcraftr-dev -- concurrently -k -n BOT,SERVER,DASH -c blue,green,magenta \"pnpm bot:dev\" \"pnpm server:dev\" \"wait-on tcp:4000 && pnpm dashboard:dev\"",
     "build": "pnpm run -r build",
     "start": "concurrently \"pnpm bot:start\" \"pnpm server:start\" \"pnpm dashboard:start\"",
     "test:watch": "vitest",
@@ -71,6 +72,7 @@
     ]
   },
   "dependencies": {
+    "@litehex/node-vault": "^1.0.4",
     "mongoose": "^8.15.1",
     "save-dev": "0.0.1-security",
     "uuid": "^9.0.1",

@@ -12,8 +12,11 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
-    "typeRoots": ["./node_modules/@types", "./src/types"]
+    "typeRoots": ["./node_modules/@types", "./src/types", "./types"]
   },
-  "include": ["src/**/*", "src/types.d.ts"],
-  "exclude": ["node_modules", "dist"]
+  "include": ["src/**/*", "src/types.d.ts", "types/**/*"],
+  "exclude": ["node_modules", "dist"],
+  "references": [
+    { "path": "../shared" }
+  ]
 }

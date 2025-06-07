@@ -1,9 +1,11 @@
+import '../../../shared/src/utils/loadEnv';
 import { createLogger, transports, format } from 'winston';
 // @ts-ignore
 import 'winston-mongodb';
 
 const { combine, timestamp, json } = format;
 
+console.log('[auditLogger] MONGODB_URI:', process.env.MONGODB_URI);
 const auditLogger = createLogger({
   level: 'info',
   format: combine(timestamp(), json()),
