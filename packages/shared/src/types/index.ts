@@ -2,3 +2,4 @@
 export * from './clip';
 export * from './montage';
 export * from './user';
+export * from './job';
