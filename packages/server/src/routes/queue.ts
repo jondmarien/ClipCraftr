@@ -1,74 +1,68 @@
 import { FastifyInstance } from 'fastify';
 import { emitQueueUpdate } from '../websocket';
 import auditLogger from '../utils/auditLogger';
-import { Job, JobDocument } from '../models/job';
+import { JobSchema } from '../../../shared/src/types';
+import { zodToJsonSchema } from 'zod-to-json-schema';
+import { Job } from '../models/job';
+import { dispatchJob, recoverQueueJobs, jobToAPI } from '@/utils/queueService';
+
+const jobJsonSchema = zodToJsonSchema(JobSchema, 'Job');
 
 let missionStatus: 'idle' | 'processing' | 'error' = 'idle';
 
-// Dispatcher: process a queue job
-async function dispatchJob(job: JobDocument) {
-  try {
-    await Job.findByIdAndUpdate(job._id, { status: 'processing' });
-    // Example job processing logic based on type
-    if (job.type === 'queue') {
-      // Simulate processing a clip queue job
-      // e.g., fetch related resources, validate payload, etc.
-      // Processing logic for 'queue' jobs goes here
-      // For demonstration, add a short artificial delay
-      await new Promise((res) => setTimeout(res, 500));
-    } else if (job.type === 'montage') {
-      // Simulate processing a montage job
-      // e.g., kick off FFmpeg montage, update progress, etc.
-      await new Promise((res) => setTimeout(res, 1000));
-    } else {
-      throw new Error(`Unknown job type: ${job.type}`);
-    }
-    await Job.findByIdAndUpdate(job._id, { status: 'completed', result: { success: true } });
-    auditLogger.info('Queue job completed', {
-      jobId: job._id,
-      action: 'complete',
-      collection: 'jobs',
-      timestamp: new Date(),
-    });
-  } catch (err: any) {
-    await Job.findByIdAndUpdate(job._id, { status: 'failed', result: { error: err.message } });
-    auditLogger.error('Queue job failed', {
-      jobId: job._id,
-      action: 'fail',
-      collection: 'jobs',
-      error: err.message,
-      timestamp: new Date(),
-    });
-  }
-}
-
-// On startup: recover jobs
-export async function recoverQueueJobs() {
-  const jobs = await Job.find({ type: 'queue', status: { $in: ['pending', 'processing'] } });
-  for (const job of jobs) {
-    // Optionally reset 'processing' to 'pending' if needed
-    if (job.status === 'processing') {
-      job.status = 'pending';
-      await job.save();
-    }
-    dispatchJob(job);
-  }
-}
-
-function jobToAPI(job: JobDocument | any) {
-  const obj = job.toObject ? job.toObject() : job;
-  return { ...obj, id: obj._id?.toString?.() || obj._id };
-}
-
 export const registerQueueRoutes = async (app: FastifyInstance): Promise<void> => {
   // Get current queue (pending jobs)
-  app.get('/api/queue', async (_req, _reply) => {
+  app.get('/api/queue', {
+    schema: {
+      description: 'Get the current queue of pending jobs',
+      tags: ['queue'],
+      response: {
+        200: {
+          description: 'Current queue',
+          type: 'object',
+          properties: {
+            queue: {
+              type: 'array',
+              items: jobJsonSchema.definitions?.Job || jobJsonSchema,
+              description: 'Array of job objects'
+            }
+          },
+          example: {
+            queue: [
+              { id: 'job1', type: 'queue', status: 'pending', payload: {}, userId: 'user1', guildId: 'guild1', createdAt: new Date().toISOString(), updatedAt: new Date().toISOString() },
+              { id: 'job2', type: 'queue', status: 'processing', payload: {}, userId: 'user2', guildId: 'guild2', createdAt: new Date().toISOString(), updatedAt: new Date().toISOString() }
+            ]
+          }
+        }
+      }
+    }
+  }, async (_req, _reply) => {
     const jobs = await Job.find({ type: 'queue', status: { $in: ['pending', 'processing'] } }).sort({ createdAt: 1 });
     return { queue: jobs.map(jobToAPI) };
   });
 
   // Add to queue
-  app.post('/api/queue', async (req, _reply) => {
+  app.post('/api/queue', {
+    schema: {
+      description: 'Add a new job to the queue',
+      tags: ['queue'],
+      body: jobJsonSchema.definitions?.Job || jobJsonSchema,
+      response: {
+        200: {
+          description: 'Job added to queue',
+          type: 'object',
+          properties: {
+            message: { type: 'string' },
+            item: jobJsonSchema.definitions?.Job || jobJsonSchema
+          },
+          example: {
+            message: 'Added to queue',
+            item: { id: 'job1', type: 'queue', status: 'pending', payload: {}, userId: 'user1', guildId: 'guild1', createdAt: new Date().toISOString(), updatedAt: new Date().toISOString() }
+          }
+        }
+      }
+    }
+  }, async (req, _reply) => {
     const payload = req.body;
     const user = req.user?.id || 'anonymous';
     const job = new Job({ type: 'queue', payload, status: 'pending' });
@@ -87,7 +81,38 @@ export const registerQueueRoutes = async (app: FastifyInstance): Promise<void> =
   });
 
   // Remove from queue
-  app.delete('/api/queue/:id', async (req, _reply) => {
+  app.delete('/api/queue/:id', {
+    schema: {
+      description: 'Remove a job from the queue by ID',
+      tags: ['queue'],
+      params: {
+        type: 'object',
+        properties: {
+          id: { type: 'string', description: 'Job ID' }
+        },
+        required: ['id']
+      },
+      response: {
+        200: {
+          description: 'Job removed from queue',
+          type: 'object',
+          properties: {
+            message: { type: 'string' },
+            id: { type: 'string' }
+          },
+          example: { message: 'Removed from queue', id: 'job1' }
+        },
+        404: {
+          description: 'Job not found',
+          type: 'object',
+          properties: {
+            message: { type: 'string' }
+          },
+          example: { message: 'Job not found' }
+        }
+      }
+    }
+  }, async (req, _reply) => {
     const { id } = req.params as { id: string };
     const user = req.user?.id || 'anonymous';
     const job = await Job.findByIdAndDelete(id);
@@ -104,12 +129,50 @@ export const registerQueueRoutes = async (app: FastifyInstance): Promise<void> =
   });
 
   // Get mission status
-  app.get('/api/mission-status', async (_req, _reply) => {
+  app.get('/api/mission-status', {
+    schema: {
+      description: 'Get the current mission status',
+      tags: ['queue'],
+      response: {
+        200: {
+          description: 'Current mission status',
+          type: 'object',
+          properties: {
+            missionStatus: { type: 'string', enum: ['idle', 'processing', 'error'] }
+          },
+          example: { missionStatus: 'idle' }
+        }
+      }
+    }
+  }, async (_req, _reply) => {
     return { missionStatus };
   });
 
   // Set mission status (for testing/demo)
-  app.post('/api/mission-status', async (req, _reply) => {
+  app.post('/api/mission-status', {
+    schema: {
+      description: 'Set the current mission status',
+      tags: ['queue'],
+      body: {
+        type: 'object',
+        properties: {
+          status: { type: 'string', enum: ['idle', 'processing', 'error'], description: 'New mission status' }
+        },
+        required: ['status']
+      },
+      response: {
+        200: {
+          description: 'Mission status updated',
+          type: 'object',
+          properties: {
+            message: { type: 'string' },
+            missionStatus: { type: 'string', enum: ['idle', 'processing', 'error'] }
+          },
+          example: { message: 'Mission status updated', missionStatus: 'processing' }
+        }
+      }
+    }
+  }, async (req, _reply) => {
     const { status } = req.body as { status: typeof missionStatus };
     missionStatus = status;
     emitQueueUpdate({ type: 'status', missionStatus });
